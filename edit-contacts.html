@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+	<link rel="stylesheet" href="./css/pages/edit-profile.css">
+	<title>Edit profile</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="page-block">
+			<section class="edit-profile">
+
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="#">
+							Profile
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						Edit
+					</li>
+				</ul>
+
+				<div class="edit-profile__inner">
+					<div class="sidebar">
+						<nav class="sidebar-menu">
+							<ul class="sidebar-menu__list">
+								<li class="sidebar-menu__item sidebar-menu__item--active">
+									<a class="sidebar-menu__link" href="#">
+										<img src="./images/profile-icons/profile.svg" alt="profile icon">
+										<span>Profile</span>
+									</a>
+								</li>
+								<li class="sidebar-menu__item">
+									<a class="sidebar-menu__link" href="#">
+										<img src="./images/profile-icons/people.svg" alt="people icon">
+										<span>People</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<a class="sidebar-banner" href="#">
+							<img src="./images/sidebar-banner.jpg" alt="banner">
+						</a>
+					</div>
+					<div class="edit-profile__settings">
+						<div class="edit-profile__title-header">
+							<h5 class="edit-profile__settings-title">
+								Contact information
+							</h5>
+							<p class="edit-profile__settings-subtitle">
+								Change or complete your information
+							</p>
+						</div>
+						<form class="edit-contacts-form" action="#">
+							<div class="edit-profile-form__part">
+
+								<label class="form-element" for="phone">
+									<span>Phone:</span>
+									<input class="input" type="text" id="phone" name="phone">
+								</label>
+
+								<label class="form-element" for="e-mail">
+									<span>E-mail:</span>
+									<input class="input" type="text" id="e-mail" name="e-mail">
+								</label>
+
+								<label class="form-element edit-profile-form__city" for="city">
+									<span>City:</span>
+									<select class="city-select" name="city" id="city">
+										<option value="december">December</option>
+										<option value="january">January</option>
+										<option value="february ">February</option>
+									</select>
+								</label>
+
+							</div>
+
+							<div class="edit-profile-form__part">
+								<label class="form-element" for="linkedin">
+									<span>linkedin:</span>
+									<input class="input" type="text" id="linkedin" name="linkedin">
+								</label>
+
+								<label class="form-element" for="instagram">
+									<span>Instagram:</span>
+									<input class="input" type="text" id="instagram" name="instagram">
+								</label>
+
+								<label class="form-element" for="telegram">
+									<span>Telegram:</span>
+									<input class="input" type="text" id="telegram" name="telegram">
+								</label>
+							</div>
+
+							<button type="submit" class="button">
+								Save change
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+	<script src="./js/edit-contacts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+	<link rel="stylesheet" href="./css/pages/edit-profile.css">
+	<title>Edit profile</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="page-block">
+			<section class="edit-profile">
+
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="#">
+							Profile
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						Edit
+					</li>
+				</ul>
+
+				<div class="edit-profile__inner">
+					<div class="sidebar">
+						<nav class="sidebar-menu">
+							<ul class="sidebar-menu__list">
+								<li class="sidebar-menu__item sidebar-menu__item--active">
+									<a class="sidebar-menu__link" href="#">
+										<img src="./images/profile-icons/profile.svg" alt="profile icon">
+										<span>Profile</span>
+									</a>
+								</li>
+								<li class="sidebar-menu__item">
+									<a class="sidebar-menu__link" href="#">
+										<img src="./images/profile-icons/people.svg" alt="people icon">
+										<span>People</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<a class="sidebar-banner" href="#">
+							<img src="./images/sidebar-banner.jpg" alt="banner">
+						</a>
+					</div>
+					<div class="edit-profile__settings">
+						<div class="edit-profile__title-header">
+							<h5 class="edit-profile__settings-title">
+								Information
+							</h5>
+							<p class="edit-profile__settings-subtitle">
+								Change or complete your information
+							</p>
+						</div>
+						<form class="edit-profile-form" action="#">
+							<div class="edit-banner">
+								<input type="file" hidden name="banner">
+								<button class="edit-banner__btn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+										fill="none">
+										<path
+											d="M14.2441 6.00391V4.50391H12.7441V3.00391H14.2441V1.50391H15.7441V3.00391H17.2441V4.50391H15.7441V6.00391H14.2441ZM2.24414 16.5039C1.83164 16.5039 1.47839 16.3569 1.18439 16.0629C0.890392 15.7689 0.743642 15.4159 0.744142 15.0039V6.00391C0.744142 5.59141 0.891142 5.23816 1.18514 4.94416C1.47914 4.65016 1.83214 4.50341 2.24414 4.50391H4.60664L5.99414 3.00391H10.4941V4.50391H6.65039L5.28164 6.00391H2.24414V15.0039H14.2441V8.25391H15.7441V15.0039C15.7441 15.4164 15.5971 15.7697 15.3031 16.0637C15.0091 16.3577 14.6561 16.5044 14.2441 16.5039H2.24414ZM8.24414 13.8789C9.18164 13.8789 9.97864 13.5507 10.6351 12.8942C11.2916 12.2377 11.6196 11.4409 11.6191 10.5039C11.6191 9.56641 11.2909 8.76941 10.6344 8.11291C9.97789 7.45641 9.18114 7.12841 8.24414 7.12891C7.30664 7.12891 6.50964 7.45716 5.85314 8.11366C5.19664 8.77016 4.86864 9.56691 4.86914 10.5039C4.86914 11.4414 5.19739 12.2384 5.85389 12.8949C6.51039 13.5514 7.30714 13.8794 8.24414 13.8789ZM8.24414 12.3789C7.71914 12.3789 7.27539 12.1977 6.91289 11.8352C6.55039 11.4727 6.36914 11.0289 6.36914 10.5039C6.36914 9.97891 6.55039 9.53516 6.91289 9.17266C7.27539 8.81016 7.71914 8.62891 8.24414 8.62891C8.76914 8.62891 9.21289 8.81016 9.57539 9.17266C9.93789 9.53516 10.1191 9.97891 10.1191 10.5039C10.1191 11.0289 9.93789 11.4727 9.57539 11.8352C9.21289 12.1977 8.76914 12.3789 8.24414 12.3789Z"
+											fill="white" />
+									</svg>
+									<span>Edit cover</span>
+								</button>
+							</div>
+
+							<div class="edit-avatar-wrap">
+								<div class="edit-avatar">
+									<div class="edit-avatar__img">
+										<input type="file" name="avatar" hidden>
+										<img src="./images/avatar.jpg" alt="avatar">
+									</div>
+									<button class="edit-avatar__change-btn">
+										<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+											fill="none">
+											<path
+												d="M16.5463 7.51283V5.86663H14.9001V4.22042H16.5463V2.57422H18.1925V4.22042H19.8387V5.86663H18.1925V7.51283H16.5463ZM3.37667 19.0363C2.92397 19.0363 2.53629 18.8749 2.21363 18.5523C1.89097 18.2296 1.72992 17.8422 1.73047 17.39V7.51283C1.73047 7.06012 1.8918 6.67244 2.21445 6.34979C2.53711 6.02713 2.92452 5.86608 3.37667 5.86663H5.96944L7.49218 4.22042H12.4308V5.86663H8.2124L6.71024 7.51283H3.37667V17.39H16.5463V9.98213H18.1925V17.39C18.1925 17.8428 18.0312 18.2304 17.7085 18.5531C17.3859 18.8757 16.9985 19.0368 16.5463 19.0363H3.37667ZM9.96149 16.1554C10.9904 16.1554 11.865 15.7952 12.5855 15.0747C13.306 14.3542 13.666 13.4798 13.6654 12.4514C13.6654 11.4226 13.3052 10.5479 12.5847 9.82739C11.8642 9.1069 10.9898 8.74693 9.96149 8.74748C8.93261 8.74748 8.05793 9.10773 7.33744 9.82821C6.61695 10.5487 6.25698 11.4231 6.25753 12.4514C6.25753 13.4803 6.61777 14.355 7.33826 15.0755C8.05875 15.796 8.93316 16.1559 9.96149 16.1554ZM9.96149 14.5092C9.38532 14.5092 8.89831 14.3103 8.50048 13.9124C8.10265 13.5146 7.90373 13.0276 7.90373 12.4514C7.90373 11.8753 8.10265 11.3883 8.50048 10.9904C8.89831 10.5926 9.38532 10.3937 9.96149 10.3937C10.5377 10.3937 11.0247 10.5926 11.4225 10.9904C11.8203 11.3883 12.0192 11.8753 12.0192 12.4514C12.0192 13.0276 11.8203 13.5146 11.4225 13.9124C11.0247 14.3103 10.5377 14.5092 9.96149 14.5092Z"
+												fill="black" />
+										</svg>
+									</button>
+								</div>
+								<p class="edit-avatar-wrap__text">
+									Become an expert and make money with our platform - pass the KYC
+								</p>
+								<a class="button button--small edit-avatar-wrap__btn" href="#">
+									KYC
+								</a>
+							</div>
+
+							<div class="edit-profile-form__part">
+								<h5 class="profile-part-title edit-profile-form__title">
+									Basic information
+								</h5>
+								<label class="form-element" for="name">
+									<span>Name:</span>
+									<input class="input" type="text" id="name" name="name">
+								</label>
+								<label class="form-element" for="surname">
+									<span>Surname:</span>
+									<input class="input" type="text" id="surname" name="surname">
+								</label>
+								<label class="form-element" for="username">
+									<span>Username:</span>
+									<input class="input" type="text" id="username" name="username">
+								</label>
+							</div>
+
+							<div class="edit-profile-form__part">
+								<h5 class="profile-part-title edit-profile-form__title">
+									User details
+								</h5>
+								<span class="date-of-birth-title">Date of Birth:</span>
+								<div class="edit-profile-form__date-of-birth">
+									<label class="form-element edit-profile-form__day" for="day-birth">
+										<span>Day</span>
+										<input class="input" type="text" id="day-birth" name="day-birth">
+									</label>
+									<label class="form-element edit-profile-form__month" for="month-birth">
+										<span>Month</span>
+										<select class="month-select" name="month-birth" id="#month-birth">
+											<option value="december">December</option>
+											<option value="january">January</option>
+											<option value="february ">February</option>
+										</select>
+									</label>
+									<label class="form-element edit-profile-form__year" for="year-birth">
+										<span>Year</span>
+										<input class="input" type="text" id="year-birth" name="year-birth">
+									</label>
+								</div>
+								<div class="form-element">
+									<span>Gender:</span>
+									<div class="edit-profile-form__gender">
+										<label class="custom-radio">
+											<input type="radio" name="gender" value="male" />
+											<span class="radio-circle"></span>
+											Male
+										</label>
+										<label class="custom-radio">
+											<input type="radio" name="gender" value="female" />
+											<span class="radio-circle"></span>
+											Female
+										</label>
+									</div>
+								</div>
+								<div class="edit-profile-form__language-list">
+									<div class="edit-profile-form__language">
+										<label class="form-element" for="language">
+											<span>Language:</span>
+											<select class="language-select" name="language" id="language">
+												<option value="English">English</option>
+												<option value="Russia">Russia</option>
+												<option value="Spain">Spain</option>
+											</select>
+										</label>
+										<label class="form-element" for="level">
+											<span>Level:</span>
+											<select class="level-select" name="level" id="level">
+												<option value="Advancde">Advancde</option>
+												<option value="Toronto">Toronto, Ohio, USA</option>
+												<option value="Toronto ">Toronto, Ohio, USA</option>
+											</select>
+										</label>
+									</div>
+								</div>
+								<button class="add-language-btn">
+									<img src="./images/icons/plus.svg" alt="plus-icon">
+									<span>Add language</span>
+								</button>
+							</div>
+
+							<div class="edit-profile-form__part">
+								<h5 class="profile-part-title edit-profile-form__title">
+									User Type
+								</h5>
+								<div class="edit-profile-form__user-type">
+									<span>I'm an expert</span>
+									<label class="toggle-switch">
+										<input type="checkbox" name="expert">
+										<span class="slider"></span>
+									</label>
+								</div>
+							</div>
+
+							<div class="edit-profile-form__part">
+								<h5 class="profile-part-title edit-profile-form__title">
+									Specializations and skills
+								</h5>
+								<label class="form-element">
+									<label class="form-element">
+										<span>Specialization</span>
+										<select class="specialization-select" name="specialization">
+											<option value="developer">Developer</option>
+											<option value="designer">Designer</option>
+										</select>
+									</label>
+								</label>
+								<label class="form-element">
+									<span>Expert in the following areas:</span>
+									<input class="specialization-tags" type="text" name="specialization-tags">
+								</label>
+							</div>
+
+							<div class="edit-profile-form__part">
+								<h5 class="profile-part-title edit-profile-form__title">
+									About me
+								</h5>
+								<textarea class="textarea" name="about" contenteditable>
+
+								</textarea>
+							</div>
+
+							<button type="submit" class="button">
+								Save change
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+	<script src="./js/edit-profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.technologies .inner-block {
+	padding: 60px 87px;
+}
+
+.technologies__inner {
+	margin-top: 27px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.technologies__card {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+}
+
+.technologies__card-title {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.technologies__card-text {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+@media (max-width: 1440px) {
+	.technologies .inner-block {
+		padding: 60px 30px;
+	}
+}
+
+
+@media(max-width: 1024px) {
+	.technologies__card {
+		width: 46%;
+	}
+}
+
+@media (max-width: 768px) {
+	.technologies .inner-block {
+		padding: 20px 7px;
+	}
+}
+
+@media (max-width: 550px) {
+	.technologies__card {
+		width: 100%;
+	}
+}

@@ -1,0 +1,90 @@
+.tariff-card {
+	padding: 30px 20px;
+	border-radius: 17px;
+	border: 1px solid #1b193f;
+	color: #1b193f;
+	max-width: 270px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.tariff-card form {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.tariff-card__price {
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.tariff-card__price span {
+	font-size: 40px;
+}
+
+.tariff-card__tariff {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+.tariff-card__tariff span {
+	color: #686F7B;
+	font-size: 13px;
+}
+
+.tariff-card__list {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.tariff-card__list-item {
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tariff-card__list-item-left {
+	position: relative;
+	padding-left: 27px;
+}
+
+.tariff-card__list-item-right {
+	position: relative;
+	padding-left: 20px;
+}
+
+.tariff-card__list-item-left::before {
+	content: '';
+	width: 21px;
+	height: 21px;
+	background: url("./../../images/icons/tariffs/check.svg") no-repeat;
+	position: absolute;
+	left: 0;
+}
+
+.tariff-card__list-item-right::before {
+	content: '';
+	width: 21px;
+	height: 21px;
+	background: url("./../../images/icons/tariffs/energy.svg") no-repeat;
+	position: absolute;
+	left: 0;
+}
+
+.tariff-card__line {
+	width: 100%;
+	height: 1px;
+	background: radial-gradient(6604899.61% 100% at 100% 0%, rgba(255, 255, 255, 0) 0%, #2662de 52.6%, rgba(255, 255, 255, 0) 100%);
+	margin: 10px 0;
+}
+
+.tariff-card__btn {
+	width: 100%;
+	margin-top: auto;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tariff</title>
+	<link rel="stylesheet" href="css/pages/tariff.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="page-block">
+			<section class="tariff">
+				<div class="tabs tariff-tabs">
+					<div class="tabs__nav">
+						<button class="tabs__btn tabs__btn_active">Monthly Plans</button>
+						<button class="tabs__btn">One Time Energy Packs</button>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__pane tabs__pane_show">
+							<div class="tariff__inner">
+								<div class="tariff-card">
+									<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
+										method="post" role="payment_pack_300">
+										<div class="tariff-card__price">
+											<span>$0</span> / month
+										</div>
+										<div class="tariff-card__tariff">
+											Free
+										</div>
+										<ul class="tariff-card__list">
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Energy
+												</span>
+												<span class="tariff-card__list-item-right">
+													20
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Recharging
+												</span>
+												<span class="tariff-card__list-item-right">
+													2 / hour
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Storage
+												</span>
+												<span class="tariff-card__list-item-right">
+													1 GB
+												</span>
+											</li>
+										</ul>
+
+										<div class="tariff-card__line"></div>
+
+										<ul class="tariff-card__list">
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron Assistant
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron GPT
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron tools
+												</span>
+											</li>
+										</ul>
+										<button type="submit"
+											class="button button--transparent button--small btn-success tariff-card__btn"
+											data-bind-href="pricing">Payment</button>
+									</form>
+								</div>
+								<div class="tariff-card">
+									<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
+										method="post" role="payment_pack_300">
+										<div class="tariff-card__price">
+											<span>$0</span> / month
+										</div>
+										<div class="tariff-card__tariff">
+											Free
+										</div>
+										<ul class="tariff-card__list">
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Energy
+												</span>
+												<span class="tariff-card__list-item-right">
+													20
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Recharging
+												</span>
+												<span class="tariff-card__list-item-right">
+													2 / hour
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Storage
+												</span>
+												<span class="tariff-card__list-item-right">
+													1 GB
+												</span>
+											</li>
+										</ul>
+
+										<div class="tariff-card__line"></div>
+
+										<ul class="tariff-card__list">
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron Assistant
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron GPT
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron tools
+												</span>
+											</li>
+										</ul>
+										<button type="submit"
+											class="button button--transparent button--small btn-success tariff-card__btn"
+											data-bind-href="pricing">Payment</button>
+									</form>
+								</div>
+								<div class="tariff-card">
+									<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
+										method="post" role="payment_pack_300">
+										<div class="tariff-card__price">
+											<span>$0</span> / month
+										</div>
+										<div class="tariff-card__tariff">
+											Free
+										</div>
+										<ul class="tariff-card__list">
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Energy
+												</span>
+												<span class="tariff-card__list-item-right">
+													20
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Recharging
+												</span>
+												<span class="tariff-card__list-item-right">
+													2 / hour
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Storage
+												</span>
+												<span class="tariff-card__list-item-right">
+													1 GB
+												</span>
+											</li>
+										</ul>
+
+										<div class="tariff-card__line"></div>
+
+										<ul class="tariff-card__list">
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron Assistant
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron GPT
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron tools
+												</span>
+											</li>
+										</ul>
+										<button type="submit"
+											class="button button--transparent button--small btn-success tariff-card__btn"
+											data-bind-href="pricing">Payment</button>
+									</form>
+								</div>
+								<div class="tariff-card">
+									<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
+										method="post" role="payment_pack_300">
+										<div class="tariff-card__price">
+											<span>$0</span> / month
+										</div>
+										<div class="tariff-card__tariff">
+											Free
+										</div>
+										<ul class="tariff-card__list">
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Energy
+												</span>
+												<span class="tariff-card__list-item-right">
+													20
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Recharging
+												</span>
+												<span class="tariff-card__list-item-right">
+													2 / hour
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Storage
+												</span>
+												<span class="tariff-card__list-item-right">
+													1 GB
+												</span>
+											</li>
+										</ul>
+
+										<div class="tariff-card__line"></div>
+
+										<ul class="tariff-card__list">
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron Assistant
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron GPT
+												</span>
+											</li>
+											<li class="tariff-card__list-item">
+												<span class="tariff-card__list-item-left">
+													Neuron tools
+												</span>
+											</li>
+										</ul>
+										<button type="submit"
+											class="button button--transparent button--small btn-success tariff-card__btn"
+											data-bind-href="pricing">Payment</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__pane">
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="./js/UI/tabs.js"></script>
+	<script src="./js/tariff.js"></script>
+</body>
+
+</html>

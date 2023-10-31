@@ -1,0 +1,88 @@
+/* Tg banner */
+.tg-banner {
+	position: relative;
+	display: flex;
+	gap: 59px;
+	padding: 0 40px;
+	border-radius: 10px;
+	border: 1px solid #CDDBE5;
+	background: linear-gradient(174deg, #FBFCFF 4.79%, #AEE2FF 190.72%);
+	box-shadow: 0px 4px 19px 0px rgba(12, 57, 99, 0.10);
+}
+
+.tg-banner__close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+}
+
+.tg-banner__content {
+	padding: 25px 0;
+	max-width: 265px;
+	width: 100%;
+}
+
+.tg-banner__title {
+	color: #1B193F;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.tg-banner__text {
+	color: #1B193F;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: -0.14px;
+	margin-bottom: 10px;
+}
+
+.tg-banner__btn {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 9px 32px;
+	border-radius: 16px;
+	background: #4BBBEC;
+}
+
+.tg-banner__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media(max-width: 1440px) {
+
+	.tg-banner {
+		gap: 20px;
+		padding: 0 20px;
+	}
+
+	.tg-banner__img img {
+		object-fit: contain;
+	}
+}
+
+@media(max-width: 560px) {
+	.tg-banner {
+		flex-direction: column;
+	}
+
+	.tg-banner__content {
+		max-width: 100%;
+	}
+
+	.tg-banner__title,
+	.tg-banner__text {
+		text-align: center;
+	}
+
+	.tg-banner__btn {
+		margin: 0 auto;
+	}
+}

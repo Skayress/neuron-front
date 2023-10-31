@@ -1,0 +1,66 @@
+.business-card__img-cover {
+	display: flex;
+	justify-content: center;
+	margin-top: 54px;
+	margin-bottom: 34px;
+}
+
+.business-card__title {
+	max-width: 758px;
+	width: 100%;
+	color: #1B193F;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 110%;
+	margin: 0 auto 30px;
+}
+
+.business-card__btn {
+	margin-bottom: 60px;
+}
+
+.business-card__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.business-card__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 9px;
+	width: 31%;
+}
+
+.business-card__card img {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+	.business-card__card {
+		width: 48%;
+	}
+}
+
+@media (max-width: 768px) {
+	.business-card__title {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	.business-card__card {
+		width: 100%;
+	}
+
+	.business-card__title {
+		font-size: 16px;
+		margin: 0 auto 15px;
+		gap: 4px;
+	}
+}

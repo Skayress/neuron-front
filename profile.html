@@ -1,0 +1,2150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+	<link rel="stylesheet" href="css/pages/profile.css">
+	<link rel="stylesheet" href="css/senses.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a class="logo" href="#">
+					<img src="./images/logo.svg" alt="logo">
+				</a>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a class="menu__list-link menu__tools" href="#">
+								<span>Tools</span>
+								<img class="menu__arrow" src="./images/icons/arrow.svg" alt="">
+							</a>
+							<div class="submenu">
+								<ul class="submenu__list">
+									<li class="submenu__list-title">
+										Text
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Writing
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Translation
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Summarization
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Rewriting
+										</a>
+									</li>
+								</ul>
+								<ul class="submenu__list">
+									<li class="submenu__list-title">
+										Image
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Draw
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Draw similar
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Image description
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Text recognition
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Remove background
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Colorize Photo
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">
+								Experts
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">
+								Publisher
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">
+								Experts
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">
+								Publisher
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">
+								Tools
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-lang-select">
+					<div class="header-lang-select__btn">
+						<img src="./images/icons/lang-icon.svg" alt="lang icon">
+						<span>English</span>
+						<img class="header-lang-select__arrow" src="./images/icons/arrow.svg" alt="arrow">
+					</div>
+
+					<ul class="header-lang-select__list">
+						<li class="header-lang-select__item">
+							<a href="#">
+								English
+							</a>
+						</li>
+						<li class="header-lang-select__item">
+							<a href="#">
+								Russian
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- <button class="button button--transparent button--small login">
+					Log In
+				</button> -->
+				<div class="user">
+					<div class="notifications">
+						<img src="./images/icons/notifications.svg" alt="notifications icon">
+					</div>
+					<div class="user-wrap">
+						<div class="user-avatar">
+							<img src="./images/icons/user.svg" alt="user avatar">
+						</div>
+						<div class="energy">
+							<img src="./images/icons/energy.svg" alt="energy icon">
+							<span>400</span>
+						</div>
+						<div class="user-arrow">
+							<img src="./images/icons/arrow.svg" alt="arrow">
+						</div>
+					</div>
+
+					<ul class="user-list">
+						<a class="user-list__item user-list__header"
+							href="{% url 'settings' lang=current_language.code_name %}">
+							<div class="user-list-avatar">
+								<img src="./images/avatar.jpg" alt="user avatar">
+							</div>
+							<p>sjdfhsdlkj@gmail.com</p>
+						</a>
+						<li class="user-list__item user-list__btn">
+							<a class="get-energy-btn" href="">
+								<span>Get Energy</span>
+								<img src="./images/icons/arrow-gradient.svg" alt="arrow">
+							</a>
+						</li>
+						<li class="user-list__item">
+							<a class="user-list__link" href="#">
+								<img src="./images/icons/user-list/posts.svg" alt="posts icon">
+								<span>Posts</span>
+							</a>
+						</li>
+						<li class="user-list__item">
+							<a class="user-list__link" href="#">
+								<img src="./images/icons/user-list/results.svg" alt="results icon">
+								<span>Assets</span>
+							</a>
+						</li>
+						<li class="user-list__item user-list__settings">
+							<a class="user-list__link" href="{% url 'settings' lang=current_language.code_name %}">
+								<img src="./images/icons/user-list/settings.svg" alt="settings icon">
+								<span>Settings</span>
+							</a>
+						</li>
+						<li class="user-list__item user-list__logout">
+							<button class="user-list__link logout-btn">
+								<img src="./images/icons/user-list/logout.svg" alt="logout icon">
+								<a href="{% url 'logout' %}">
+									<span>Logout</span>
+								</a>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="page-block">
+			<section class="profile profile-page">
+				<header class="profile-header">
+					<div class="profile-header__top">
+						<span class="profile-status profile-status--online">
+							online
+						</span>
+					</div>
+					<div class="profile-header__wrapper">
+						<div class="profile-header-info">
+							<div class="profile-avatar">
+								<img src="./images/avatar.jpg" alt="avatar">
+							</div>
+							<div class="profile-header-info__list">
+								<div class="profile-header-info__name">
+									<span>Mary Paris</span>
+									<img src="./images/profile-icons/confirm.svg" alt="confirm-icon">
+								</div>
+								<div class="profile-header-info__username">
+									@Username
+								</div>
+								<div class="profile-header-info__specialization">
+									<span>Design, Development</span>
+								</div>
+								<div class="profile-header-info__location">
+									<img src="./images/profile-icons/geo.svg" alt="geo-icon">
+									<span>Canada,Vancouver</span>
+								</div>
+							</div>
+						</div>
+						<div class="profile-header__social-list">
+							<div class="profile-header__social-item">
+								<span>
+									217
+								</span>
+								<p>
+									subscribers
+								</p>
+							</div>
+							<div class="profile-header__social-item">
+								<span>
+									35
+								</span>
+								<p>
+									subscriptions
+								</p>
+							</div>
+							<div class="profile-header__social-item">
+								<span>
+									28
+								</span>
+								<p>
+									general contacts
+								</p>
+							</div>
+						</div>
+						<button class="button button--gray button--medium ">
+							<img src="./images/profile-icons/editing.svg" alt="editing button icon">
+							<span>Edit profile</span>
+						</button>
+					</div>
+				</header>
+				<div class="profile__wrapper">
+					<nav class="profile-nav">
+						<ul class="profile-nav__list">
+							<!-- SMM Manager -->
+							<li class="profile-nav__item">
+								<button class="profile-nav__btn" data-tab="smm-manager">
+									<img src="./images/profile-icons/people.svg" alt="people icon">
+									<span>SMM Manager</span>
+									</и>
+							</li>
+							<div class="line"></div>
+							<!-- Digital Workers -->
+							<li class="profile-nav__item profile-nav__item--sub">
+								<button class="profile-nav__btn">
+									<img src="./images/profile-icons/profile.svg" alt="profile icon">
+									<span>Digital Workers</span>
+									<img class="profile-nav__arrow" src="./images/icons/arrow.svg" alt="arrow icon">
+								</button>
+								<ul class="profile-nav__submenu">
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="sales-manager-v1">
+											Sales Manager V1
+										</button>
+									</li>
+								</ul>
+							</li>
+							<!-- Business Card -->
+							<li class="profile-nav__item">
+								<button class="profile-nav__btn" data-tab="business-card">
+									<img src="./images/profile-icons/profile.svg" alt="profile icon">
+									<span>Business Card</span>
+								</button>
+							</li>
+							<div class="line"></div>
+							<!-- Messenger -->
+							<li class="profile-nav__item">
+								<button class="profile-nav__btn" data-tab="messenger">
+									<img src="./images/profile-icons/people.svg" alt="people icon">
+									<span>Messenger</span>
+								</button>
+							</li>
+							<!-- My calendar  -->
+							<li class="profile-nav__item">
+								<button class="profile-nav__btn" data-tab="calendar">
+									<img src="./images/profile-icons/people.svg" alt="people icon">
+									<span>My calendar</span>
+								</button>
+							</li>
+							<div class="line"></div>
+							<!-- Profile -->
+							<li class="profile-nav__item profile-nav__item--sub open">
+								<button class="profile-nav__btn">
+									<img src="./images/profile-icons/profile.svg" alt="profile icon">
+									<span>Profile</span>
+									<img class="profile-nav__arrow" src="./images/icons/arrow.svg" alt="arrow icon">
+								</button>
+								<ul class="profile-nav__submenu open">
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="feed">
+											Feed
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn profile-nav__submenu-btn--active"
+											data-tab="information">
+											Information
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="experience">
+											Experience
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="contacts">
+											Contacts
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="following">
+											Following
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="folowers">
+											Folowers
+										</button>
+									</li>
+								</ul>
+							</li>
+							<div class="line"></div>
+							<!-- Settings -->
+							<li class="profile-nav__item profile-nav__item--sub">
+								<button class="profile-nav__btn">
+									<img src="./images/profile-icons/profile.svg" alt="profile icon">
+									<span>Settings</span>
+									<img class="profile-nav__arrow" src="./images/icons/arrow.svg" alt="arrow icon">
+								</button>
+								<ul class="profile-nav__submenu">
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="connections">
+											Connections
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="notifications">
+											Notification
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="storage">
+											Storage
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="privacy">
+											Privacy
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="collaborators">
+											Collaborators
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="projects">
+											Projects
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="api">
+											API Key
+										</button>
+									</li>
+								</ul>
+							</li>
+							<!-- Wallet -->
+							<li class="profile-nav__item profile-nav__item--sub">
+								<button class="profile-nav__btn">
+									<img src="./images/profile-icons/profile.svg" alt="profile icon">
+									<span>Wallet</span>
+									<img class="profile-nav__arrow" src="./images/icons/arrow.svg" alt="arrow icon">
+								</button>
+								<ul class="profile-nav__submenu">
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="payments">
+											Payments
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="usage">
+											Usage
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="subscription">
+											Subscription
+										</button>
+									</li>
+								</ul>
+							</li>
+							<div class="line"></div>
+							<!-- History -->
+							<li class="profile-nav__item profile-nav__item--sub">
+								<button class="profile-nav__btn">
+									<img src="./images/profile-icons/profile.svg" alt="profile icon">
+									<span>History</span>
+									<img class="profile-nav__arrow" src="./images/icons/arrow.svg" alt="arrow icon">
+								</button>
+								<ul class="profile-nav__submenu">
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="generations">
+											Generations
+										</button>
+									</li>
+									<li>
+										<button class="profile-nav__submenu-btn" data-tab="posts">
+											Posts
+										</button>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<div class="profile__info">
+						<div class="tg-banner">
+							<button class="tg-banner__close">
+								<img src="./images/icons/close.svg" alt="close icon">
+							</button>
+							<div class="tg-banner__content">
+								<h3 class="tg-banner__title">
+									Multiplatform usage
+								</h3>
+								<p class="tg-banner__text">
+									Make communication with the Neuron even more convenient. Link the web version of the site
+									with
+									Telegram.
+								</p>
+								<button class="tg-banner__btn">
+									<img src="./images/icons/telegram.svg" alt="">
+									<span>Log in with Telegram</span>
+								</button>
+							</div>
+							<div class="tg-banner__img">
+								<img src="./images/tg-banner-img.png" alt="">
+							</div>
+						</div>
+						<div class="profile__info-wrapper">
+							<div class="smm-manager-part profile-tab hidden" id="smm-manager">
+								<h3 class="profile__info-title">
+									<span>
+										SMM Manager
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="messenger-part profile-tab hidden" id="messenger">
+								<h3 class="profile__info-title">
+									<span>
+										Messenger
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="calendar-part profile-tab hidden" id="calendar">
+								<h3 class="profile__info-title">
+									<span>
+										My calendar
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="feed-part profile-tab hidden" id="feed">
+								<h3 class="profile__info-title">
+									<span>
+										Feed
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="information-part profile-tab active" id="information">
+								<h3 class="profile__info-title">
+									<span>
+										Information
+									</span>
+									<a class="profile__info-edit-btn">
+										<img src="./images/profile-icons/editing.svg" alt="edit button">
+									</a>
+								</h3>
+								<div class="profile__part">
+									<h4 class="profile-part-title">
+										Expertise
+									</h4>
+									<div class="profile__part-row">
+										<span>Specialization:</span>
+										<p>Expert in the following areas</p>
+									</div>
+									<div class="profile__part-row">
+										<span class="profile__part-specilization">Desig:</span>
+										<div class="profile__part-tags">
+											<div class="tag">
+												Logos
+											</div>
+											<div class="tag">
+												Website design
+											</div>
+											<div class="tag">
+												Mobile applications
+											</div>
+											<div class="tag">
+												Technology
+											</div>
+											<div class="tag">
+												Technology
+											</div>
+											<div class="tag">
+												Technology
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="profile__part">
+									<h4 class="profile-part-title">
+										Language of communication
+									</h4>
+									<div class="profile__part-row">
+										<span>English:</span>
+										<div class="tag">
+											Native
+										</div>
+									</div>
+									<div class="profile__part-row">
+										<span>German:</span>
+										<div class="tag">
+											Advanced
+										</div>
+									</div>
+									<div class="profile__part-row">
+										<span>Spanish:</span>
+										<div class="tag">
+											Intermediate
+										</div>
+									</div>
+								</div>
+								<div class="profile__part profile__communication">
+									<h4 class="profile-part-title">
+										Сommunication
+									</h4>
+									<div class="profile__communication-item">
+										<img src="./images/profile-icons/chat.svg" alt=" chat icon">
+										<p>Chat:</p>
+										<span>1$ / 1 min</span>
+									</div>
+									<div class="profile__communication-item">
+										<img src="./images/profile-icons/audio.svg" alt=" audio icon">
+										<p>Audio communication::</p>
+										<span>1$ / 1 min</span>
+									</div>
+									<div class="profile__communication-item">
+										<img src="./images/profile-icons/personal.svg" alt=" personal icon">
+										<p>Personal meeting::</p>
+										<span>1$ / 1 min</span>
+									</div>
+								</div>
+								<div class="profile__part">
+									<h4 class="profile-part-title profile-about">
+										About me
+									</h4>
+									<div class="profile-about__text">
+										<p>
+											Making a startup can be a challenging but rewarding experience. Here are some general
+											steps
+											you can follow to get started:Making a startup can be a challenging but rewarding
+											experience.
+											Here are some general steps you can follow to get started:Making a startup can be a
+											challenging but rewarding experience.
+										</p>
+										<p>
+											Here are some general steps you can follow to get started:Making a startup can be a
+											challenging but rewarding experience. Here are some general steps you can follow to get
+											started
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="experience-part profile-tab hidden" id="experience">
+								<h3 class="profile__info-title">
+									<span>
+										Experience
+									</span>
+									<a class="profile__info-edit-btn">
+										<img src="./images/profile-icons/editing.svg" alt="edit button">
+									</a>
+								</h3>
+								<div class="experience-part__item">
+									<div class="experience-part__date">
+										<div class="experience-part__date-icon">
+											<img src="./images/icons/profile/calendar.svg" alt="calendar icon">
+										</div>
+										<div class="experience-part__date-title">
+											<span class="experience-part__date-title-period">
+												July 2021 - June 2023
+											</span>
+											<span class="experience-part__date-title-term">
+												1 year and 11 months
+											</span>
+										</div>
+									</div>
+									<div class="experience-part__box">
+										<div class="experience-part__box-item">
+											<h4 class="profile-part-title">
+												Company name:
+											</h4>
+											<p>
+												Digital LLC
+											</p>
+										</div>
+										<div class="experience-part__box-item">
+											<h4 class="profile-part-title">
+												Industry:
+											</h4>
+											<p>
+												Information technology
+											</p>
+										</div>
+										<div class="experience-part__box-item">
+											<h4 class="profile-part-title">
+												Position:
+											</h4>
+											<p>
+												Lead developer
+											</p>
+										</div>
+										<div class="experience-part__box-item">
+											<h4 class="profile-part-title">
+												Responsibilities:
+											</h4>
+											<ul>
+												<li>
+													- Developing new functionality for a commercial application.
+												</li>
+												<li>
+													- Work UIKit, Foundation,.
+												</li>
+												<li>
+													- Code layout, also worked with xib.
+												</li>
+												<li>
+													- Work with client-server interaction (HTTP REST API, JSON).
+												</li>
+												<li>
+													- Work with Alamofire network library.
+												</li>
+												<li>
+													- Work with pokatet managers, Cocoapods.
+												</li>
+												<li>
+													- Work with version control system - GitLab.
+												</li>
+												<li>
+													- Participated in code review.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="experience-part__item">
+									<div class="experience-part__date">
+										<div class="experience-part__date-icon">
+											<img src="./images/icons/profile/calendar.svg" alt="calendar icon">
+										</div>
+										<div class="experience-part__date-title">
+											<span class="experience-part__date-title-period">
+												July 2021 - June 2023
+											</span>
+											<span class="experience-part__date-title-term">
+												1 year and 11 months
+											</span>
+										</div>
+									</div>
+									<div class="experience-part__box">
+										<div class="experience-part__box-item">
+											<h4 class="profile-part-title">
+												Company name:
+											</h4>
+											<p>
+												Digital LLC
+											</p>
+										</div>
+										<div class="experience-part__box-item">
+											<h4 class="profile-part-title">
+												Industry:
+											</h4>
+											<p>
+												Information technology
+											</p>
+										</div>
+										<div class="experience-part__box-item">
+											<h4 class="profile-part-title">
+												Position:
+											</h4>
+											<p>
+												Lead developer
+											</p>
+										</div>
+										<div class="experience-part__box-item">
+											<h4 class="profile-part-title">
+												Responsibilities:
+											</h4>
+											<ul>
+												<li>
+													- Developing new functionality for a commercial application.
+												</li>
+												<li>
+													- Work UIKit, Foundation,.
+												</li>
+												<li>
+													- Code layout, also worked with xib.
+												</li>
+												<li>
+													- Work with client-server interaction (HTTP REST API, JSON).
+												</li>
+												<li>
+													- Work with Alamofire network library.
+												</li>
+												<li>
+													- Work with pokatet managers, Cocoapods.
+												</li>
+												<li>
+													- Work with version control system - GitLab.
+												</li>
+												<li>
+													- Participated in code review.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="contants-part profile-tab hidden" id="contacts">
+								<h3 class="profile__info-title">
+									<span>
+										Contact information
+									</span>
+									<a class="profile__info-edit-btn">
+										<img src="./images/profile-icons/editing.svg" alt="edit button">
+									</a>
+								</h3>
+								<div class="contacts-part__inner">
+									<div class="contacts-part__box">
+										<div class="contacts-part__item">
+											<div class="contacts-part__item-icon">
+												<img src="./images/icons/profile/contacts/phone.svg" alt="phone icon">
+											</div>
+											<div class="contacts-part__item-content">
+												<h4 class="profile-part-title">
+													Phone
+												</h4>
+												<a href="tel:">
+													(800) 666-7045
+												</a>
+											</div>
+										</div>
+										<div class="contacts-part__item">
+											<div class="contacts-part__item-icon">
+												<img src="./images/icons/profile/contacts/email.svg" alt="email icon">
+											</div>
+											<div class="contacts-part__item-content">
+												<h4 class="profile-part-title">
+													E-mail
+												</h4>
+												<a href="mailto:">
+													zpn@vaterelay.appleid.com
+												</a>
+											</div>
+										</div>
+										<div class="contacts-part__item">
+											<div class="contacts-part__item-icon">
+												<img src="./images/icons/profile/contacts/location.svg" alt="location icon">
+											</div>
+											<div class="contacts-part__item-content">
+												<h4 class="profile-part-title">
+													Location
+												</h4>
+												<p>
+													790 Penllyn Pike, Suite 203 Blue Bell, PA 19422
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-part__box">
+										<div class="contacts-part__item">
+											<div class="contacts-part__item-icon">
+												<img src="./images/icons/profile/contacts/linkedin.svg" alt="linkedin icon">
+											</div>
+											<div class="contacts-part__item-content">
+												<h4 class="profile-part-title">
+													linkedin
+												</h4>
+												<a href="#">
+													linkedin.com/in/svetlana-manko-0959bb201
+												</a>
+											</div>
+										</div>
+										<div class="contacts-part__item">
+											<div class="contacts-part__item-icon">
+												<img src="./images/icons/profile/contacts/instagram.svg" alt="instagram icon">
+											</div>
+											<div class="contacts-part__item-content">
+												<h4 class="profile-part-title">
+													Instagram
+												</h4>
+												<a href="mailto:">
+													www.instagram.com
+												</a>
+											</div>
+										</div>
+										<div class="contacts-part__item">
+											<div class="contacts-part__item-icon">
+												<img src="./images/icons/profile/contacts/telegram.svg" alt="telegram icon">
+											</div>
+											<div class="contacts-part__item-content">
+												<h4 class="profile-part-title">
+													Telegram
+												</h4>
+												<a href="#">
+													www.telegram.com
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="following-part profile-tab hidden" id="following">
+								<h3 class="profile__info-title">
+									<span>
+										Following
+									</span>
+								</h3>
+								<div class="user-search">
+									<input class="input user-search__input" placeholder="Search..." type="text"
+										name="search-subscriptions">
+									<button class="user-search__btn">
+										<img src="./images/icons/search.svg" alt="search">
+									</button>
+								</div>
+								<ul class="users-list">
+									<li class="users-list__item">
+										<div class="user">
+											<div class="user__avatar">
+												<img src="./images/avatar.jpg" alt="avatar">
+											</div>
+											<div class="user__info">
+												<div class="user__info-name">
+													<a href="#">Mary Paris</a>
+													<img src="images/profile-icons/confirm.svg" alt="conform icon">
+												</div>
+												<a class="user__info-username" href="#">
+													@Username
+												</a>
+												<div class="user__info-prof">
+													Design, Development
+												</div>
+											</div>
+											<a class="user__send-msg" href="#">
+												Send message
+											</a>
+											<button class="more-btn">
+												<span></span>
+												<span></span>
+												<span></span>
+											</button>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="folowers-part profile-tab hidden" id="folowers">
+								<h3 class="profile__info-title">
+									<span>
+										Folowers
+									</span>
+									<div class="profile__part">
+										In developing
+									</div>
+								</h3>
+							</div>
+							<div class="connections-part profile-tab hidden" id="connections">
+								<h3 class="profile__info-title">
+									<span>
+										Connections
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="notifications-part profile-tab hidden" id="notifications">
+								<h3 class="profile__info-title">
+									<span>
+										Notifications
+									</span>
+								</h3>
+								<div class="notifications-part__inner">
+									<div class="notifications-part__block">
+										<h4 class="notifications-part__title">
+											E-mail notifications
+										</h4>
+										<p class="notifications-part__text">
+											This option allows you to receive up-to-date information about new tools and options
+											and
+											latest news
+										</p>
+										<div class="notifications-part__item">
+											<label class="custom-checkbox">
+												<input type="checkbox" name="neuron-news">
+												<span class="checkmark"></span>
+												Neuron News
+											</label>
+										</div>
+										<div class="notifications-part__item">
+											<label class="custom-checkbox">
+												<input type="checkbox" name="ai-news">
+												<span class="checkmark"></span>
+												AI News
+											</label>
+										</div>
+									</div>
+									<div class="notifications-part__block">
+										<h4 class="notifications-part__title">
+											Telegram notifications
+										</h4>
+										<p class="notifications-part__text">
+											This option allows you to receive up-to-date information about the weather and events
+											in
+											your city
+										</p>
+										<div class="notifications-part__item">
+											<label class="custom-checkbox">
+												<input type="checkbox" name="weather">
+												<span class="checkmark"></span>
+												Weather
+											</label>
+										</div>
+										<div class="notifications-part__item">
+											<label class="custom-checkbox">
+												<input type="checkbox" name="events">
+												<span class="checkmark"></span>
+												Events
+											</label>
+										</div>
+										<div class="notifications-part__item">
+											<label class="custom-checkbox">
+												<input type="checkbox" name="neuron-news">
+												<span class="checkmark"></span>
+												Neuron news
+											</label>
+										</div>
+										<div class="notifications-part__item">
+											<label class="custom-checkbox">
+												<input type="checkbox" name="ai-news">
+												<span class="checkmark"></span>
+												AI news
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="storage-part profile-tab hidden" id="storage">
+								<h3 class="profile__info-title">
+									<span>
+										Storage
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="privacy-part profile-tab hidden" id="privacy">
+								<h3 class="profile__info-title">
+									<span>
+										Privacy
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="collaborators-part profile-tab hidden" id="collaborators">
+								<h3 class="profile__info-title">
+									<span>
+										Collaborators
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="projects-part profile-tab hidden" id="projects">
+								<h3 class="profile__info-title">
+									<span>
+										Projects
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="payments-part profile-tab hidden" id="payments">
+								<h3 class="profile__info-title">
+									<span>
+										Payments
+									</span>
+								</h3>
+								<div class="payments-part__inner">
+									<div class="payments-part__left">
+										<h4 class="payments-part__title">
+											Available Energy:
+										</h4>
+										<div class="payments-part__energy">
+											<img src="./images/icons/energy.svg" alt="energy icons">
+											<span>11080</span>
+										</div>
+										<button class="button button--medium">
+											Refill balance
+										</button>
+									</div>
+									<div class="payments-part__tariff">
+										<h4 class="payments-part__title">
+											Current tariff plan:
+										</h4>
+										<div class="tariff-card">
+											<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
+												method="post" role="payment_pack_300">
+												<div class="tariff-card__tariff">
+													Free
+													<span>until 07/13/2023</span>
+												</div>
+												<ul class="tariff-card__list">
+													<li class="tariff-card__list-item">
+														<span class="tariff-card__list-item-left">
+															Energy
+														</span>
+														<span class="tariff-card__list-item-right">
+															20
+														</span>
+													</li>
+													<li class="tariff-card__list-item">
+														<span class="tariff-card__list-item-left">
+															Recharging
+														</span>
+														<span class="tariff-card__list-item-right">
+															2 / hour
+														</span>
+													</li>
+													<li class="tariff-card__list-item">
+														<span class="tariff-card__list-item-left">
+															Storage
+														</span>
+														<span>
+															1 GB
+														</span>
+													</li>
+												</ul>
+
+												<div class="tariff-card__line"></div>
+
+												<ul class="tariff-card__list">
+													<li class="tariff-card__list-item">
+														<span class="tariff-card__list-item-left">
+															Neuron Assistant
+														</span>
+													</li>
+													<li class="tariff-card__list-item">
+														<span class="tariff-card__list-item-left">
+															Neuron GPT
+														</span>
+													</li>
+													<li class="tariff-card__list-item">
+														<span class="tariff-card__list-item-left">
+															Neuron tools
+														</span>
+													</li>
+												</ul>
+											</form>
+										</div>
+										<button class="button button--medium">
+											Change plan
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="usage-part profile-tab hidden" id="usage">
+								<h3 class="profile__info-title">
+									<span>
+										Usage
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="subscription-part profile-tab hidden" id="subscription">
+								<h3 class="profile__info-title">
+									<span>
+										Subscription
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="generations-part profile-tab hidden" id="generations">
+								<h3 class="profile__info-title">
+									<span>
+										Generations
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="posts-part profile-tab hidden" id="posts">
+								<h3 class="profile__info-title">
+									<span>
+										Posts
+									</span>
+								</h3>
+								<div class="profile__part">
+									In developing
+								</div>
+							</div>
+							<div class="business-card-part profile-tab hidden" id="business-card">
+								<div class="business-card-part__main">
+									<div class="business-card__start">
+										<div class="business-card__top">
+											<strong>
+												Business Card
+											</strong>
+											<form class="toggle-on-form" action="." style="display: none;">
+												<input type="text" name="action" value="sync_on" hidden>
+											</form>
+											<form class="toggle-off-form" action="." style="display: none;">
+												<input type="text" name="action" value="sync_off" hidden>
+											</form>
+											<div class="business-card__toggle">
+												Sync with profile
+
+												<input class="toggle-btn" type="checkbox">
+											</div>
+										</div>
+										<div class="business-card__bottom">
+											Create your digital business card
+										</div>
+									</div>
+									<ul class="contact-list" id="contact">
+										<li>
+											<button class="focus-btn">
+												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+													fill="none">
+													<path
+														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+														stroke="#686F7B" stroke-width="1.6" />
+													<path
+														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+														stroke="#686F7B" stroke-width="1.6" />
+												</svg>
+											</button>
+											<img src="./images/icons/social/phone.svg" alt="phone icon">
+											<div class="contact-data__right">
+												<div class="contact-data__right">
+													<strong>Phone</strong>
+													<p>(800) 666-7045 </p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<button class="focus-btn">
+												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+													fill="none">
+													<path
+														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+														stroke="#686F7B" stroke-width="1.6" />
+													<path
+														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+														stroke="#686F7B" stroke-width="1.6" />
+												</svg>
+											</button>
+											<img src="./images/icons/social/email.svg" alt="phone icon">
+											<div class="contact-data__right">
+												<strong>E-mail</strong>
+												<p>zpn@vaterelay.appleid.com</p>
+											</div>
+										</li>
+										<li>
+											<button class="focus-btn">
+												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+													fill="none">
+													<path
+														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+														stroke="#686F7B" stroke-width="1.6" />
+													<path
+														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+														stroke="#686F7B" stroke-width="1.6" />
+												</svg>
+											</button>
+											<img src="./images/icons/social/instagram.svg" alt="instagram icon">
+											<div class="contact-data__right">
+												<strong>Instagram</strong>
+												<p>www.instagram.com</p>
+											</div>
+										</li>
+										<li>
+											<button class="focus-btn">
+												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+													fill="none">
+													<path
+														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+														stroke="#686F7B" stroke-width="1.6" />
+													<path
+														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+														stroke="#686F7B" stroke-width="1.6" />
+												</svg>
+											</button>
+											<img src="./images/icons/social/telegram.svg" alt="telegram icon">
+											<div class="contact-data__right">
+												<strong>Telegram</strong>
+												<p>www.telegram.com</p>
+											</div>
+										</li>
+										<li>
+											<button class="focus-btn">
+												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+													fill="none">
+													<path
+														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+														stroke="#686F7B" stroke-width="1.6" />
+													<path
+														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+														stroke="#686F7B" stroke-width="1.6" />
+												</svg>
+											</button>
+											<img src="./images/icons/social/location.svg" alt="location icon">
+											<div class="contact-data__right">
+												<strong>Location</strong>
+												<p>790 Penllyn Pike, Suite 203 Blue Bell, PA 19422</p>
+											</div>
+										</li>
+										<li>
+											<button class="focus-btn">
+												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+													fill="none">
+													<path
+														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+														stroke="#686F7B" stroke-width="1.6" />
+													<path
+														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+														stroke="#686F7B" stroke-width="1.6" />
+												</svg>
+											</button>
+											<img src="./images/icons/social/linkedin.svg" alt="linkedin icon">
+											<div class="contact-data__right">
+												<strong>linkedin</strong>
+												<p>linkedin.com/in/svetlana-manko-0959bb201</p>
+											</div>
+										</li>
+									</ul>
+									<button class="add-contact">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+											fill="none">
+											<path
+												d="M18 12.9961H13V17.9961C13 18.2613 12.8946 18.5157 12.7071 18.7032C12.5196 18.8907 12.2652 18.9961 12 18.9961C11.7348 18.9961 11.4804 18.8907 11.2929 18.7032C11.1054 18.5157 11 18.2613 11 17.9961V12.9961H6C5.73478 12.9961 5.48043 12.8907 5.29289 12.7032C5.10536 12.5157 5 12.2613 5 11.9961C5 11.7309 5.10536 11.4765 5.29289 11.289C5.48043 11.1015 5.73478 10.9961 6 10.9961H11V5.99609C11 5.73088 11.1054 5.47652 11.2929 5.28899C11.4804 5.10145 11.7348 4.99609 12 4.99609C12.2652 4.99609 12.5196 5.10145 12.7071 5.28899C12.8946 5.47652 13 5.73088 13 5.99609V10.9961H18C18.2652 10.9961 18.5196 11.1015 18.7071 11.289C18.8946 11.4765 19 11.7309 19 11.9961C19 12.2613 18.8946 12.5157 18.7071 12.7032C18.5196 12.8907 18.2652 12.9961 18 12.9961Z"
+												fill="white" />
+										</svg>
+										Add contact
+									</button>
+									<div class="mobile-btns">
+										<button class="mobile-btns__qr">
+											Get QR-code
+										</button>
+										<button class="mobile-btns__card">
+											Card live preview
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<aside class="senses-right">
+						<button class="share-btn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<path
+									d="M18.4561 8.41834L12.2061 2.16834C12.1405 2.10287 12.057 2.05829 11.9662 2.04023C11.8753 2.02218 11.7811 2.03146 11.6955 2.06691C11.6099 2.10235 11.5367 2.16237 11.4852 2.23938C11.4337 2.31639 11.4062 2.40694 11.4061 2.49959V5.79646C7.14984 6.07693 2.00062 10.0933 1.41155 15.223C1.39242 15.3864 1.42533 15.5516 1.50558 15.6951C1.58583 15.8387 1.70933 15.9532 1.8585 16.0225C2.00766 16.0918 2.17488 16.1122 2.33632 16.0809C2.49777 16.0495 2.64521 15.968 2.75765 15.848C3.63734 14.9097 6.79671 11.9215 11.4061 11.7285V14.9996C11.4062 15.0922 11.4337 15.1828 11.4852 15.2598C11.5367 15.3368 11.6099 15.3968 11.6955 15.4323C11.7811 15.4677 11.8753 15.477 11.9662 15.4589C12.057 15.4409 12.1405 15.3963 12.2061 15.3308L18.4561 9.08084C18.5439 8.99295 18.5932 8.87381 18.5932 8.74959C18.5932 8.62537 18.5439 8.50623 18.4561 8.41834ZM12.3436 13.8683V11.2496C12.3436 11.1253 12.2942 11.006 12.2063 10.9181C12.1184 10.8302 11.9992 10.7808 11.8748 10.7808C9.70843 10.7808 7.59671 11.3472 5.59984 12.4644C4.43595 13.1182 3.36386 13.9234 2.41155 14.859C2.77874 12.784 3.98656 10.7965 5.84906 9.21287C7.69281 7.65115 9.94437 6.71834 11.8748 6.71834C11.9992 6.71834 12.1184 6.66895 12.2063 6.58104C12.2942 6.49314 12.3436 6.37391 12.3436 6.24959V3.63162L17.4616 8.74959L12.3436 13.8683Z"
+									fill="white" />
+							</svg>
+							Share Your Card
+						</button>
+						<h3>
+							Card live preview
+						</h3>
+						<div class="profile-card">
+							<div class="profile-card__bg">
+								<img src="./images/senses-profile-img.png" alt="">
+							</div>
+							<div class="profile-items">
+								<strong>
+									Mary Paris
+									<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+										fill="none">
+										<rect x="1.52344" y="2.84766" width="6.09764" height="4.30421" fill="white" />
+										<path
+											d="M8.48091 2.84743L7.48206 2.27072L6.9055 1.27202H5.75226L4.75341 0.695312L3.75456 1.27202H2.60131L2.0246 2.27087L1.02593 2.84743V4.00068L0.449219 4.99953L1.02593 5.99838V7.15162L2.02478 7.72833L2.60149 8.72718H3.75473L4.75343 9.30374L5.75228 8.72703H6.90553L7.48224 7.72818L8.48108 7.15147V5.99823L9.05779 4.99938L8.48108 4.00053V2.84743H8.48091ZM4.36493 6.7612C4.28468 6.84146 4.17894 6.88046 4.07368 6.87899C3.9684 6.88049 3.86269 6.84146 3.78243 6.7612L2.5236 5.50237C2.36591 5.34468 2.36591 5.08887 2.5236 4.93118L2.85685 4.59793C3.01454 4.44024 3.27036 4.44024 3.42805 4.59793L4.07368 5.24356L6.07867 3.23843C6.23636 3.08074 6.49217 3.08074 6.64986 3.23843L6.98311 3.57168C7.1408 3.72937 7.1408 3.98518 6.98311 4.14287L4.36493 6.7612Z"
+											fill="url(#paint0_linear_4694_9820)" />
+										<defs>
+											<linearGradient id="paint0_linear_4694_9820" x1="8.97997" y1="8.73333" x2="-0.919834"
+												y2="8.6103" gradientUnits="userSpaceOnUse">
+												<stop offset="0.116616" stop-color="#1D4ED8" />
+												<stop offset="0.931232" stop-color="#5AD7FE" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</strong>
+								<p class="profile-items__skill">
+									Development
+								</p>
+								<p class="profile-items__location">
+									<svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14"
+										fill="none">
+										<path
+											d="M6.5 1.71875C4.48145 1.71875 2.84375 3.27748 2.84375 5.19727C2.84375 7.40625 5.28125 10.9069 6.17627 12.116C6.21342 12.167 6.26211 12.2085 6.31838 12.2372C6.37464 12.2658 6.43687 12.2807 6.5 12.2807C6.56313 12.2807 6.62536 12.2658 6.68162 12.2372C6.73789 12.2085 6.78658 12.167 6.82373 12.116C7.71875 10.9074 10.1562 7.40803 10.1562 5.19727C10.1562 3.27748 8.51855 1.71875 6.5 1.71875Z"
+											stroke="#0650BE" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path
+											d="M6.5 6.59375C7.1731 6.59375 7.71875 6.0481 7.71875 5.375C7.71875 4.7019 7.1731 4.15625 6.5 4.15625C5.8269 4.15625 5.28125 4.7019 5.28125 5.375C5.28125 6.0481 5.8269 6.59375 6.5 6.59375Z"
+											stroke="#0650BE" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+									Canada,Vancouver
+								</p>
+								<a class="profile-items__link" href="#">
+									Profile on Neuron.expert
+								</a>
+							</div>
+							<button class="save-chat">
+								Save Contact
+							</button>
+							<div class="socila-links">
+								<button>
+									<img src="./images/save-icon.svg" alt="icon">
+									Save My Info
+								</button>
+								<a href="#">
+									<img src="./images/linkedin-icon.svg" alt="icon">
+									Linkedin
+								</a>
+								<a href="#">
+									<img src="./images/instagram-icon.svg" alt="icon">
+									Instagram
+								</a>
+								<a href="#">
+									<img src="./images/facebook-icon.svg" alt="icon">
+									Facebook
+								</a>
+								<a href="#">
+									<img src="./images/twitter-icon.svg" alt="icon">
+									Twitter
+								</a>
+								<a href="#">
+									<img src="./images/tiktok-icon.svg" alt="icon">
+									Tiktok
+								</a>
+								<a href="#">
+									<img src="./images/telegram-icon.svg" alt="icon">
+									Telegram
+								</a>
+							</div>
+						</div>
+						<div class="qr-box"></div>
+						<button class="get-qr">
+							Get QR-code
+						</button>
+					</aside>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-logo">
+				<img src="./images/logo.svg" alt="footer logo">
+			</div>
+			<div class="footer__menu">
+				<ul class="footer__menu-list footer__menu-list-wrap">
+					<h3 class="footer__menu-title">
+						<!-- {{foottools.value}} -->
+						Tools
+					</h3>
+
+					<div class="footer__menu-wrap-inner">
+
+						<div class="footer__menu-wrap">
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-write-text" href="#working-text">
+									<!-- {{ footwriting.value }} -->
+									Writing
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-translate-text" href="#working-text">
+									{{ foottranslation.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-summarize" href="#working-text">
+									{{ footsummarization.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-rewrite" href="#working-text">
+									{{ footrewriting.value }}
+								</a>
+							</li>
+
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-text-to-image" href="#image-generation">
+									{{ footdraw.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-similar-image" href="#image-generation">
+									{{ footdrawsimilar.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-image-description" href="#image-generation">
+									{{ footimagedescription.value }}
+								</a>
+							</li>
+						</div>
+						<div class="footer__menu-wrap">
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-text-recognition" href="#image-generation">
+									{{ foottextrecognition.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-remove-background" href="#image-generation">
+									{{ footremovebackground.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-colorize-photo" href="#image-generation">
+									{{ footphotocolorization.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-erase-object" href="#image-generation">
+									{{ footeraseobject.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-write-text" href="#image-generation">
+									{{ footalienateanddraw.value }}
+								</a>
+							</li>
+							<li class=" footer__menu-item">
+								<a class="footer__menu-link link-write-text" href="#image-generation">
+									{{ footqualityimprovement.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-write-text" href="#image-generation">
+									{{ footvoicerecognition.value }}
+								</a>
+							</li>
+						</div>
+						<div class="footer__menu-wrap">
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-write-text" href="#working-text">
+									{{ foottexttomusic.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-write-text" href="#working-text">
+									{{ footspeechgeneration.value }}
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link link-write-text" href="#working-text">
+									{{ footspeakingavatar.value }}
+								</a>
+							</li>
+
+						</div>
+
+					</div>
+				</ul>
+
+				<ul class="footer__menu-list">
+					<h3 class="footer__menu-title">
+						{{footproducts.value}}
+					</h3>
+
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="#">
+							{{ footneuronassistant.value }}
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="#">
+							{{ footneuronpublisher.value }}
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="#">
+							{{ footneuronnews.value }}
+						</a>
+					</li>
+
+
+				</ul>
+				<ul class="footer__menu-list">
+					<h3 class="footer__menu-title">
+						{{footcommunity.value}}
+					</h3>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="{{footinstagramurl.value}}">
+							{{footinstagram.value}}
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="{{foottelegramurl.value}}">
+							{{foottelegram.value}}
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="https://t.me/neuronexpertru">
+							Telegram RU
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="https://t.me/neuronexpertsp">
+							Telegram SP
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="{{foottwitterurl.value}}">
+							{{foottwitter.value}}
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="{{footfacebookurl.value}}">
+							{{footfacebook.value}}
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="{{footlinkedInurl.value}}">
+							{{footlinkedIn.value}}
+						</a>
+					</li>
+				</ul>
+				<ul class="footer__menu-list">
+					<h3 class="footer__menu-title">
+						{{footaboutus.value}}
+					</h3>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="/products">
+							{{footerprod.value}}
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="/pricing">
+							{{footerpricing.value}}
+						</a>
+					</li>
+
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="{% url 'about-us' %}">
+							{{ footaboutus1.value }}
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="#">
+							{{ footcontcts.value }}
+						</a>
+					</li>
+					<li class="footer__menu-item">
+						<a class="footer__menu-link" href="#">
+							{{ footfaq.value }}
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="footer__bottom">
+				<ul class="footer__socials">
+					<li class="footer__socials-item">
+						<a href="{{foottwitterurl.value}}" target="_blank">
+							<img src="{% static 'img/twitter.svg' %}" alt="twitter">
+						</a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="{{footfacebookurl.value}}" target="_blank">
+							<img src="{% static 'img/facebook.svg' %}" alt="facebook">
+						</a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="{{footlinkedInurl.value}}" target="_blank">
+							<img src="{% static 'img/linkedin.svg' %}" alt="linkedin">
+						</a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="{{foottelegramurl.value}}" target="_blank">
+							<img src="{% static 'img/telegram-white.svg' %}" alt="telegram">
+						</a>
+					</li>
+					<li class="footer__socials-item">
+						<a href="{{footinstagramurl.value}}" target="_blank">
+							<img src="{% static 'img/instagram.svg' %}" alt="instagram">
+						</a>
+					</li>
+				</ul>
+				<p class="footer__copy">
+					{{rights.value}}<a href="{{rightslinkurl.value}}">{{ rightslink.value }}</a>{{rights1.value}}
+				</p>
+				<a class="footer__privacy" href="#">
+					{{privacy.value}}
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal sign-up-modal">
+		<div class="modal__overlay"></div>
+		<div class="modal-content">
+			<span class="modal__close">
+				<img src="./images/icons/close.svg" alt="close icon">
+			</span>
+
+			<div class="sign-up-modal__inner">
+				<div class="logo">
+					<img src="./images/logo.svg" alt="logo">
+				</div>
+
+				<div class="sign-up-modal__buttons">
+
+					<a class="button button--transparent sign-up-modal__btn"
+						href="{% provider_login_url 'google' action='reauthenticate' %}?next=/">
+						<img src="./images/icons/brands/google.svg" alt="google icon">
+						<span>Google</span>
+					</a>
+
+					<a class="button button--transparent sign-up-modal__btn"
+						href="{% provider_login_url 'telegram' action='reauthenticate' %}?process=login">
+						<img src="./images/icons/brands/telegram.svg" alt="telegram icon">
+						<span>Telegram</span>
+					</a>
+				</div>
+				<div class="or">
+					<span>or</span>
+				</div>
+
+				<input class="sign-up-modal__email input" type="text" name="email_input" placeholder="Email">
+
+				<button class="sign-up-modal__continue-btn button" type="submit" value="continue" name="action">
+					Continue
+				</button>
+
+				<label class="custom-checkbox">
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+				</label>
+
+				<label class="custom-checkbox">
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					I agree to receive notifications about new tools and products
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact-popup">
+		<div class="contact-popup__item">
+			<button class="contact-popup__back">
+				<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+					<path
+						d="M12.4305 17.0802L5.76068 10.4302C5.68151 10.351 5.62557 10.2653 5.59284 10.1729C5.55959 10.0806 5.54297 9.9816 5.54297 9.87604C5.54297 9.77049 5.55959 9.67153 5.59284 9.57917C5.62557 9.48681 5.68151 9.40104 5.76068 9.32188L12.4305 2.65208C12.6152 2.46736 12.8461 2.375 13.1232 2.375C13.4003 2.375 13.6378 2.47396 13.8357 2.67188C14.0336 2.86979 14.1326 3.10069 14.1326 3.36458C14.1326 3.62847 14.0336 3.85938 13.8357 4.05729L8.01693 9.87604L13.8357 15.6948C14.0204 15.8795 14.1128 16.107 14.1128 16.3772C14.1128 16.648 14.0138 16.8823 13.8159 17.0802C13.618 17.2781 13.3871 17.3771 13.1232 17.3771C12.8593 17.3771 12.6284 17.2781 12.4305 17.0802Z"
+						fill="#686F7B" />
+				</svg>
+				Back
+			</button>
+			<div class="contact-popup__top">
+				<strong>
+					Add contact
+				</strong>
+				<button>
+					<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+						<path d="M12.25 12.25L29.75 29.75M12.25 29.75L29.75 12.25" stroke="#686F7B" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+			</div>
+			<div class="search-box">
+				<input type="search" placeholder="Search...">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+					<path
+						d="M13.4232 11.6679H12.8048L12.5856 11.4429C13.0748 10.8378 13.4324 10.1252 13.6326 9.35588C13.8329 8.58658 13.871 7.77966 13.7442 6.99287C13.3762 4.6762 11.5601 2.8262 9.36815 2.54287C8.59754 2.43909 7.81485 2.52434 7.07996 2.79211C6.34507 3.05987 5.67746 3.50305 5.12822 4.08773C4.57898 4.6724 4.16266 5.38308 3.91112 6.16539C3.65959 6.94769 3.5795 7.78088 3.67699 8.6012C3.94315 10.9345 5.68103 12.8679 7.85729 13.2595C8.5964 13.3946 9.35441 13.354 10.0771 13.1408C10.7998 12.9276 11.4692 12.547 12.0376 12.0262L12.249 12.2595V12.9179L15.576 16.4595C15.8969 16.8012 16.4214 16.8012 16.7424 16.4595C17.0633 16.1179 17.0633 15.5595 16.7424 15.2179L13.4232 11.6679ZM8.72623 11.6679C6.77699 11.6679 5.2035 9.99287 5.2035 7.91787C5.2035 5.84287 6.77699 4.16787 8.72623 4.16787C10.6755 4.16787 12.249 5.84287 12.249 7.91787C12.249 9.99287 10.6755 11.6679 8.72623 11.6679Z"
+						fill="black" />
+				</svg>
+			</div>
+			<ul class="contact-add">
+				<li>
+					<div class="contact-add__left">
+						<img src="./images/icons/social/phone.svg" alt="phone icon">
+						Phone
+					</div>
+					<button class="contact-add__btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M18 12.9961H13V17.9961C13 18.2613 12.8946 18.5157 12.7071 18.7032C12.5196 18.8907 12.2652 18.9961 12 18.9961C11.7348 18.9961 11.4804 18.8907 11.2929 18.7032C11.1054 18.5157 11 18.2613 11 17.9961V12.9961H6C5.73478 12.9961 5.48043 12.8907 5.29289 12.7032C5.10536 12.5157 5 12.2613 5 11.9961C5 11.7309 5.10536 11.4765 5.29289 11.289C5.48043 11.1015 5.73478 10.9961 6 10.9961H11V5.99609C11 5.73088 11.1054 5.47652 11.2929 5.28899C11.4804 5.10145 11.7348 4.99609 12 4.99609C12.2652 4.99609 12.5196 5.10145 12.7071 5.28899C12.8946 5.47652 13 5.73088 13 5.99609V10.9961H18C18.2652 10.9961 18.5196 11.1015 18.7071 11.289C18.8946 11.4765 19 11.7309 19 11.9961C19 12.2613 18.8946 12.5157 18.7071 12.7032C18.5196 12.8907 18.2652 12.9961 18 12.9961Z"
+								fill="#1B193F" />
+						</svg>
+						Add
+					</button>
+				</li>
+				<li>
+					<div class="contact-add__left">
+						<img src="./images/icons/social/email.svg" alt="email icon">
+						E-mail
+					</div>
+					<button class="contact-add__btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M18 12.9961H13V17.9961C13 18.2613 12.8946 18.5157 12.7071 18.7032C12.5196 18.8907 12.2652 18.9961 12 18.9961C11.7348 18.9961 11.4804 18.8907 11.2929 18.7032C11.1054 18.5157 11 18.2613 11 17.9961V12.9961H6C5.73478 12.9961 5.48043 12.8907 5.29289 12.7032C5.10536 12.5157 5 12.2613 5 11.9961C5 11.7309 5.10536 11.4765 5.29289 11.289C5.48043 11.1015 5.73478 10.9961 6 10.9961H11V5.99609C11 5.73088 11.1054 5.47652 11.2929 5.28899C11.4804 5.10145 11.7348 4.99609 12 4.99609C12.2652 4.99609 12.5196 5.10145 12.7071 5.28899C12.8946 5.47652 13 5.73088 13 5.99609V10.9961H18C18.2652 10.9961 18.5196 11.1015 18.7071 11.289C18.8946 11.4765 19 11.7309 19 11.9961C19 12.2613 18.8946 12.5157 18.7071 12.7032C18.5196 12.8907 18.2652 12.9961 18 12.9961Z"
+								fill="#1B193F" />
+						</svg>
+						Add
+					</button>
+				</li>
+				<li>
+					<div class="contact-add__left">
+						<img src="./images/icons/social/location.svg" alt="location icon">
+						Location
+					</div>
+					<button class="contact-add__btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M18 12.9961H13V17.9961C13 18.2613 12.8946 18.5157 12.7071 18.7032C12.5196 18.8907 12.2652 18.9961 12 18.9961C11.7348 18.9961 11.4804 18.8907 11.2929 18.7032C11.1054 18.5157 11 18.2613 11 17.9961V12.9961H6C5.73478 12.9961 5.48043 12.8907 5.29289 12.7032C5.10536 12.5157 5 12.2613 5 11.9961C5 11.7309 5.10536 11.4765 5.29289 11.289C5.48043 11.1015 5.73478 10.9961 6 10.9961H11V5.99609C11 5.73088 11.1054 5.47652 11.2929 5.28899C11.4804 5.10145 11.7348 4.99609 12 4.99609C12.2652 4.99609 12.5196 5.10145 12.7071 5.28899C12.8946 5.47652 13 5.73088 13 5.99609V10.9961H18C18.2652 10.9961 18.5196 11.1015 18.7071 11.289C18.8946 11.4765 19 11.7309 19 11.9961C19 12.2613 18.8946 12.5157 18.7071 12.7032C18.5196 12.8907 18.2652 12.9961 18 12.9961Z"
+								fill="#1B193F" />
+						</svg>
+						Add
+					</button>
+				</li>
+				<li>
+					<div class="contact-add__left">
+						<img src="./images/icons/social/instagram.svg" alt="instagram icon">
+						Instagram
+					</div>
+					<button class="contact-add__btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M18 12.9961H13V17.9961C13 18.2613 12.8946 18.5157 12.7071 18.7032C12.5196 18.8907 12.2652 18.9961 12 18.9961C11.7348 18.9961 11.4804 18.8907 11.2929 18.7032C11.1054 18.5157 11 18.2613 11 17.9961V12.9961H6C5.73478 12.9961 5.48043 12.8907 5.29289 12.7032C5.10536 12.5157 5 12.2613 5 11.9961C5 11.7309 5.10536 11.4765 5.29289 11.289C5.48043 11.1015 5.73478 10.9961 6 10.9961H11V5.99609C11 5.73088 11.1054 5.47652 11.2929 5.28899C11.4804 5.10145 11.7348 4.99609 12 4.99609C12.2652 4.99609 12.5196 5.10145 12.7071 5.28899C12.8946 5.47652 13 5.73088 13 5.99609V10.9961H18C18.2652 10.9961 18.5196 11.1015 18.7071 11.289C18.8946 11.4765 19 11.7309 19 11.9961C19 12.2613 18.8946 12.5157 18.7071 12.7032C18.5196 12.8907 18.2652 12.9961 18 12.9961Z"
+								fill="#1B193F" />
+						</svg>
+						Add
+					</button>
+				</li>
+				<li>
+					<div class="contact-add__left">
+						<img src="./images/icons/social/whatsapp.svg" alt="whatsapp icon">
+						WhatsApp
+					</div>
+					<button class="contact-add__btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M18 12.9961H13V17.9961C13 18.2613 12.8946 18.5157 12.7071 18.7032C12.5196 18.8907 12.2652 18.9961 12 18.9961C11.7348 18.9961 11.4804 18.8907 11.2929 18.7032C11.1054 18.5157 11 18.2613 11 17.9961V12.9961H6C5.73478 12.9961 5.48043 12.8907 5.29289 12.7032C5.10536 12.5157 5 12.2613 5 11.9961C5 11.7309 5.10536 11.4765 5.29289 11.289C5.48043 11.1015 5.73478 10.9961 6 10.9961H11V5.99609C11 5.73088 11.1054 5.47652 11.2929 5.28899C11.4804 5.10145 11.7348 4.99609 12 4.99609C12.2652 4.99609 12.5196 5.10145 12.7071 5.28899C12.8946 5.47652 13 5.73088 13 5.99609V10.9961H18C18.2652 10.9961 18.5196 11.1015 18.7071 11.289C18.8946 11.4765 19 11.7309 19 11.9961C19 12.2613 18.8946 12.5157 18.7071 12.7032C18.5196 12.8907 18.2652 12.9961 18 12.9961Z"
+								fill="#1B193F" />
+						</svg>
+						Add
+					</button>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	<div class="add-info">
+		<div class="add-info__item">
+			<div class="add-info__top">
+				<button class="add-info__back">
+					<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+						<path
+							d="M12.4305 17.0802L5.76068 10.4302C5.68151 10.351 5.62557 10.2653 5.59284 10.1729C5.55959 10.0806 5.54297 9.9816 5.54297 9.87604C5.54297 9.77049 5.55959 9.67153 5.59284 9.57917C5.62557 9.48681 5.68151 9.40104 5.76068 9.32188L12.4305 2.65208C12.6152 2.46736 12.8461 2.375 13.1232 2.375C13.4003 2.375 13.6378 2.47396 13.8357 2.67188C14.0336 2.86979 14.1326 3.10069 14.1326 3.36458C14.1326 3.62847 14.0336 3.85938 13.8357 4.05729L8.01693 9.87604L13.8357 15.6948C14.0204 15.8795 14.1128 16.107 14.1128 16.3772C14.1128 16.648 14.0138 16.8823 13.8159 17.0802C13.618 17.2781 13.3871 17.3771 13.1232 17.3771C12.8593 17.3771 12.6284 17.2781 12.4305 17.0802Z"
+							fill="#686F7B" />
+					</svg>
+					Back
+				</button>
+				<button class="add-info__close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+						<path d="M12.25 12.25L29.75 29.75M12.25 29.75L29.75 12.25" stroke="#686F7B" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+			</div>
+			<div class="inputs">
+				<div class="input-wrapper">
+					<label>Link title:</label>
+					<input class="title-input" type="text" placeholder="WhatsApp number">
+				</div>
+				<div class="input-wrapper">
+					<div class="label-wrapper">
+						<label>WhatsApp number:</label>
+					</div>
+					<input class="item-input" type="tel" placeholder="WhatsApp number">
+				</div>
+			</div>
+			<div class="add-info__btns">
+				<button class="add-info__cancel">
+					Cancel
+				</button>
+				<button class="add-info__add">
+					Add
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="share-popup">
+		<div class="share-popup__item">
+			<button class="share-popup__back">
+				<svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+					<path
+						d="M7.43047 15.0802L0.760677 8.43021C0.68151 8.35104 0.625566 8.26528 0.592844 8.17292C0.559594 8.08056 0.542969 7.9816 0.542969 7.87604C0.542969 7.77049 0.559594 7.67153 0.592844 7.57917C0.625566 7.48681 0.68151 7.40104 0.760677 7.32188L7.43047 0.652083C7.61519 0.467361 7.84609 0.375 8.12318 0.375C8.40026 0.375 8.63776 0.473958 8.83568 0.671875C9.03359 0.869792 9.13255 1.10069 9.13255 1.36458C9.13255 1.62847 9.03359 1.85938 8.83568 2.05729L3.01693 7.87604L8.83568 13.6948C9.0204 13.8795 9.11276 14.107 9.11276 14.3772C9.11276 14.648 9.0138 14.8823 8.81588 15.0802C8.61797 15.2781 8.38707 15.3771 8.12318 15.3771C7.85929 15.3771 7.62839 15.2781 7.43047 15.0802Z"
+						fill="#686F7B" />
+				</svg>
+				Back
+			</button>
+			<div class="share-popup__top">
+				<strong>
+					Copy Card Link
+				</strong>
+				<button>
+					<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+						<path d="M12.25 12.25L29.75 29.75M12.25 29.75L29.75 12.25" stroke="#686F7B" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+			</div>
+			<div class="link-box">
+				<div class="input-box">
+					<input type="text">
+				</div>
+				<div class="button-box">
+					<button>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M19.0781 6H8.67188C7.19624 6 6 7.19624 6 8.67188V19.0781C6 20.5538 7.19624 21.75 8.67188 21.75H19.0781C20.5538 21.75 21.75 20.5538 21.75 19.0781V8.67188C21.75 7.19624 20.5538 6 19.0781 6Z"
+								stroke="black" stroke-linejoin="round" />
+							<path
+								d="M17.9766 6L18 4.875C17.998 4.17942 17.7208 3.51289 17.229 3.02103C16.7371 2.52918 16.0706 2.25198 15.375 2.25H5.25C4.45507 2.25235 3.69338 2.56917 3.13128 3.13128C2.56917 3.69338 2.25235 4.45507 2.25 5.25V15.375C2.25198 16.0706 2.52918 16.7371 3.02103 17.229C3.51289 17.7208 4.17942 17.998 4.875 18H6"
+								stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						<span>Copy Link</span>
+					</button>
+				</div>
+			</div>
+			<div class="share-box">
+				<strong>
+					Share Card
+				</strong>
+				<ul class="share-list">
+					<li>
+						<div class="share-list__left">
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+								<g clip-path="url(#clip0_4627_23360)">
+									<g filter="url(#filter0_i_4627_23360)">
+										<path
+											d="M11.3095 0H38.6905C44.9405 0 50 5.05952 50 11.3095V38.6905C50 44.9405 44.9405 50 38.6905 50H11.3095C5.05952 50 0 44.9405 0 38.6905V11.3095C0 5.05952 5.05952 0 11.3095 0Z"
+											fill="url(#paint0_linear_4627_23360)" />
+										<path
+											d="M41.2604 13.75H9.01697C8.72403 13.75 8.44828 13.8362 8.20703 13.9741L8.55166 14.3187L23.0104 28.7946C24.1823 29.9665 26.0952 29.9665 27.267 28.7946L42.0877 13.9912C41.8463 13.8362 41.5534 13.75 41.2604 13.75Z"
+											fill="white" />
+										<path
+											d="M42.7915 15.2826C42.7915 14.9897 42.7053 14.7139 42.5674 14.4727L31.8828 25.2607L42.6019 35.9453C42.7226 35.7213 42.7915 35.4628 42.7915 35.2043V15.2826Z"
+											fill="white" />
+										<path
+											d="M7.5 15.2826C7.5 14.9897 7.58619 14.7139 7.72406 14.4727L18.4087 25.2607L7.68956 35.9453C7.56894 35.7213 7.5 35.4628 7.5 35.2043V15.2826Z"
+											fill="white" />
+										<path
+											d="M31.3168 25.7617L27.5772 29.5013C26.233 30.8455 24.0272 30.8455 22.683 29.5013L18.9433 25.779L8.20703 36.4981C8.44828 36.636 8.70678 36.7221 8.99972 36.7221H41.2432C41.5362 36.7221 41.8119 36.636 42.0359 36.4981L41.3983 35.8605L31.3168 25.7617Z"
+											fill="white" />
+									</g>
+								</g>
+								<defs>
+									<filter id="filter0_i_4627_23360" x="0" y="-1" width="50" height="51"
+										filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+										<feColorMatrix in="SourceAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+										<feOffset dy="-1" />
+										<feGaussianBlur stdDeviation="0.5" />
+										<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" />
+										<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4627_23360" />
+									</filter>
+									<linearGradient id="paint0_linear_4627_23360" x1="25" y1="0" x2="25" y2="50"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="#1E51EE" />
+										<stop offset="1" stop-color="#19E4FF" />
+									</linearGradient>
+									<clipPath id="clip0_4627_23360">
+										<rect width="50" height="50" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+							E-mail
+						</div>
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<path
+									d="M18.4561 8.41834L12.2061 2.16834C12.1405 2.10287 12.057 2.05829 11.9662 2.04023C11.8753 2.02218 11.7811 2.03146 11.6955 2.06691C11.6099 2.10235 11.5367 2.16237 11.4852 2.23938C11.4337 2.31639 11.4062 2.40694 11.4061 2.49959V5.79646C7.14984 6.07693 2.00062 10.0933 1.41155 15.223C1.39242 15.3864 1.42533 15.5516 1.50558 15.6951C1.58583 15.8387 1.70933 15.9532 1.8585 16.0225C2.00766 16.0918 2.17488 16.1122 2.33632 16.0809C2.49777 16.0495 2.64521 15.968 2.75765 15.848C3.63734 14.9097 6.79671 11.9215 11.4061 11.7285V14.9996C11.4062 15.0922 11.4337 15.1828 11.4852 15.2598C11.5367 15.3368 11.6099 15.3968 11.6955 15.4323C11.7811 15.4677 11.8753 15.477 11.9662 15.4589C12.057 15.4409 12.1405 15.3963 12.2061 15.3308L18.4561 9.08084C18.5439 8.99295 18.5932 8.87381 18.5932 8.74959C18.5932 8.62537 18.5439 8.50623 18.4561 8.41834ZM12.3436 13.8683V11.2496C12.3436 11.1253 12.2942 11.006 12.2063 10.9181C12.1184 10.8302 11.9992 10.7808 11.8748 10.7808C9.70843 10.7808 7.59671 11.3472 5.59984 12.4644C4.43595 13.1182 3.36386 13.9234 2.41155 14.859C2.77874 12.784 3.98656 10.7965 5.84906 9.21287C7.69281 7.65115 9.94437 6.71834 11.8748 6.71834C11.9992 6.71834 12.1184 6.66895 12.2063 6.58104C12.2942 6.49314 12.3436 6.37391 12.3436 6.24959V3.63162L17.4616 8.74959L12.3436 13.8683Z"
+									fill="#1B193F" />
+							</svg>
+							Share
+						</a>
+					</li>
+					<li>
+						<div class="share-list__left">
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+								<g clip-path="url(#clip0_4627_23344)">
+									<g filter="url(#filter0_i_4627_23344)">
+										<path
+											d="M11.3095 0H38.6905C44.9405 0 50 5.05952 50 11.3095V38.6905C50 44.9405 44.9405 50 38.6905 50H11.3095C5.05952 50 0 44.9405 0 38.6905V11.3095C0 5.05952 5.05952 0 11.3095 0Z"
+											fill="url(#paint0_linear_4627_23344)" />
+										<path
+											d="M7.35156 42.649C7.46925 42.1784 7.58688 41.8255 7.64569 41.4725C8.35156 39.0019 8.99862 36.5314 9.64569 34.0607C9.7045 33.8255 9.7045 33.5314 9.58687 33.3549C8.35156 31.1784 7.7045 28.8255 7.46925 26.296C7.23394 23.5902 7.64569 20.9431 8.64569 18.4137C10.2339 14.5314 12.881 11.5902 16.5281 9.53136C18.881 8.23723 21.4104 7.53136 24.1163 7.41367C28.7633 7.23723 32.8222 8.59017 36.3516 11.649C39.5869 14.4725 41.6457 18.0019 42.2339 22.2372C42.9986 27.4725 41.7045 32.1196 38.2927 36.1784C35.4104 39.5902 31.7045 41.649 27.2339 42.2372C23.7633 42.7078 20.4104 42.2372 17.2339 40.5902C16.7045 40.3549 16.2928 40.296 15.7045 40.4137C13.1163 41.1195 10.5281 41.7666 7.93981 42.4725C7.881 42.5314 7.64569 42.5902 7.35156 42.649ZM24.5869 10.2372C24.1163 10.296 23.1751 10.3549 22.2928 10.4725C18.9986 11.1196 16.1751 12.7078 13.9398 15.2372C11.3516 18.2372 10.1163 21.7666 10.3516 25.7078C10.4692 28.296 11.2927 30.649 12.7045 32.8255C12.8222 33.0019 12.8222 33.2372 12.7633 33.4725C12.4104 34.8255 12.0574 36.1784 11.6457 37.5314C11.5869 37.7666 11.5281 37.9431 11.4693 38.1784C11.4693 38.2372 11.6457 38.4137 11.7045 38.4137C11.8222 38.4137 11.9986 38.3549 12.1751 38.296C13.5869 37.9431 15.0574 37.5314 16.4693 37.1784C16.7633 37.1196 17.1163 37.1784 17.3516 37.296C20.1751 38.9431 23.2339 39.649 26.4692 39.296C30.4692 38.8843 33.7633 37.0607 36.2339 34.0019C38.6457 31.0019 39.7633 27.5902 39.4692 23.7078C39.2339 20.3549 37.9986 17.4137 35.7045 14.9431C32.9398 11.8843 29.2927 10.296 24.5869 10.2372Z"
+											fill="white" />
+										<path
+											d="M29.5912 33.2363C28.2383 33.2951 27.0618 32.7657 25.8854 32.2951C23.8266 31.5303 22.0619 30.2363 20.5324 28.648C19.1795 27.2951 17.9442 25.8245 17.0618 24.1186C16.1795 22.5892 15.8266 20.9422 16.4148 19.2363C16.7089 18.4127 17.2383 17.7068 17.8854 17.1186C18.5324 16.5892 19.2971 16.7068 20.0618 16.8833C20.2383 16.9422 20.3559 17.1186 20.4736 17.2951C21.003 18.4715 21.5324 19.648 22.003 20.8833C22.1207 21.1186 22.0618 21.4715 21.8854 21.7068C21.6501 22.1186 21.2971 22.5303 20.9442 22.8833C20.5324 23.3539 20.4736 23.5303 20.8266 24.0598C22.2383 26.4715 24.2383 28.1774 26.8266 29.1774C27.1795 29.2951 27.4148 29.2363 27.6501 29.001C28.0618 28.4715 28.5324 27.9422 28.9442 27.4715C29.2971 27.001 29.4736 26.9422 30.0618 27.1774C30.5324 27.3539 30.9442 27.5892 31.4148 27.7657C32.0619 28.0598 32.7089 28.4127 33.3559 28.7068C33.7677 28.8833 33.8854 29.2363 33.8854 29.648C33.7089 31.648 32.1207 33.1186 30.0618 33.1774C29.8854 33.2363 29.7089 33.2363 29.5912 33.2363Z"
+											fill="white" />
+									</g>
+								</g>
+								<defs>
+									<filter id="filter0_i_4627_23344" x="0" y="-1" width="50" height="51"
+										filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+										<feColorMatrix in="SourceAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+										<feOffset dy="-1" />
+										<feGaussianBlur stdDeviation="0.5" />
+										<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" />
+										<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4627_23344" />
+									</filter>
+									<linearGradient id="paint0_linear_4627_23344" x1="25" y1="0" x2="25" y2="50"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="#00FF6A" />
+										<stop offset="1" stop-color="#00D31D" />
+									</linearGradient>
+									<clipPath id="clip0_4627_23344">
+										<rect width="50" height="50" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+							WhatsApp
+						</div>
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<path
+									d="M18.4561 8.41834L12.2061 2.16834C12.1405 2.10287 12.057 2.05829 11.9662 2.04023C11.8753 2.02218 11.7811 2.03146 11.6955 2.06691C11.6099 2.10235 11.5367 2.16237 11.4852 2.23938C11.4337 2.31639 11.4062 2.40694 11.4061 2.49959V5.79646C7.14984 6.07693 2.00062 10.0933 1.41155 15.223C1.39242 15.3864 1.42533 15.5516 1.50558 15.6951C1.58583 15.8387 1.70933 15.9532 1.8585 16.0225C2.00766 16.0918 2.17488 16.1122 2.33632 16.0809C2.49777 16.0495 2.64521 15.968 2.75765 15.848C3.63734 14.9097 6.79671 11.9215 11.4061 11.7285V14.9996C11.4062 15.0922 11.4337 15.1828 11.4852 15.2598C11.5367 15.3368 11.6099 15.3968 11.6955 15.4323C11.7811 15.4677 11.8753 15.477 11.9662 15.4589C12.057 15.4409 12.1405 15.3963 12.2061 15.3308L18.4561 9.08084C18.5439 8.99295 18.5932 8.87381 18.5932 8.74959C18.5932 8.62537 18.5439 8.50623 18.4561 8.41834ZM12.3436 13.8683V11.2496C12.3436 11.1253 12.2942 11.006 12.2063 10.9181C12.1184 10.8302 11.9992 10.7808 11.8748 10.7808C9.70843 10.7808 7.59671 11.3472 5.59984 12.4644C4.43595 13.1182 3.36386 13.9234 2.41155 14.859C2.77874 12.784 3.98656 10.7965 5.84906 9.21287C7.69281 7.65115 9.94437 6.71834 11.8748 6.71834C11.9992 6.71834 12.1184 6.66895 12.2063 6.58104C12.2942 6.49314 12.3436 6.37391 12.3436 6.24959V3.63162L17.4616 8.74959L12.3436 13.8683Z"
+									fill="#1B193F" />
+							</svg>
+							Share
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="qr-popup">
+		<div class="qr-popup__item">
+			<button class="qr-popup__back">
+				<svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+					<path
+						d="M7.43047 15.0802L0.760677 8.43021C0.68151 8.35104 0.625566 8.26528 0.592844 8.17292C0.559594 8.08056 0.542969 7.9816 0.542969 7.87604C0.542969 7.77049 0.559594 7.67153 0.592844 7.57917C0.625566 7.48681 0.68151 7.40104 0.760677 7.32188L7.43047 0.652083C7.61519 0.467361 7.84609 0.375 8.12318 0.375C8.40026 0.375 8.63776 0.473958 8.83568 0.671875C9.03359 0.869792 9.13255 1.10069 9.13255 1.36458C9.13255 1.62847 9.03359 1.85938 8.83568 2.05729L3.01693 7.87604L8.83568 13.6948C9.0204 13.8795 9.11276 14.107 9.11276 14.3772C9.11276 14.648 9.0138 14.8823 8.81588 15.0802C8.61797 15.2781 8.38707 15.3771 8.12318 15.3771C7.85929 15.3771 7.62839 15.2781 7.43047 15.0802Z"
+						fill="#686F7B" />
+				</svg>
+				Back
+			</button>
+			<img src="./images/qr-img.png" alt="img">
+			<a class="download-btn" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path
+						d="M12.5533 16.506C12.483 16.5829 12.3975 16.6442 12.3022 16.6862C12.2069 16.7282 12.1039 16.7499 11.9998 16.7499C11.8957 16.7499 11.7927 16.7282 11.6974 16.6862C11.6021 16.6442 11.5166 16.5829 11.4463 16.506L7.4463 12.131C7.3121 11.9841 7.24177 11.7898 7.25077 11.5911C7.25977 11.3923 7.34737 11.2052 7.4943 11.071C7.64123 10.9368 7.83545 10.8665 8.03424 10.8755C8.23303 10.8845 8.4201 10.9721 8.5543 11.119L11.2503 14.069V3C11.2503 2.80109 11.3293 2.61032 11.47 2.46967C11.6106 2.32902 11.8014 2.25 12.0003 2.25C12.1992 2.25 12.39 2.32902 12.5306 2.46967C12.6713 2.61032 12.7503 2.80109 12.7503 3V14.068L15.4473 11.118C15.5816 10.9712 15.7688 10.8838 15.9676 10.875C16.1664 10.8662 16.3605 10.9367 16.5073 11.071C16.6541 11.2053 16.7415 11.3925 16.7503 11.5913C16.7591 11.7901 16.6886 11.9842 16.5543 12.131L12.5533 16.506Z"
+						fill="#1B193F" />
+					<path
+						d="M3.75 15C3.75 14.8011 3.67098 14.6103 3.53033 14.4697C3.38968 14.329 3.19891 14.25 3 14.25C2.80109 14.25 2.61032 14.329 2.46967 14.4697C2.32902 14.6103 2.25 14.8011 2.25 15V15.055C2.25 16.422 2.25 17.525 2.367 18.392C2.487 19.292 2.747 20.05 3.348 20.652C3.95 21.254 4.708 21.512 5.608 21.634C6.475 21.75 7.578 21.75 8.945 21.75H15.055C16.422 21.75 17.525 21.75 18.392 21.634C19.292 21.512 20.05 21.254 20.652 20.652C21.254 20.05 21.512 19.292 21.634 18.392C21.75 17.525 21.75 16.422 21.75 15.055V15C21.75 14.8011 21.671 14.6103 21.5303 14.4697C21.3897 14.329 21.1989 14.25 21 14.25C20.8011 14.25 20.6103 14.329 20.4697 14.4697C20.329 14.6103 20.25 14.8011 20.25 15C20.25 16.435 20.248 17.436 20.147 18.192C20.048 18.926 19.867 19.314 19.591 19.591C19.314 19.868 18.926 20.048 18.191 20.147C17.436 20.248 16.435 20.25 15 20.25H9C7.565 20.25 6.563 20.248 5.808 20.147C5.074 20.048 4.686 19.867 4.409 19.591C4.132 19.314 3.952 18.926 3.853 18.191C3.752 17.436 3.75 16.435 3.75 15Z"
+						fill="#1B193F" />
+				</svg>
+				Download QR-code
+			</a>
+			<button class="print-btn">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path
+						d="M20.1253 6.9375H18.5625V3.75C18.5625 3.60082 18.5032 3.45774 18.3977 3.35225C18.2923 3.24676 18.1492 3.1875 18 3.1875H6C5.85082 3.1875 5.70774 3.24676 5.60225 3.35225C5.49676 3.45774 5.4375 3.60082 5.4375 3.75V6.9375H3.87469C2.66906 6.9375 1.6875 7.86281 1.6875 9V16.5C1.6875 16.6492 1.74676 16.7923 1.85225 16.8977C1.95774 17.0032 2.10082 17.0625 2.25 17.0625H5.4375V20.25C5.4375 20.3992 5.49676 20.5423 5.60225 20.6477C5.70774 20.7532 5.85082 20.8125 6 20.8125H18C18.1492 20.8125 18.2923 20.7532 18.3977 20.6477C18.5032 20.5423 18.5625 20.3992 18.5625 20.25V17.0625H21.75C21.8992 17.0625 22.0423 17.0032 22.1477 16.8977C22.2532 16.7923 22.3125 16.6492 22.3125 16.5V9C22.3125 7.86281 21.3309 6.9375 20.1253 6.9375ZM6.5625 4.3125H17.4375V6.9375H6.5625V4.3125ZM17.4375 19.6875H6.5625V14.8125H17.4375V19.6875ZM21.1875 15.9375H18.5625V14.25C18.5625 14.1008 18.5032 13.9577 18.3977 13.8523C18.2923 13.7468 18.1492 13.6875 18 13.6875H6C5.85082 13.6875 5.70774 13.7468 5.60225 13.8523C5.49676 13.9577 5.4375 14.1008 5.4375 14.25V15.9375H2.8125V9C2.8125 8.48344 3.28875 8.0625 3.87469 8.0625H20.1253C20.7113 8.0625 21.1875 8.48344 21.1875 9V15.9375ZM18.5625 10.875C18.5625 11.0604 18.5075 11.2417 18.4045 11.3958C18.3015 11.55 18.1551 11.6702 17.9838 11.7411C17.8125 11.8121 17.624 11.8307 17.4421 11.7945C17.2602 11.7583 17.0932 11.669 16.9621 11.5379C16.831 11.4068 16.7417 11.2398 16.7055 11.0579C16.6693 10.876 16.6879 10.6875 16.7589 10.5162C16.8298 10.3449 16.95 10.1985 17.1042 10.0955C17.2583 9.99248 17.4396 9.9375 17.625 9.9375C17.8736 9.9375 18.1121 10.0363 18.2879 10.2121C18.4637 10.3879 18.5625 10.6264 18.5625 10.875Z"
+						fill="#686F7B" />
+				</svg>
+				Print QR-code
+			</button>
+		</div>
+	</div>
+	<div class="profile-popup">
+		<div class="profile-popup__item">
+			<button class="profile-popup__back">
+				<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+					<path
+						d="M12.4305 17.0802L5.76068 10.4302C5.68151 10.351 5.62557 10.2653 5.59284 10.1729C5.55959 10.0806 5.54297 9.9816 5.54297 9.87604C5.54297 9.77049 5.55959 9.67153 5.59284 9.57917C5.62557 9.48681 5.68151 9.40104 5.76068 9.32188L12.4305 2.65208C12.6152 2.46736 12.8461 2.375 13.1232 2.375C13.4003 2.375 13.6378 2.47396 13.8357 2.67188C14.0336 2.86979 14.1326 3.10069 14.1326 3.36458C14.1326 3.62847 14.0336 3.85938 13.8357 4.05729L8.01693 9.87604L13.8357 15.6948C14.0204 15.8795 14.1128 16.107 14.1128 16.3772C14.1128 16.648 14.0138 16.8823 13.8159 17.0802C13.618 17.2781 13.3871 17.3771 13.1232 17.3771C12.8593 17.3771 12.6284 17.2781 12.4305 17.0802Z"
+						fill="#1B193F" />
+				</svg>
+				Back
+			</button>
+			<div class="profile-card">
+				<div class="profile-card__bg">
+					<img src="./images/senses-profile-img.png" alt="">
+				</div>
+				<div class="profile-items">
+					<strong>
+						Mary Paris
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+							<rect x="1.52344" y="2.84766" width="6.09764" height="4.30421" fill="white"></rect>
+							<path
+								d="M8.48091 2.84743L7.48206 2.27072L6.9055 1.27202H5.75226L4.75341 0.695312L3.75456 1.27202H2.60131L2.0246 2.27087L1.02593 2.84743V4.00068L0.449219 4.99953L1.02593 5.99838V7.15162L2.02478 7.72833L2.60149 8.72718H3.75473L4.75343 9.30374L5.75228 8.72703H6.90553L7.48224 7.72818L8.48108 7.15147V5.99823L9.05779 4.99938L8.48108 4.00053V2.84743H8.48091ZM4.36493 6.7612C4.28468 6.84146 4.17894 6.88046 4.07368 6.87899C3.9684 6.88049 3.86269 6.84146 3.78243 6.7612L2.5236 5.50237C2.36591 5.34468 2.36591 5.08887 2.5236 4.93118L2.85685 4.59793C3.01454 4.44024 3.27036 4.44024 3.42805 4.59793L4.07368 5.24356L6.07867 3.23843C6.23636 3.08074 6.49217 3.08074 6.64986 3.23843L6.98311 3.57168C7.1408 3.72937 7.1408 3.98518 6.98311 4.14287L4.36493 6.7612Z"
+								fill="url(#paint0_linear_4694_9820)"></path>
+							<defs>
+								<linearGradient id="paint0_linear_4694_9820" x1="8.97997" y1="8.73333" x2="-0.919834"
+									y2="8.6103" gradientUnits="userSpaceOnUse">
+									<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+									<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+								</linearGradient>
+							</defs>
+						</svg>
+					</strong>
+					<p class="profile-items__skill">
+						Development
+					</p>
+					<p class="profile-items__location">
+						<svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+							<path
+								d="M6.5 1.71875C4.48145 1.71875 2.84375 3.27748 2.84375 5.19727C2.84375 7.40625 5.28125 10.9069 6.17627 12.116C6.21342 12.167 6.26211 12.2085 6.31838 12.2372C6.37464 12.2658 6.43687 12.2807 6.5 12.2807C6.56313 12.2807 6.62536 12.2658 6.68162 12.2372C6.73789 12.2085 6.78658 12.167 6.82373 12.116C7.71875 10.9074 10.1562 7.40803 10.1562 5.19727C10.1562 3.27748 8.51855 1.71875 6.5 1.71875Z"
+								stroke="#0650BE" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path
+								d="M6.5 6.59375C7.1731 6.59375 7.71875 6.0481 7.71875 5.375C7.71875 4.7019 7.1731 4.15625 6.5 4.15625C5.8269 4.15625 5.28125 4.7019 5.28125 5.375C5.28125 6.0481 5.8269 6.59375 6.5 6.59375Z"
+								stroke="#0650BE" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Canada,Vancouver
+					</p>
+					<a class="profile-items__link" href="#">
+						Profile on Neuron.expert
+					</a>
+				</div>
+				<button class="save-chat">
+					Save Contact
+				</button>
+				<div class="socila-links">
+					<button>
+						<img src="./images/save-icon.svg" alt="icon">
+						Save My Info
+					</button>
+					<a href="#">
+						<img src="./images/linkedin-icon.svg" alt="icon">
+						Linkedin
+					</a>
+					<a href="#">
+						<img src="./images/instagram-icon.svg" alt="icon">
+						Instagram
+					</a>
+					<a href="#">
+						<img src="./images/facebook-icon.svg" alt="icon">
+						Facebook
+					</a>
+					<a href="#">
+						<img src="./images/twitter-icon.svg" alt="icon">
+						Twitter
+					</a>
+					<a href="#">
+						<img src="./images/tiktok-icon.svg" alt="icon">
+						Tiktok
+					</a>
+					<a href="#">
+						<img src="./images/telegram-icon.svg" alt="icon">
+						Telegram
+					</a>
+				</div>
+				<button class="share-btn share-btn-mobile">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+						<path
+							d="M18.4561 8.41834L12.2061 2.16834C12.1405 2.10287 12.057 2.05829 11.9662 2.04023C11.8753 2.02218 11.7811 2.03146 11.6955 2.06691C11.6099 2.10235 11.5367 2.16237 11.4852 2.23938C11.4337 2.31639 11.4062 2.40694 11.4061 2.49959V5.79646C7.14984 6.07693 2.00062 10.0933 1.41155 15.223C1.39242 15.3864 1.42533 15.5516 1.50558 15.6951C1.58583 15.8387 1.70933 15.9532 1.8585 16.0225C2.00766 16.0918 2.17488 16.1122 2.33632 16.0809C2.49777 16.0495 2.64521 15.968 2.75765 15.848C3.63734 14.9097 6.79671 11.9215 11.4061 11.7285V14.9996C11.4062 15.0922 11.4337 15.1828 11.4852 15.2598C11.5367 15.3368 11.6099 15.3968 11.6955 15.4323C11.7811 15.4677 11.8753 15.477 11.9662 15.4589C12.057 15.4409 12.1405 15.3963 12.2061 15.3308L18.4561 9.08084C18.5439 8.99295 18.5932 8.87381 18.5932 8.74959C18.5932 8.62537 18.5439 8.50623 18.4561 8.41834ZM12.3436 13.8683V11.2496C12.3436 11.1253 12.2942 11.006 12.2063 10.9181C12.1184 10.8302 11.9992 10.7808 11.8748 10.7808C9.70843 10.7808 7.59671 11.3472 5.59984 12.4644C4.43595 13.1182 3.36386 13.9234 2.41155 14.859C2.77874 12.784 3.98656 10.7965 5.84906 9.21287C7.69281 7.65115 9.94437 6.71834 11.8748 6.71834C11.9992 6.71834 12.1184 6.66895 12.2063 6.58104C12.2942 6.49314 12.3436 6.37391 12.3436 6.24959V3.63162L17.4616 8.74959L12.3436 13.8683Z"
+							fill="white"></path>
+					</svg>
+					Share Your Card
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+	<script src="./js/UI/modals.js"></script>
+	<script src="./js/components/header/common.js" type="module"></script>
+	<script src="./js/senses.js" type="module"></script>
+	<script src="./js/profile.js" type="module"></script>
+</body>
+
+</html>

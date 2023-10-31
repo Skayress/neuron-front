@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/pages/main.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="beta-die">
+			<span>beta</span>
+			<p>Version 2.1</p>
+		</div>
+		<div class="container">
+			<div class="header__inner">
+				<a class="logo" href="#">
+					<img src="./images/logo.svg" alt="logo">
+				</a>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a class="menu__list-link menu__tools" href="#">
+								<span>Tools</span>
+								<img class="menu__arrow" src="./images/icons/arrow.svg" alt="">
+							</a>
+							<div class="submenu">
+								<ul class="submenu__list">
+									<li class="submenu__list-title">
+										Text
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Writing
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Translation
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Summarization
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Rewriting
+										</a>
+									</li>
+								</ul>
+								<ul class="submenu__list">
+									<li class="submenu__list-title">
+										Image
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Draw
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Draw similar
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Image description
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Text recognition
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Remove background
+										</a>
+									</li>
+									<li class="submenu__item">
+										<a class="submenu__link" href="#">
+											Colorize Photo
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">
+								Experts
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">
+								Publisher
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">
+								Experts
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">
+								Publisher
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">
+								Tools
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-lang-select">
+					<div class="header-lang-select__btn">
+						<img src="./images/icons/lang-icon.svg" alt="lang icon">
+						<span>English</span>
+						<img class="header-lang-select__arrow" src="./images/icons/arrow.svg" alt="arrow">
+					</div>
+
+					<ul class="header-lang-select__list">
+						<li class="header-lang-select__item">
+							<a href="#">
+								English
+							</a>
+						</li>
+						<li class="header-lang-select__item">
+							<a href="#">
+								Russian
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- <button class="button button--transparent button--small login">
+					Log In
+				</button> -->
+				<div class="user">
+					<div class="notifications">
+						<img src="./images/icons/notifications.svg" alt="notifications icon">
+					</div>
+					<div class="user-wrap">
+						<div class="user-avatar">
+							<img src="./images/icons/user.svg" alt="user avatar">
+						</div>
+						<div class="energy">
+							<img src="./images/icons/energy.svg" alt="energy icon">
+							<span>400</span>
+						</div>
+						<div class="user-arrow">
+							<img src="./images/icons/arrow.svg" alt="arrow">
+						</div>
+					</div>
+
+					<ul class="user-list">
+						<a class="user-list__item user-list__header"
+							href="{% url 'settings' lang=current_language.code_name %}">
+							<div class="user-list-avatar">
+								<img src="./images/avatar.jpg" alt="user avatar">
+							</div>
+							<p>sjdfhsdlkj@gmail.com</p>
+						</a>
+						<li class="user-list__item user-list__btn">
+							<a class="get-energy-btn" href="">
+								<span>Get Energy</span>
+								<img src="./images/icons/arrow-gradient.svg" alt="arrow">
+							</a>
+						</li>
+						<li class="user-list__item">
+							<a class="user-list__link" href="#">
+								<img src="./images/icons/user-list/posts.svg" alt="posts icon">
+								<span>Posts</span>
+							</a>
+						</li>
+						<li class="user-list__item">
+							<a class="user-list__link" href="#">
+								<img src="./images/icons/user-list/results.svg" alt="results icon">
+								<span>Assets</span>
+							</a>
+						</li>
+						<li class="user-list__item user-list__settings">
+							<a class="user-list__link" href="{% url 'settings' lang=current_language.code_name %}">
+								<img src="./images/icons/user-list/settings.svg" alt="settings icon">
+								<span>Settings</span>
+							</a>
+						</li>
+						<li class="user-list__item user-list__logout">
+							<button class="user-list__link logout-btn">
+								<img src="./images/icons/user-list/logout.svg" alt="logout icon">
+								<a href="{% url 'logout' %}">
+									<span>Logout</span>
+								</a>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+
+		<section class="page-block main">
+			<div class="main__inner">
+				<div class="main__content">
+					<h1 class="h1 main__title">
+						<span class="text-gradient">
+							Cloud solution to bring AI
+						</span>
+						into your business
+					</h1>
+					<ul class="main__list">
+						<li class="main__list-item">
+							Let your <a href="#">digital avatar</a> help you in work, you will only need to teach AI your
+							professional knowledge
+						</li>
+						<li class="main__list-item">
+							Use Neuron <a href="#">GPT</a> & other <a href="#">AI tools</a> to make your job easier and find
+							answers faster or get real expert consultation
+						</li>
+						<li class="main__list-item">
+							Create cool content and make yourself known on all social networks with the built-in <a
+								href="#">Content Builder</a> & <a href="#">SMM manager</a>
+						</li>
+						<li class="main__list-item">
+							Get valuable advice from experts and earn money from professional counsulting on <a href="#">Neuron
+								Network</a>
+						</li>
+					</ul>
+					<button class="button">
+						Join for free
+					</button>
+				</div>
+				<div class="main__media">
+					<div class="video">
+						<video width="100%" height="290" id="neuron-video" playsinline webkit-playinginline muted autoplay>
+							<source src="./images/video/expert_en.mp4">
+						</video>
+						<button id="toggle-sound">
+							<img src="./images/video/volume-off.svg" alt="volume">
+						</button>
+						<button id="reload-video">
+							<img src="./images/video/reload.svg" alt="reload">
+						</button>
+						<img class="video__bg" src="./images/video/image-bg.png" alt="background">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-block communications">
+			<h2 class="h2 text-center">
+				Expert network
+			</h2>
+			<p class="subtitle text-center">
+				Grow yourself and your clients base
+			</p>
+			<div class="communications__inner">
+				<div class="communications__card">
+					<h3 class="h3 text-center">
+						Neuron GPT
+					</h3>
+					<p class="text text-center">
+						Get a free initial consultation from Neuron based on neural network knowledge or start creating
+						content through embedded AI tools
+					</p>
+				</div>
+				<div class="communications__card">
+					<h3 class="h3 text-center">
+						Find an expert
+					</h3>
+					<p class="text text-center">
+						During your dialog with Neuron, he will match you with the most suitable expert according to your task
+					</p>
+					<button class="button button--small button--transparent communications__card-btn">
+						Find an expert
+					</button>
+				</div>
+				<div class="communications__card">
+					<h3 class="h3 text-center">
+						Chat with colleagues
+					</h3>
+					<p class="text text-center">
+						Communicate with your colleagues in a format that suits you, pump up a corporate avatar that can make
+						a summary of your conversations and transfer tasks to your task manager
+					</p>
+				</div>
+			</div>
+			<iframe src="https://chat.neuron.expert/" width="100%" height="610px" style="border: none;"
+				allow="camera; microphone" id="chat"></iframe>
+			<div class="communications__inner">
+				<div class="communications__card communications__card--big">
+					<h3 class="h3 text-center">
+						Centralised approach to communication
+					</h3>
+					<p class="text text-center">
+						Connect quick access to messengers for corporate and personal communication without having to switch
+						between apps
+					</p>
+				</div>
+				<div class="communications__card">
+					<h3 class="h3 text-center">
+						All types of communication
+					</h3>
+					<p class="text text-center">
+						Communication in any format with your colleagues and friends: chat, audio, video
+					</p>
+				</div>
+				<div class="communications__card">
+					<h3 class="h3 text-center">
+						AI simultaneous translation
+					</h3>
+					<p class="text text-center">
+						Communication in any convenient language. Общайся с людьми на их языке
+					</p>
+				</div>
+				<div class="communications__card">
+					<h3 class="h3 text-center">
+						Training programs
+					</h3>
+					<p class="text text-center">
+						Organizing and broadcasting training courses on our platform
+					</p>
+				</div>
+			</div>
+			<button class="button center communications__btn">
+				Join community
+			</button>
+		</section>
+
+		<section class="page-block benefits">
+			<div class="inner-block">
+				<h2 class="h2 text-center">
+					Benefits for life
+				</h2>
+				<p class="subtitle text-center">
+					AI technologies are an integral part of modern life, helping people cope with routine, improving
+					productivity and quality of life.
+				</p>
+				<div class="benefits__inner">
+					<div class="benefits__info-card">
+						<span class="benefits__info-card-status benefits__info-card-status--active"></span>
+						<h3 class="h3 text-center">
+							Network
+						</h3>
+						<p class="text text-center">
+							Seeking expert help for various life challenges and helping others
+						</p>
+					</div>
+					<div class="benefits__info-card">
+						<span class="benefits__info-card-status benefits__info-card-status--active"></span>
+						<h3 class="h3 text-center">
+							AI tools
+						</h3>
+						<p class="text text-center">
+							AI tools are included in Neuron Assistant, so they will make you more efficient and productive
+						</p>
+					</div>
+					<div class="benefits__info-card">
+						<span class="benefits__info-card-status benefits__info-card-status--inactive"></span>
+						<h3 class="h3 text-center">
+							My calendar
+						</h3>
+						<p class="text text-center">
+							Reminding you of important events and meeting scheduling
+						</p>
+					</div>
+					<div class="benefits__info-card">
+						<span class="benefits__info-card-status benefits__info-card-status--inactive"></span>
+						<h3 class="h3 text-center">
+							Recommendation system
+						</h3>
+						<p class="text text-center">
+							Offering products and services according to your preferences
+						</p>
+					</div>
+					<div class="benefits__info-card">
+						<span class="benefits__info-card-status benefits__info-card-status--inactive"></span>
+						<h3 class="h3 text-center">
+							Educational programs
+						</h3>
+						<p class="text text-center">
+							Platform for AI-assisted knowledge acquisition and course delivery
+						</p>
+						<!-- <div class="benefits__info-card-box">
+							<div class="benefits__info-card-item">
+								<img src="./images/icons/benefits/web.svg" alt="web icon">
+								<span class="benefits__info-card-item-text">
+									Web
+								</span>
+							</div>
+							<div class="benefits__info-card-item">
+								<img src="./images/icons/benefits/mobile.svg" alt="mobile icon">
+								<span class="benefits__info-card-item-text">
+									Mobile
+								</span>
+							</div>
+							<div class="benefits__info-card-item">
+								<img src="./images/icons/benefits/plugin.svg" alt="plugin icon">
+								<span class="benefits__info-card-item-text">
+									Plagin
+								</span>
+							</div>
+						</div> -->
+					</div>
+					<div class="benefits__info-card">
+						<span class="benefits__info-card-status benefits__info-card-status--inactive"></span>
+						<h3 class="h3 text-center">
+							Task Manager
+						</h3>
+						<p class="text text-center">
+							Communicate with colleagues and get the opportunity to manage a task manager using AI
+						</p>
+					</div>
+				</div>
+				<div class="swiper benefits-slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide benefits-slider__slide">
+							<div class="benefits-slider__slide-content">
+								<h3 class="benefits-slider__slide-title">
+									Neuron Assistant
+								</h3>
+								<p class="benefits-slider__slide-text">
+									We introduce to you a personal AI assistant capable of processing and analyzing information
+									in various formats such as text, images, videos, and audio.
+								</p>
+								<p class="benefits-slider__slide-text">
+									With 24 tools for working with text, photos, documents, voice, and video, you can use it for
+									any purpose, from planning your workday to creating an effective marketing campaign.
+								</p>
+								<button class="button benefits-slider__slide-btn">
+									Claim your Neuron
+								</button>
+							</div>
+							<div class="benefits-slider__cover-img">
+								<img src="./images/main-page/benefits-slider-img.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-block">
+			<div class="inner-block benefits benefits-business">
+				<h2 class="h2 text-center">
+					Benefits for your business
+				</h2>
+				<p class="subtitle text-center">
+					Implement AI in your business process. Reduce marketing, smm and content production costs with Digital
+					Worker and promote your company easily
+				</p>
+				<div class="benefits__inner">
+					<div class="benefits__info-card">
+						<span class="benefits__info-card-status benefits__info-card-status--active"></span>
+						<h3 class="h3 text-center">
+							Content Builder
+						</h3>
+						<p class="text text-center">
+							Unleash the power of AI with our Content Builder, transforming your ideas into compelling content
+							effortlessly. It's not just writing; it's your digital creative companion
+						</p>
+					</div>
+					<div class="benefits__info-card">
+						<span class="benefits__info-card-status benefits__info-card-status--active"></span>
+						<h3 class="h3 text-center">
+							SMM manager
+						</h3>
+						<p class="text text-center">
+							Your ceaseless engine in social networks, serves as a content pipeline, equipping users to manage
+							creation, editing, and publishing, enriching audience interaction, and opening new business
+							horizons in social media
+						</p>
+					</div>
+					<div class="benefits__info-card">
+						<span class="benefits__info-card-status benefits__info-card-status--active"></span>
+						<h3 class="h3 text-center">
+							Digital workers
+						</h3>
+						<p class="text text-center">
+							Train your digital worker to be helpful, answer customer questions, make your business more
+							productive and save your time
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="inner-block digital-worker">
+				<h2 class="h2 text-center">
+					Digital workers
+				</h2>
+				<p class="subtitle text-center">
+					AI Digital Worker is a virtual employee, trained based on corporate scenarios and a specialised knowledge
+					base. AI Digital Worker works around the clock, offers personalised solutions, reduces costs and
+					integrates seamlessly with business systems.
+				</p>
+				<div class="digital-worker__inner">
+					<div class="digital-worker-card">
+						<span class="benefits__info-card-status benefits__info-card-status--active"></span>
+						<div class="digital-worker-card__header">
+							<div class="digital-worker-card__avatar">
+								<img src="./images/main-page/digital-worker-card.jpg" alt="">
+							</div>
+							<div class="digital-worker-card__info">
+								<a class="digital-worker-card__name" href="#">
+									Neuron Sales
+								</a>
+								<div class="digital-worker-card__specialization">
+									Digital Sales Manager
+								</div>
+							</div>
+						</div>
+						<p class="text digital-worker-card__text">
+							Trained on your company’s materials and interacts directly with the client. His responsibilities
+							include advising the client on a catalog of goods or services, collecting and researching
+							information, and selecting a product according to the buyer’s preferences.
+						</p>
+						<p class="text digital-worker-card__text">
+							We've infused Sales Manager with marketing fundamentals, customer focus, empathy and creativity to
+							help you increase sales with 24/7 customer support.
+						</p>
+						<button class="button button--transparent button--small digital-worker-card__btn">
+							Try for free
+						</button>
+					</div>
+					<div class="digital-worker-card">
+						<div class="digital-worker-card__header">
+							<div class="digital-worker-card__avatar">
+								<img src="./images/main-page/digital-worker-card.jpg" alt="">
+							</div>
+							<div class="digital-worker-card__info">
+								<a class="digital-worker-card__name" href="#">
+									Neuron Marketing Expert
+								</a>
+								<div class="digital-worker-card__specialization">
+									Digital Marketing Expert r
+								</div>
+							</div>
+						</div>
+						<p class="text digital-worker-card__text">
+							Analyzes the market, creating strategies based on this data. And also selects effective promotion
+							channels individually for your business.
+						</p>
+						<p class="text digital-worker-card__text">
+							Combine the efforts of Content Manager and SMM Manager under the control of Marketing Expert to
+							fully automate the content process.
+						</p>
+						<button class="button button--transparent button--small digital-worker-card__btn">
+							Try for free
+						</button>
+					</div>
+					<div class="digital-worker-card">
+						<div class="digital-worker-card__header">
+							<div class="digital-worker-card__avatar">
+								<img src="./images/main-page/digital-worker-card.jpg" alt="">
+							</div>
+							<div class="digital-worker-card__info">
+								<a class="digital-worker-card__name" href="#">
+									Neuron Content Manager
+								</a>
+								<div class="digital-worker-card__specialization">
+									Digital Content Manager
+								</div>
+							</div>
+						</div>
+						<p class="text digital-worker-card__text">
+							Capable of generating texts and optimizing content for SEO. He manages the content, checks and
+							corrects it for errors and uniqueness.
+						</p>
+						<p class="text digital-worker-card__text">
+							Advanced artificial intelligence algorithms ensuring high accuracy and quality of generation.
+						</p>
+						<button class="button button--transparent button--small digital-worker-card__btn">
+							Try for free
+						</button>
+					</div>
+					<div class="digital-worker-card">
+						<div class="digital-worker-card__header">
+							<div class="digital-worker-card__avatar">
+								<img src="./images/main-page/digital-worker-card.jpg" alt="">
+							</div>
+							<div class="digital-worker-card__info">
+								<a class="digital-worker-card__name" href="#">
+									Neuron SMM Manager
+								</a>
+								<div class="digital-worker-card__specialization">
+									Digital SMM Manager
+								</div>
+							</div>
+						</div>
+						<p class="text digital-worker-card__text">
+							Works on content plans of various sizes, based on trends and formats of various social networks,
+							generates ideas and topics, creates material, helping to maintain contact with the audience.
+						</p>
+						<p class="text digital-worker-card__text">
+							With SMM Manager, you can control all social networks using one platform, publish materials without
+							moving from one site to another.
+						</p>
+						<button class="button button--transparent button--small digital-worker-card__btn">
+							Try for free
+						</button>
+					</div>
+				</div>
+				<div class="digital-worker__block">
+					The advantages of Digital Worker is the speed of training and work, processing a large amount of data and
+					requests, which will provide you with optimised business processes. Communicate with coworkers using the
+					built-in communication system and get the opportunity to train corporate e-workers
+				</div>
+			</div>
+		</section>
+
+		<section class="page-block business-card">
+			<div class="inner-block">
+				<h2 class="h2 text-center">
+					Business card
+				</h2>
+				<p class="subtitle text-center">
+					A business card provides a unique opportunity for specialists and companies to present themselves in the
+					modern world.
+				</p>
+				<div class="business-card__img-cover">
+					<img src="{% static 'images/main-page/business-card-img.png' %}" alt="business-card img">
+				</div>
+				<button class="button center business-card__btn">
+					Get your QR-code
+				</button>
+				<h4 class="business-card__title">
+					Having issued a Business card, you become part of the Neuron Expert Network, a community of experts with
+					various profiles.
+				</h4>
+				<h4 class="business-card__title">
+					Membership carries such advantages as:
+				</h4>
+				<div class="business-card__inner">
+					<div class="business-card__card">
+						<img src="{% static 'images/main-page/business-card/1.jpg' %}">
+						<h3 class="h3 text-center">
+							Paid consultations
+						</h3>
+						<p class="text text-center">
+							Make money with your knowledge and expertise by helping people
+						</p>
+					</div>
+					<div class="business-card__card">
+						<img src="{% static 'images/main-page/business-card/2.jpg' %}">
+						<h3 class="h3 text-center">
+							Personal Assistant Training
+						</h3>
+						<p class="text text-center">
+							Share various information and socialize in the Network for AI training. This will allow you to
+							customize an individual approach for everyone
+						</p>
+					</div>
+					<div class="business-card__card">
+						<img src="{% static 'images/main-page/business-card/3.jpg' %}">
+						<h3 class="h3 text-center">
+							Continuous learning
+						</h3>
+						<p class="text text-center">
+							Communicate with colleagues, study articles and educational courses, get the latest interesting
+							news in the Neuron Network
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-block publisher">
+			<div class="inner-block">
+				<h2 class="h2 text-center">
+					SMM Manager
+				</h2>
+				<p class="subtitle text-center">
+					Leading the SMM, PR and advertising campaign from a single location
+				</p>
+				<div class="publisher__img-cover">
+					<img src="./images/main-page/publisher-img.png" alt="publisher img">
+				</div>
+				<h3 class="publisher__title">
+					Content Builder
+				</h3>
+				<div class="publisher__inner">
+					<div class="publisher__card">
+						<h3 class="h3 text-center">
+							Multiformat
+						</h3>
+						<p class="text text-center">
+							NEURON Publisher supports working with a variety of content formats, including text, images, audio
+							and video, allowing you to create diverse and interesting publications
+						</p>
+					</div>
+					<div class="publisher__card">
+						<h3 class="h3 text-center">
+							Content pipeline
+						</h3>
+						<p class="text text-center">
+							NEURON functions as a content pipeline, providing users with the tools and capabilities to manage
+							the entire process of creating, editing and publishing content
+						</p>
+					</div>
+					<div class="publisher__card">
+						<h3 class="h3 text-center">
+							Content editing
+						</h3>
+						<p class="text text-center">
+							Users can edit content right in the app, allowing for flexibility and the ability to make changes
+							quickly
+						</p>
+					</div>
+				</div>
+				<h3 class="publisher__title">
+					SMM Publisher
+				</h3>
+				<div class="publisher__inner">
+					<div class="publisher__card">
+						<h3 class="h3 text-center">
+							Content pipeline
+						</h3>
+						<p class="text text-center">
+							NEURON functions as a content pipeline, providing users with the tools and capabilities to manage
+							the entire process of creating, editing and publishing content
+						</p>
+					</div>
+					<div class="publisher__card">
+						<h3 class="h3 text-center">
+							Working on multiple projects
+						</h3>
+						<p class="text text-center">
+							The ability to work on multiple projects at the same time increases work efficiency and
+							productivity
+						</p>
+					</div>
+					<div class="publisher__card">
+						<h3 class="h3 text-center">
+							Postponed publication
+						</h3>
+						<p class="text text-center">
+							NEURON Publisher allows you to post the created content on various social platforms at any
+							convenient time, simplifying the process of information distribution
+						</p>
+					</div>
+					<div class="publisher__card publisher__card--big">
+						<h3 class="h3 text-center">
+							Publishing on all social networks at once
+						</h3>
+						<p class="text text-center">
+							Share posts with the click of a button on all networks
+						</p>
+						<ul class="publisher__social-list">
+							<li class="publisher__social-list-item">
+								<img src="./images/main-page/publisher-icons/facebook.svg" alt="facebook icon">
+							</li>
+							<li class="publisher__social-list-item">
+								<img src="./images/main-page/publisher-icons/instagram.svg" alt="instagram icon">
+							</li>
+							<li class="publisher__social-list-item">
+								<img src="./images/main-page/publisher-icons/twitter.svg" alt="twitter icon">
+							</li>
+							<li class="publisher__social-list-item">
+								<img src="./images/main-page/publisher-icons/telegram.svg" alt="telegram icon">
+							</li>
+							<li class="publisher__social-list-item">
+								<img src="./images/main-page/publisher-icons/linkedin.svg" alt="linkedin icon">
+							</li>
+							<li class="publisher__social-list-item">
+								<img src="./images/icons/social/linkedin.svg" alt="linkedin icon">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button class="button publisher__btn">
+					Create publication
+				</button>
+			</div>
+		</section>
+
+		<section class="page-block tools">
+			<div class="inner-block">
+				<h2 class="h2 text-center">
+					AI tools
+				</h2>
+				<p class="subtitle text-center">
+					Our artificial intelligence tools can help you stand out among professionals and improve your social
+					media presence.
+				</p>
+				<div class="tabs tools-tabs">
+					<div class="tabs__nav">
+						<button class="tabs__btn tabs__btn_active">Text</button>
+						<button class="tabs__btn">Draw</button>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__pane tabs__pane_show">
+							<div class="tools__inner">
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/write-text.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Writing texts
+									</h3>
+									<p class="text">
+										Create high-quality, unique texts in a variety of formats using artificial intelligence in
+										seconds
+									</p>
+								</a>
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/translate-text.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Translation of texts and files
+									</h3>
+									<p class="text">
+										Free online translator allowing you to translate texts, web pages and documents in more
+										than 90 languages
+									</p>
+								</a>
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/summarize.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Summarize
+									</h3>
+									<p class="text">
+										Create high-quality, unique texts in a variety of formats using artificial intelligence in
+										seconds
+									</p>
+								</a>
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/rewrite.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Rewrite
+									</h3>
+									<p class="text">
+										Create unique content based on existing material, avoiding repetition and improving the
+										quality of the text by making
+									</p>
+								</a>
+							</div>
+						</div>
+						<div class="tabs__pane">
+							<div class="tools__inner">
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/draw.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Draw
+									</h3>
+									<p class="text">
+										Create unique and high-quality images in just seconds based on a text query using AI
+									</p>
+								</a>
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/draw-similar.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Draw similar
+									</h3>
+									<p class="text">
+										Generate images similar to already created pictures or photos
+									</p>
+								</a>
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/image-description.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Image description
+									</h3>
+									<p class="text">
+										Generating a text description of a set of objects in pictures or photos
+									</p>
+								</a>
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/text-recognition.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Text recognition
+									</h3>
+									<p class="text">
+										Retrieve text information from photos, images, scanned documents, and more
+									</p>
+								</a>
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/remove-bg.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Remove background
+									</h3>
+									<p class="text">
+										Remove the background in a couple of clicks. No need to waste time erasing unnecessary
+									</p>
+								</a>
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/erase-object.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Erase an object
+									</h3>
+									<p class="text">
+										Remove unwanted objects, people from photos with our object removal tool
+									</p>
+								</a>
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/improve-quality.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Improve the quality
+									</h3>
+									<p class="text">
+										Make blurry images clear and improve image quality online automatically and for free
+									</p>
+								</a>
+								<a class="tools__card" href="#">
+									<div class="tools__card-img">
+										<img src="./images/main-page/tools/colorize-photo.jpg" alt="">
+									</div>
+									<h3 class="h3">
+										Colorize Photo
+									</h3>
+									<p class="text">
+										Turn your black and white photos into color with Neuron expert , bring old family photos
+										to life
+									</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-block technologies">
+			<div class="inner-block">
+				<h2 class="h2 text-center">
+					Our technologies
+				</h2>
+				<p class="subtitle text-center">
+					Secure storage and processing of your data and documents
+				</p>
+				<div class="technologies__inner">
+					<div class="technologies__card">
+						<img src="./images/main-page/technologies/1.jpg" alt="">
+						<h3 class="h3 text-center">
+							Decentralized AI compute
+						</h3>
+						<p class="text text-center">
+							Decentralized AI compute refers to the concept of distributing artificial intelligence computing
+							power across multiple nodes or devices. Instead of relying on a centralized system, decentralized
+							AI compute allows for more efficient processing, increased privacy, and reduced vulnerability to
+							single points of failure.
+						</p>
+					</div>
+					<div class="technologies__card">
+						<img src="./images/main-page/technologies/2.jpg" alt="">
+						<h3 class="h3 text-center">
+							AI blockchain
+						</h3>
+						<p class="text text-center">
+							AI blockchain refers to the combination of artificial intelligence and blockchain technology. This
+							integration allows for the development of decentralized and secure systems that leverage AI
+							capabilities. The use of blockchain ensures that data is stored in a tamper-proof manner, while AI
+							enables intelligent decision-making and automation.
+						</p>
+					</div>
+					<div class="technologies__card">
+						<img src="./images/main-page/technologies/3.jpg" alt="">
+						<h3 class="h3 text-center">
+							Decetralized secure storage
+						</h3>
+						<p class="text text-center">
+							Decentralized secure storage refers to a storage system where data is distributed across multiple
+							network nodes rather than being stored in a central location. This helps enhance security as the
+							data is not vulnerable to a single point of failure.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-block news">
+			<h2 class="h2 text-center">
+				News
+			</h2>
+			<p class="subtitle text-center">
+				Follow our news block to keep abreast of the latest achievements in the world of artificial intelligence and
+				new projects of our corporation
+			</p>
+			<div class="tabs news-tabs">
+				<div class="tabs__nav">
+					<button class="tabs__btn tabs__btn_active">All</button>
+					<button class="tabs__btn">Neuron</button>
+				</div>
+				<div class="tabs__content">
+					<div class="tabs__pane tabs__pane_show">
+						<div class="news__inner">
+							<div class="news-card">
+								<div class="news-card__img-cover">
+									<img src="Image-news.jpg" alt="">
+								</div>
+								<div class="news-card__content">
+									<span class="news-card__date">
+										May 31, 2023
+									</span>
+									<h3 class="h3">
+										Neuralink allowed to test brain implants on humans
+									</h3>
+									<p class="news-card__text">
+										Elon Musk's startup Neuralink has announced it has received US regulatory approval to test
+										brain implants in humans ...
+									</p>
+								</div>
+							</div>
+							<div class="news-card">
+								<div class="news-card__img-cover">
+									<img src="Image-news.jpg" alt="">
+								</div>
+								<div class="news-card__content">
+									<span class="news-card__date">
+										May 31, 2023
+									</span>
+									<h3 class="h3">
+										Neuralink allowed to test brain implants on humans
+									</h3>
+									<p class="news-card__text">
+										Elon Musk's startup Neuralink has announced it has received US regulatory approval to test
+										brain implants in humans ...
+									</p>
+								</div>
+							</div>
+							<div class="news-card">
+								<div class="news-card__img-cover">
+									<img src="Image-news.jpg" alt="">
+								</div>
+								<div class="news-card__content">
+									<span class="news-card__date">
+										May 31, 2023
+									</span>
+									<h3 class="h3">
+										Neuralink allowed to test brain implants on humans
+									</h3>
+									<p class="news-card__text">
+										Elon Musk's startup Neuralink has announced it has received US regulatory approval to test
+										brain implants in humans ...
+									</p>
+								</div>
+							</div>
+							<div class="news-card">
+								<div class="news-card__img-cover">
+									<img src="Image-news.jpg" alt="">
+								</div>
+								<div class="news-card__content">
+									<span class="news-card__date">
+										May 31, 2023
+									</span>
+									<h3 class="h3">
+										Neuralink allowed to test brain implants on humans
+									</h3>
+									<p class="news-card__text">
+										Elon Musk's startup Neuralink has announced it has received US regulatory approval to test
+										brain implants in humans ...
+									</p>
+								</div>
+							</div>
+							<div class="news-card">
+								<div class="news-card__img-cover">
+									<img src="Image-news.jpg" alt="">
+								</div>
+								<div class="news-card__content">
+									<span class="news-card__date">
+										May 31, 2023
+									</span>
+									<h3 class="h3">
+										Neuralink allowed to test brain implants on humans
+									</h3>
+									<p class="news-card__text">
+										Elon Musk's startup Neuralink has announced it has received US regulatory approval to test
+										brain implants in humans ...
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__pane">
+						<div class="news__inner">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Modals -->
+	<div class="modal sign-up-modal">
+		<div class="modal__overlay"></div>
+		<div class="modal-content">
+			<span class="modal__close">
+				<img src="./images/icons/close.svg" alt="close icon">
+			</span>
+
+			<div class="sign-up-modal__inner">
+				<div class="logo">
+					<img src="./images/logo.svg" alt="logo">
+				</div>
+
+				<div class="sign-up-modal__buttons">
+
+					<a class="button button--transparent sign-up-modal__btn"
+						href="{% provider_login_url 'google' action='reauthenticate' %}?next=/">
+						<img src="./images/icons/brands/google.svg" alt="google icon">
+						<span>Google</span>
+					</a>
+
+					<a class="button button--transparent sign-up-modal__btn"
+						href="{% provider_login_url 'telegram' action='reauthenticate' %}?process=login">
+						<img src="./images/icons/brands/telegram.svg" alt="telegram icon">
+						<span>Telegram</span>
+					</a>
+				</div>
+				<div class="or">
+					<span>or</span>
+				</div>
+
+				<input class="sign-up-modal__email input" type="text" name="email_input" placeholder="Email">
+
+				<button class="sign-up-modal__continue-btn button" type="submit" value="continue" name="action">
+					Continue
+				</button>
+
+				<label class="custom-checkbox">
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+				</label>
+
+				<label class="custom-checkbox">
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					I agree to receive notifications about new tools and products
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script src="./js/UI/modals.js"></script>
+	<script src="./js/UI/tabs.js"></script>
+
+	<script src="./js/components/header/common.js" type="module"></script>
+	<script src="./js/components/video.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>

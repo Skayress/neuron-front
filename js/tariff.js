@@ -1,0 +1,1 @@
+const tariffTabs = new ItcTabs('.tariff-tabs')

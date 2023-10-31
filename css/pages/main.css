@@ -1,0 +1,13 @@
+@import url('./../common.css');
+@import url('./../ui.css');
+@import url('./../_partials/common/header.css');
+@import url('./../_partials/common/footer.css');
+@import url('./../_partials/main-page/main.css');
+@import url('./../_partials/main-page/communications.css');
+@import url('./../_partials/main-page/benefits.css');
+@import url('./../_partials/main-page/digital-worker.css');
+@import url('./../_partials/main-page/business-card.css');
+@import url('./../_partials/main-page/publisher.css');
+@import url('./../_partials/main-page/tools.css');
+@import url('./../_partials/main-page/technologies.css');
+@import url('./../_partials/main-page/news.css');
