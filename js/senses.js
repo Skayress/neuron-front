@@ -46,6 +46,7 @@ new ContactPopup();
 
 let cloned;
 let cloned2;
+let contactName;
 class AddPopup extends Main {
 	constructor(s, d = document) {
 		super(s, d)
@@ -59,6 +60,7 @@ class AddPopup extends Main {
 		this.cancelBtn = new Main('.add-info__cancel');
 		this.addBtns = new Main('.contact-add__btn');
 		this.main = new Main('.business-card');
+		this.inputContactName = new Main('input[name="contact-name"]');
 
 		this.each(this.addBtns.elems, btn => {
 			this.addEvent(btn, 'click', () => this.openPopup(btn))
@@ -75,6 +77,9 @@ class AddPopup extends Main {
 		this.removeClass(this.Contactpopup.elem, 'active');
 		cloned = e.parentElement.querySelector('svg').cloneNode(true);
 		cloned2 = new Main('.contact-list li').elem.cloneNode(true);
+		contactName = e.getAttribute('data-name');
+		console.log(this.inputContactName);
+		this.inputContactName.elem.setAttribute('value', contactName);
 	}
 	closePopup() {
 		this.removeClass(this.infoPopup.elem, 'active');
@@ -125,21 +130,36 @@ class AddContact extends Main {
 		this.contactList = new Main('.contact-list');
 		this.infoPopup = new Main('.add-info');
 		this.main = new Main('.business-card');
+		this.addContactForm = new Main('.add-contact-form')
 
-		this.addEvent(this.addBtn.elem, 'click', () => this.add());
+		this.addEvent(this.addBtn.elem, 'click', (e) => {
+			e.preventDefault();
+			this.add()
+		});
 	}
-	add() {
-		if (this.addTitleInput.elem.value !== ''
-			&& this.itemInput.value !== '') {
-			this.contactList.elem.appendChild(cloned2);
-			cloned2.querySelector('strong').textContent = this.addTitleInput.elem.value;
-			cloned2.querySelector('p').textContent = this.itemInput.elem.value;
-			const svg = cloned2.querySelector('.focus-btn').nextElementSibling;
-			cloned2.replaceChild(cloned, svg);
-			this.addTitleInput.elem.value = '';
-			this.itemInput.elem.value = '';
-			this.removeClass(this.infoPopup.elem, 'active');
-			this.main.elem.removeAttribute('style');
+	async add() {
+		try {
+			const URL = this.addContactForm.elem.getAttribute('action')
+			const formData = new FormData(this.addContactForm.elem);
+			const response = await fetch(URL, {
+				method: 'POST',
+				body: formData,
+			});
+		} catch (error) {
+			console.log(error);
+		} finally {
+			if (this.addTitleInput.elem.value !== ''
+				&& this.itemInput.value !== '') {
+				this.contactList.elem.appendChild(cloned2);
+				cloned2.querySelector('strong').textContent = this.addTitleInput.elem.value;
+				cloned2.querySelector('p').textContent = this.itemInput.elem.value;
+				const svg = cloned2.querySelector('.focus-btn').nextElementSibling;
+				cloned2.replaceChild(cloned, svg);
+				this.addTitleInput.elem.value = '';
+				this.itemInput.elem.value = '';
+				this.removeClass(this.infoPopup.elem, 'active');
+				this.main.elem.removeAttribute('style');
+			}
 		}
 	}
 }
@@ -191,9 +211,8 @@ class CardPopup extends Main {
 		this.main.elem.removeAttribute('style');
 	}
 }
-const asd = new CardPopup();
 
-console.log(asd);
+new CardPopup();
 
 new Sortable(contact, {
 	multiDrag: true,
