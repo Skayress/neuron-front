@@ -12,6 +12,8 @@ async function submitToggleForm(form) {
 		});
 	} catch (error) {
 		console.error('Ошибка запроса', error);
+	} finally {
+		location.reload()
 	}
 }
 
