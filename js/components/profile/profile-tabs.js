@@ -1,8 +1,20 @@
 const tabProfileButtons = document.querySelectorAll('button[data-tab]');
 const tabProfileContents = document.querySelectorAll(".profile-tab");
 
+const businessCardSidebar = document.querySelector('.senses-right')
+const advertisingSidebar = document.querySelector('.advertising-sidebar')
+
+// Таб по умолчанию
 if (localStorage.getItem('tab-name') === null) {
 	localStorage.setItem('tab-name', 'information')
+}
+
+if (localStorage.getItem('tab-name') === 'business-card') {
+	businessCardSidebar.style.display = 'block'
+	advertisingSidebar.style.display = 'none'
+} else {
+	businessCardSidebar.style.display = 'none'
+	advertisingSidebar.style.display = 'flex'
 }
 
 tabProfileButtons.forEach((button) => {
@@ -31,6 +43,14 @@ tabProfileButtons.forEach((button) => {
 			}
 			tabContent.classList.add("active");
 			tabContent.classList.remove("hidden");
+		}
+
+		if (localStorage.getItem('tab-name') === 'business-card') {
+			businessCardSidebar.style.display = 'block'
+			advertisingSidebar.style.display = 'none'
+		} else {
+			businessCardSidebar.style.display = 'none'
+			advertisingSidebar.style.display = 'flex'
 		}
 	});
 });

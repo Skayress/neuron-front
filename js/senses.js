@@ -78,8 +78,10 @@ class AddPopup extends Main {
 		cloned = e.parentElement.querySelector('svg').cloneNode(true);
 		cloned2 = new Main('.contact-list li').elem.cloneNode(true);
 		contactName = e.getAttribute('data-name');
-		console.log(this.inputContactName);
 		this.inputContactName.elem.setAttribute('value', contactName);
+		const inputDataLink = document.querySelector('.title-input')
+		console.log(inputDataLink);
+		inputDataLink.value = contactName
 	}
 	closePopup() {
 		this.removeClass(this.infoPopup.elem, 'active');
@@ -138,6 +140,7 @@ class AddContact extends Main {
 		});
 	}
 	async add() {
+		console.log(2);
 		try {
 			const URL = this.addContactForm.elem.getAttribute('action')
 			const formData = new FormData(this.addContactForm.elem);
