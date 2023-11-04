@@ -1,0 +1,22 @@
+.payments-part__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.payments-part__left,
+.payments-part__tariff {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.payments-part__tariff {
+	max-width: 275px;
+	width: 100%;
+}
+
+.payments-part__energy {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}

@@ -66,6 +66,15 @@
 	margin-left: auto;
 }
 
+.del-btn {
+	color: #F91C1C;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 8px;
+	border-radius: 16px;
+	border: 1px solid #F91C1C;
+}
+
 /* Input */
 .input {
 	position: relative;

@@ -1,0 +1,21 @@
+.contacts-part__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.contacts-part__box {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.contacts-part__item {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.contacts-part__item .profile-part-title {
+	margin-bottom: 0;
+}

@@ -1,0 +1,40 @@
+.profile__part-specilization {
+	color: #0650BE;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.profile__part-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.profile__communication-item {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.profile__communication-item p {
+	color: #1B193F;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.profile__communication-item span {
+	color: #686F7B;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.profile-about__text p {
+	color: #1B193F;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.profile-about__text p:not(:last-child) {
+	margin-bottom: 20px;
+}

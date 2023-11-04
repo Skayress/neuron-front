@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Profile</title>
 	<link rel="stylesheet" href="css/pages/profile.css">
-	<link rel="stylesheet" href="css/senses.css">
 </head>
 
 <body>
@@ -566,14 +565,19 @@
 											</div>
 										</div>
 										<div class="chat__setting-line"></div>
-										<div class="chat__setting-delete">
-											<button>Удалить чат</button>
+										<div class="chat__btn-inner">
+											<button class="button button--medium">
+												Save chat
+											</button>
+											<button class="del-btn">
+												Delete chat
+											</button>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="messenger-part profile-tab hidden" id="messenger">
+						<div class="messenger-part profile-tab profile-wrap hidden" id="messenger">
 							<h3 class="profile__info-title">
 								<span>
 									Messenger
@@ -583,7 +587,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="calendar-part profile-tab hidden" id="calendar">
+						<div class="calendar-part profile-tab profile-wrap hidden" id="calendar">
 							<h3 class="profile__info-title">
 								<span>
 									My calendar
@@ -593,7 +597,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="feed-part profile-tab hidden" id="feed">
+						<div class="feed-part profile-tab profile-wrap hidden" id="feed">
 							<h3 class="profile__info-title">
 								<span>
 									Feed
@@ -603,7 +607,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="information-part profile-tab active" id="information">
+						<div class="information-part profile-tab profile-wrap active" id="information">
 							<h3 class="profile__info-title">
 								<span>
 									Information
@@ -708,7 +712,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="experience-part profile-tab hidden" id="experience">
+						<div class="experience-part profile-tab profile-wrap hidden" id="experience">
 							<h3 class="profile__info-title">
 								<span>
 									Experience
@@ -862,7 +866,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="contants-part profile-tab hidden" id="contacts">
+						<div class="contants-part profile-tab profile-wrap hidden" id="contacts">
 							<h3 class="profile__info-title">
 								<span>
 									Contact information
@@ -956,7 +960,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="following-part profile-tab hidden" id="following">
+						<div class="following-part profile-tab profile-wrap hidden" id="following">
 							<h3 class="profile__info-title">
 								<span>
 									Following
@@ -999,7 +1003,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="folowers-part profile-tab hidden" id="folowers">
+						<div class="folowers-part profile-tab profile-wrap hidden" id="folowers">
 							<h3 class="profile__info-title">
 								<span>
 									Folowers
@@ -1009,7 +1013,7 @@
 								</div>
 							</h3>
 						</div>
-						<div class="connections-part profile-tab hidden" id="connections">
+						<div class="connections-part profile-tab profile-wrap hidden" id="connections">
 							<h3 class="profile__info-title">
 								<span>
 									Connections
@@ -1019,7 +1023,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="notifications-part profile-tab hidden" id="notifications">
+						<div class="notifications-part profile-tab profile-wrap hidden" id="notifications">
 							<h3 class="profile__info-title">
 								<span>
 									Notifications
@@ -1090,7 +1094,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="storage-part profile-tab hidden" id="storage">
+						<div class="storage-part profile-tab profile-wrap hidden" id="storage">
 							<h3 class="profile__info-title">
 								<span>
 									Storage
@@ -1100,7 +1104,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="privacy-part profile-tab hidden" id="privacy">
+						<div class="privacy-part profile-tab profile-wrap hidden" id="privacy">
 							<h3 class="profile__info-title">
 								<span>
 									Privacy
@@ -1110,7 +1114,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="collaborators-part profile-tab hidden" id="collaborators">
+						<div class="collaborators-part profile-tab profile-wrap hidden" id="collaborators">
 							<h3 class="profile__info-title">
 								<span>
 									Collaborators
@@ -1120,7 +1124,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="projects-part profile-tab hidden" id="projects">
+						<div class="projects-part profile-tab profile-wrap hidden" id="projects">
 							<h3 class="profile__info-title">
 								<span>
 									Projects
@@ -1130,7 +1134,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="payments-part profile-tab hidden" id="payments">
+						<div class="payments-part profile-tab profile-wrap hidden" id="payments">
 							<h3 class="profile__info-title">
 								<span>
 									Payments
@@ -1214,7 +1218,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="usage-part profile-tab hidden" id="usage">
+						<div class="usage-part profile-tab profile-wrap hidden" id="usage">
 							<h3 class="profile__info-title">
 								<span>
 									Usage
@@ -1224,7 +1228,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="subscription-part profile-tab hidden" id="subscription">
+						<div class="subscription-part profile-tab profile-wrap hidden" id="subscription">
 							<h3 class="profile__info-title">
 								<span>
 									Subscription
@@ -1234,7 +1238,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="generations-part profile-tab hidden" id="generations">
+						<div class="generations-part profile-tab profile-wrap hidden" id="generations">
 							<h3 class="profile__info-title">
 								<span>
 									Generations
@@ -1244,7 +1248,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="posts-part profile-tab hidden" id="posts">
+						<div class="posts-part profile-tab profile-wrap hidden" id="posts">
 							<h3 class="profile__info-title">
 								<span>
 									Posts
@@ -1254,7 +1258,7 @@
 								In developing
 							</div>
 						</div>
-						<div class="business-card-part profile-wrap profile-tab hidden" id="business-card">
+						<div class="business-card-part profile-tab profile-wrap hidden" id="business-card">
 							<div class="business-card-part__main">
 								<div class="business-card__start">
 									<div class="business-card__top">
