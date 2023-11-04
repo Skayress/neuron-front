@@ -46,11 +46,252 @@
 	flex: 1 1 auto;
 }
 
-.profile__info-wrapper {
-	padding: 28px 40px;
+.profile-wrap {
+	padding: 30px;
 	border-radius: 16px;
 	background: #fff;
 	box-shadow: 0px 4px 19px 0px rgba(12, 57, 99, 0.10);
+}
+
+.profile-wrap:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.chat-setting {
+	max-width: 620px;
+	width: 100%;
+}
+
+.chat-setting__wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.drag-file {
+	padding: 10px;
+	width: 100%;
+	border-radius: 16px;
+	border: 1px solid #C0C0C0;
+	background: #FFF;
+}
+
+.drag-file__inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 13px;
+	border-radius: 9px;
+	border: 1px dashed #C0C0C0;
+}
+
+.drag-file__text {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 14px;
+}
+
+.drag-file__text button {
+	text-decoration: underline;
+}
+
+.input-file {
+	border-radius: 8.852px;
+	border: 0.885px dashed var(--stroke, #C0C0C0);
+	position: relative;
+	display: inline-block;
+}
+
+.input-file-btn {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 4px;
+	background-color: #419152;
+	line-height: 22px;
+	height: 40px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: background-color 0.2s;
+}
+
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+/* Focus */
+.input-file input[type=file]:focus+.input-file-btn {
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+/* Hover/active */
+.input-file:hover .input-file-btn {
+	background-color: #59be6e;
+}
+
+.input-file:active .input-file-btn {
+	background-color: #2E703A;
+}
+
+/* Disabled */
+.input-file input[type=file]:disabled+.input-file-btn {
+	background-color: #eee;
+}
+
+.chat__setting-main {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.chat__setting-inp-title {
+	color: var(--black, #1B193F);
+	font-family: Manrope;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.chat__setting-inp-title span {
+	color: var(--Red, #F91C1C);
+	font-family: Manrope;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.chat__setting-inp-main input {
+	width: 100%;
+	padding: 12px 20px;
+	margin-top: 4px;
+	border-radius: 16px;
+	border: 1px solid var(--stroke, #C0C0C0);
+	background: var(--white, #FFF);
+}
+
+.chat__setting-inp-main textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin-top: 4px;
+	border-radius: 16px;
+	border: 1px solid var(--stroke, #C0C0C0);
+	background: var(--white, #FFF);
+}
+
+.chat__setting-inp-col span {
+	color: var(--black, #1B193F);
+	text-align: center;
+	font-family: Manrope;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+
+.files {
+	display: flex;
+	gap: 13px;
+}
+
+.file {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.file-icon {
+	left: 5px;
+	position: relative;
+}
+
+.file-icon span {
+	position: absolute;
+	bottom: -0px;
+	left: -15px;
+	color: var(--black, #1B193F);
+	font-family: Manrope;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%;
+	/* 11px */
+}
+
+.file-name {
+	margin-top: -3px;
+	color: var(--black, #1B193F);
+	text-align: center;
+	font-family: Manrope;
+	font-size: 13.6px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.file-delete {
+	margin-top: 7px;
+	color: var(--gray, #686F7B);
+	font-family: Manrope;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
+}
+
+.chat__setting-line {
+	margin: 30px 0;
+	width: 100%;
+	height: 1px;
+	background: rgba(0, 0, 0, 0.11);
+}
+
+.chat__setting-goal-title {
+	color: var(--black, #1B193F);
+	font-family: Manrope;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.chat__setting-question {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.chat__setting-question-title {
+	color: var(--black, #1B193F);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.questions-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
 .profile__info-title {

@@ -474,850 +474,983 @@
 								<img src="./images/tg-banner-img.png" alt="">
 							</div>
 						</div>
-						<div class="profile__info-wrapper">
-							<div class="smm-manager-part profile-tab hidden" id="smm-manager">
-								<h3 class="profile__info-title">
-									<span>
-										SMM Manager
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
+						<div class="smm-manager-part profile-tab hidden" id="sales-manager-v1">
+							<div class="profile-wrap">
+								<iframe src="https://chat.neuron.expert/" width="100%" height="610px" style="border: none;"
+									allow="camera; microphone" id="chat"></iframe>
 							</div>
-							<div class="messenger-part profile-tab hidden" id="messenger">
+							<div class="profile-wrap">
 								<h3 class="profile__info-title">
-									<span>
-										Messenger
-									</span>
+									<span>Settings</span>
 								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="calendar-part profile-tab hidden" id="calendar">
-								<h3 class="profile__info-title">
-									<span>
-										My calendar
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="feed-part profile-tab hidden" id="feed">
-								<h3 class="profile__info-title">
-									<span>
-										Feed
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="information-part profile-tab active" id="information">
-								<h3 class="profile__info-title">
-									<span>
-										Information
-									</span>
-									<a class="profile__info-edit-btn">
-										<img src="./images/profile-icons/editing.svg" alt="edit button">
-									</a>
-								</h3>
-								<div class="profile__part">
-									<h4 class="profile-part-title">
-										Expertise
-									</h4>
-									<div class="profile__part-row">
-										<span>Specialization:</span>
-										<p>Expert in the following areas</p>
-									</div>
-									<div class="profile__part-row">
-										<span class="profile__part-specilization">Desig:</span>
-										<div class="profile__part-tags">
-											<div class="tag">
-												Logos
+								<div class="chat-setting">
+									<div class="chat-setting__wrap">
+										<label class="form-element" for="name">
+											<span>Name:</span>
+											<input class="input" type="text" id="name" name="name">
+										</label>
+										<label class="form-element" for="name">
+											<span>Short description:</span>
+											<textarea class="textarea" id="short-description" name="short-description"></textarea>
+										</label>
+										<label class="form-element" for="link">
+											<span>Link to home page</span>
+											<input class="input" id="link" name="link">
+										</label>
+										<label class="form-element">
+											<span>Uploaded documents</span>
+											<div class="drag-file">
+												<div class="drag-file__inner">
+													<svg width="35" height="33" viewBox="0 0 35 33" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path d="M23.1784 21.832L17.3451 16.332L11.5117 21.832" stroke="#1B193F"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M17.3398 16.332V28.707" stroke="#1B193F" stroke-width="2"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path
+															d="M29.5739 25.1188C30.9963 24.3877 32.1199 23.2308 32.7675 21.8307C33.415 20.4306 33.5496 18.867 33.15 17.3868C32.7505 15.9065 31.8394 14.5939 30.5607 13.656C29.282 12.7182 27.7085 12.2086 26.0885 12.2076H24.251C23.8096 10.5978 22.9869 9.10327 21.8447 7.83642C20.7025 6.56958 19.2706 5.56335 17.6566 4.89339C16.0426 4.22343 14.2885 3.90718 12.5262 3.9684C10.7639 4.02962 9.03923 4.46672 7.48189 5.24685C5.92455 6.02698 4.57504 7.12982 3.53483 8.47248C2.49461 9.81514 1.79076 11.3627 1.47618 12.9987C1.16161 14.6348 1.24449 16.3168 1.71861 17.9183C2.19272 19.5198 3.04573 20.9991 4.2135 22.2451"
+															stroke="#1B193F" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path d="M23.1784 21.832L17.3451 16.332L11.5117 21.832" stroke="#1B193F"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<p class="drag-file__text">
+														Drag & drop a files into this field
+														<button class="btn-add-file">or select from device</button>
+													</p>
+												</div>
 											</div>
-											<div class="tag">
-												Website design
+										</label>
+										<div class="files"></div>
+										<div class="chat__setting-line"></div>
+										<div class="chat__setting-goal">
+											<div class="chat__setting-goal-title">
+												Цели чата
 											</div>
-											<div class="tag">
-												Mobile applications
+											<div class="chat__setting-goal-points">
+												<label class="custom-checkbox">
+													<input type="checkbox">
+													<span class="checkmark"></span>
+													My organization doesn’t have a street address
+												</label>
+												<label class="custom-checkbox">
+													<input type="checkbox">
+													<span class="checkmark"></span>
+													My organization doesn’t have a street address
+												</label>
+												<label class="custom-checkbox">
+													<input type="checkbox">
+													<span class="checkmark"></span>
+													My organization doesn’t have a street address
+												</label>
 											</div>
-											<div class="tag">
-												Technology
+										</div>
+										<div class="chat__setting-line"></div>
+										<div class="chat__setting-question">
+											<div class="chat__setting-question-title">Popular questions</div>
+											<div class="questions-list">
+												<label class="form-element" for="question-1">
+													<span>1 question</span>
+													<input class="input" type="text" id="question-1" name="question-1">
+												</label>
+												<label class="form-element" for="question-2">
+													<span>2 question</span>
+													<input class="input" type="text" id="question-2" name="question-2">
+												</label>
 											</div>
-											<div class="tag">
-												Technology
+											<div class="chat__setting-question-add">
+												<button class="add-btn add-question-btn">
+													<img src="./images/icons/plus.svg" alt="plus-icon">
+													<span>Add question</span>
+												</button>
 											</div>
-											<div class="tag">
-												Technology
-											</div>
+										</div>
+										<div class="chat__setting-line"></div>
+										<div class="chat__setting-delete">
+											<button>Удалить чат</button>
 										</div>
 									</div>
 								</div>
-								<div class="profile__part">
-									<h4 class="profile-part-title">
-										Language of communication
-									</h4>
-									<div class="profile__part-row">
-										<span>English:</span>
+							</div>
+						</div>
+						<div class="messenger-part profile-tab hidden" id="messenger">
+							<h3 class="profile__info-title">
+								<span>
+									Messenger
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="calendar-part profile-tab hidden" id="calendar">
+							<h3 class="profile__info-title">
+								<span>
+									My calendar
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="feed-part profile-tab hidden" id="feed">
+							<h3 class="profile__info-title">
+								<span>
+									Feed
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="information-part profile-tab active" id="information">
+							<h3 class="profile__info-title">
+								<span>
+									Information
+								</span>
+								<a class="profile__info-edit-btn">
+									<img src="./images/profile-icons/editing.svg" alt="edit button">
+								</a>
+							</h3>
+							<div class="profile__part">
+								<h4 class="profile-part-title">
+									Expertise
+								</h4>
+								<div class="profile__part-row">
+									<span>Specialization:</span>
+									<p>Expert in the following areas</p>
+								</div>
+								<div class="profile__part-row">
+									<span class="profile__part-specilization">Desig:</span>
+									<div class="profile__part-tags">
 										<div class="tag">
-											Native
+											Logos
 										</div>
-									</div>
-									<div class="profile__part-row">
-										<span>German:</span>
 										<div class="tag">
-											Advanced
+											Website design
 										</div>
-									</div>
-									<div class="profile__part-row">
-										<span>Spanish:</span>
 										<div class="tag">
-											Intermediate
+											Mobile applications
+										</div>
+										<div class="tag">
+											Technology
+										</div>
+										<div class="tag">
+											Technology
+										</div>
+										<div class="tag">
+											Technology
 										</div>
 									</div>
 								</div>
-								<div class="profile__part profile__communication">
-									<h4 class="profile-part-title">
-										Сommunication
-									</h4>
-									<div class="profile__communication-item">
-										<img src="./images/profile-icons/chat.svg" alt=" chat icon">
-										<p>Chat:</p>
-										<span>1$ / 1 min</span>
-									</div>
-									<div class="profile__communication-item">
-										<img src="./images/profile-icons/audio.svg" alt=" audio icon">
-										<p>Audio communication::</p>
-										<span>1$ / 1 min</span>
-									</div>
-									<div class="profile__communication-item">
-										<img src="./images/profile-icons/personal.svg" alt=" personal icon">
-										<p>Personal meeting::</p>
-										<span>1$ / 1 min</span>
+							</div>
+							<div class="profile__part">
+								<h4 class="profile-part-title">
+									Language of communication
+								</h4>
+								<div class="profile__part-row">
+									<span>English:</span>
+									<div class="tag">
+										Native
 									</div>
 								</div>
-								<div class="profile__part">
-									<h4 class="profile-part-title profile-about">
-										About me
-									</h4>
-									<div class="profile-about__text">
+								<div class="profile__part-row">
+									<span>German:</span>
+									<div class="tag">
+										Advanced
+									</div>
+								</div>
+								<div class="profile__part-row">
+									<span>Spanish:</span>
+									<div class="tag">
+										Intermediate
+									</div>
+								</div>
+							</div>
+							<div class="profile__part profile__communication">
+								<h4 class="profile-part-title">
+									Сommunication
+								</h4>
+								<div class="profile__communication-item">
+									<img src="./images/profile-icons/chat.svg" alt=" chat icon">
+									<p>Chat:</p>
+									<span>1$ / 1 min</span>
+								</div>
+								<div class="profile__communication-item">
+									<img src="./images/profile-icons/audio.svg" alt=" audio icon">
+									<p>Audio communication::</p>
+									<span>1$ / 1 min</span>
+								</div>
+								<div class="profile__communication-item">
+									<img src="./images/profile-icons/personal.svg" alt=" personal icon">
+									<p>Personal meeting::</p>
+									<span>1$ / 1 min</span>
+								</div>
+							</div>
+							<div class="profile__part">
+								<h4 class="profile-part-title profile-about">
+									About me
+								</h4>
+								<div class="profile-about__text">
+									<p>
+										Making a startup can be a challenging but rewarding experience. Here are some general
+										steps
+										you can follow to get started:Making a startup can be a challenging but rewarding
+										experience.
+										Here are some general steps you can follow to get started:Making a startup can be a
+										challenging but rewarding experience.
+									</p>
+									<p>
+										Here are some general steps you can follow to get started:Making a startup can be a
+										challenging but rewarding experience. Here are some general steps you can follow to get
+										started
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="experience-part profile-tab hidden" id="experience">
+							<h3 class="profile__info-title">
+								<span>
+									Experience
+								</span>
+								<a class="profile__info-edit-btn">
+									<img src="./images/profile-icons/editing.svg" alt="edit button">
+								</a>
+							</h3>
+							<div class="experience-part__item">
+								<div class="experience-part__date">
+									<div class="experience-part__date-icon">
+										<img src="./images/icons/profile/calendar.svg" alt="calendar icon">
+									</div>
+									<div class="experience-part__date-title">
+										<span class="experience-part__date-title-period">
+											July 2021 - June 2023
+										</span>
+										<span class="experience-part__date-title-term">
+											1 year and 11 months
+										</span>
+									</div>
+								</div>
+								<div class="experience-part__box">
+									<div class="experience-part__box-item">
+										<h4 class="profile-part-title">
+											Company name:
+										</h4>
 										<p>
-											Making a startup can be a challenging but rewarding experience. Here are some general
-											steps
-											you can follow to get started:Making a startup can be a challenging but rewarding
-											experience.
-											Here are some general steps you can follow to get started:Making a startup can be a
-											challenging but rewarding experience.
+											Digital LLC
 										</p>
+									</div>
+									<div class="experience-part__box-item">
+										<h4 class="profile-part-title">
+											Industry:
+										</h4>
 										<p>
-											Here are some general steps you can follow to get started:Making a startup can be a
-											challenging but rewarding experience. Here are some general steps you can follow to get
-											started
+											Information technology
 										</p>
 									</div>
-								</div>
-							</div>
-							<div class="experience-part profile-tab hidden" id="experience">
-								<h3 class="profile__info-title">
-									<span>
-										Experience
-									</span>
-									<a class="profile__info-edit-btn">
-										<img src="./images/profile-icons/editing.svg" alt="edit button">
-									</a>
-								</h3>
-								<div class="experience-part__item">
-									<div class="experience-part__date">
-										<div class="experience-part__date-icon">
-											<img src="./images/icons/profile/calendar.svg" alt="calendar icon">
-										</div>
-										<div class="experience-part__date-title">
-											<span class="experience-part__date-title-period">
-												July 2021 - June 2023
-											</span>
-											<span class="experience-part__date-title-term">
-												1 year and 11 months
-											</span>
-										</div>
+									<div class="experience-part__box-item">
+										<h4 class="profile-part-title">
+											Position:
+										</h4>
+										<p>
+											Lead developer
+										</p>
 									</div>
-									<div class="experience-part__box">
-										<div class="experience-part__box-item">
-											<h4 class="profile-part-title">
-												Company name:
-											</h4>
-											<p>
-												Digital LLC
-											</p>
-										</div>
-										<div class="experience-part__box-item">
-											<h4 class="profile-part-title">
-												Industry:
-											</h4>
-											<p>
-												Information technology
-											</p>
-										</div>
-										<div class="experience-part__box-item">
-											<h4 class="profile-part-title">
-												Position:
-											</h4>
-											<p>
-												Lead developer
-											</p>
-										</div>
-										<div class="experience-part__box-item">
-											<h4 class="profile-part-title">
-												Responsibilities:
-											</h4>
-											<ul>
-												<li>
-													- Developing new functionality for a commercial application.
-												</li>
-												<li>
-													- Work UIKit, Foundation,.
-												</li>
-												<li>
-													- Code layout, also worked with xib.
-												</li>
-												<li>
-													- Work with client-server interaction (HTTP REST API, JSON).
-												</li>
-												<li>
-													- Work with Alamofire network library.
-												</li>
-												<li>
-													- Work with pokatet managers, Cocoapods.
-												</li>
-												<li>
-													- Work with version control system - GitLab.
-												</li>
-												<li>
-													- Participated in code review.
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="experience-part__item">
-									<div class="experience-part__date">
-										<div class="experience-part__date-icon">
-											<img src="./images/icons/profile/calendar.svg" alt="calendar icon">
-										</div>
-										<div class="experience-part__date-title">
-											<span class="experience-part__date-title-period">
-												July 2021 - June 2023
-											</span>
-											<span class="experience-part__date-title-term">
-												1 year and 11 months
-											</span>
-										</div>
-									</div>
-									<div class="experience-part__box">
-										<div class="experience-part__box-item">
-											<h4 class="profile-part-title">
-												Company name:
-											</h4>
-											<p>
-												Digital LLC
-											</p>
-										</div>
-										<div class="experience-part__box-item">
-											<h4 class="profile-part-title">
-												Industry:
-											</h4>
-											<p>
-												Information technology
-											</p>
-										</div>
-										<div class="experience-part__box-item">
-											<h4 class="profile-part-title">
-												Position:
-											</h4>
-											<p>
-												Lead developer
-											</p>
-										</div>
-										<div class="experience-part__box-item">
-											<h4 class="profile-part-title">
-												Responsibilities:
-											</h4>
-											<ul>
-												<li>
-													- Developing new functionality for a commercial application.
-												</li>
-												<li>
-													- Work UIKit, Foundation,.
-												</li>
-												<li>
-													- Code layout, also worked with xib.
-												</li>
-												<li>
-													- Work with client-server interaction (HTTP REST API, JSON).
-												</li>
-												<li>
-													- Work with Alamofire network library.
-												</li>
-												<li>
-													- Work with pokatet managers, Cocoapods.
-												</li>
-												<li>
-													- Work with version control system - GitLab.
-												</li>
-												<li>
-													- Participated in code review.
-												</li>
-											</ul>
-										</div>
+									<div class="experience-part__box-item">
+										<h4 class="profile-part-title">
+											Responsibilities:
+										</h4>
+										<ul>
+											<li>
+												- Developing new functionality for a commercial application.
+											</li>
+											<li>
+												- Work UIKit, Foundation,.
+											</li>
+											<li>
+												- Code layout, also worked with xib.
+											</li>
+											<li>
+												- Work with client-server interaction (HTTP REST API, JSON).
+											</li>
+											<li>
+												- Work with Alamofire network library.
+											</li>
+											<li>
+												- Work with pokatet managers, Cocoapods.
+											</li>
+											<li>
+												- Work with version control system - GitLab.
+											</li>
+											<li>
+												- Participated in code review.
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>
-							<div class="contants-part profile-tab hidden" id="contacts">
-								<h3 class="profile__info-title">
-									<span>
-										Contact information
-									</span>
-									<a class="profile__info-edit-btn">
-										<img src="./images/profile-icons/editing.svg" alt="edit button">
-									</a>
-								</h3>
-								<div class="contacts-part__inner">
-									<div class="contacts-part__box">
-										<div class="contacts-part__item">
-											<div class="contacts-part__item-icon">
-												<img src="./images/icons/profile/contacts/phone.svg" alt="phone icon">
-											</div>
-											<div class="contacts-part__item-content">
-												<h4 class="profile-part-title">
-													Phone
-												</h4>
-												<a href="tel:">
-													(800) 666-7045
-												</a>
-											</div>
+							<div class="experience-part__item">
+								<div class="experience-part__date">
+									<div class="experience-part__date-icon">
+										<img src="./images/icons/profile/calendar.svg" alt="calendar icon">
+									</div>
+									<div class="experience-part__date-title">
+										<span class="experience-part__date-title-period">
+											July 2021 - June 2023
+										</span>
+										<span class="experience-part__date-title-term">
+											1 year and 11 months
+										</span>
+									</div>
+								</div>
+								<div class="experience-part__box">
+									<div class="experience-part__box-item">
+										<h4 class="profile-part-title">
+											Company name:
+										</h4>
+										<p>
+											Digital LLC
+										</p>
+									</div>
+									<div class="experience-part__box-item">
+										<h4 class="profile-part-title">
+											Industry:
+										</h4>
+										<p>
+											Information technology
+										</p>
+									</div>
+									<div class="experience-part__box-item">
+										<h4 class="profile-part-title">
+											Position:
+										</h4>
+										<p>
+											Lead developer
+										</p>
+									</div>
+									<div class="experience-part__box-item">
+										<h4 class="profile-part-title">
+											Responsibilities:
+										</h4>
+										<ul>
+											<li>
+												- Developing new functionality for a commercial application.
+											</li>
+											<li>
+												- Work UIKit, Foundation,.
+											</li>
+											<li>
+												- Code layout, also worked with xib.
+											</li>
+											<li>
+												- Work with client-server interaction (HTTP REST API, JSON).
+											</li>
+											<li>
+												- Work with Alamofire network library.
+											</li>
+											<li>
+												- Work with pokatet managers, Cocoapods.
+											</li>
+											<li>
+												- Work with version control system - GitLab.
+											</li>
+											<li>
+												- Participated in code review.
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contants-part profile-tab hidden" id="contacts">
+							<h3 class="profile__info-title">
+								<span>
+									Contact information
+								</span>
+								<a class="profile__info-edit-btn">
+									<img src="./images/profile-icons/editing.svg" alt="edit button">
+								</a>
+							</h3>
+							<div class="contacts-part__inner">
+								<div class="contacts-part__box">
+									<div class="contacts-part__item">
+										<div class="contacts-part__item-icon">
+											<img src="./images/icons/profile/contacts/phone.svg" alt="phone icon">
 										</div>
-										<div class="contacts-part__item">
-											<div class="contacts-part__item-icon">
-												<img src="./images/icons/profile/contacts/email.svg" alt="email icon">
-											</div>
-											<div class="contacts-part__item-content">
-												<h4 class="profile-part-title">
-													E-mail
-												</h4>
-												<a href="mailto:">
-													zpn@vaterelay.appleid.com
-												</a>
-											</div>
-										</div>
-										<div class="contacts-part__item">
-											<div class="contacts-part__item-icon">
-												<img src="./images/icons/profile/contacts/location.svg" alt="location icon">
-											</div>
-											<div class="contacts-part__item-content">
-												<h4 class="profile-part-title">
-													Location
-												</h4>
-												<p>
-													790 Penllyn Pike, Suite 203 Blue Bell, PA 19422
-												</p>
-											</div>
+										<div class="contacts-part__item-content">
+											<h4 class="profile-part-title">
+												Phone
+											</h4>
+											<a href="tel:">
+												(800) 666-7045
+											</a>
 										</div>
 									</div>
-									<div class="contacts-part__box">
-										<div class="contacts-part__item">
-											<div class="contacts-part__item-icon">
-												<img src="./images/icons/profile/contacts/linkedin.svg" alt="linkedin icon">
-											</div>
-											<div class="contacts-part__item-content">
-												<h4 class="profile-part-title">
-													linkedin
-												</h4>
-												<a href="#">
-													linkedin.com/in/svetlana-manko-0959bb201
-												</a>
-											</div>
+									<div class="contacts-part__item">
+										<div class="contacts-part__item-icon">
+											<img src="./images/icons/profile/contacts/email.svg" alt="email icon">
 										</div>
-										<div class="contacts-part__item">
-											<div class="contacts-part__item-icon">
-												<img src="./images/icons/profile/contacts/instagram.svg" alt="instagram icon">
-											</div>
-											<div class="contacts-part__item-content">
-												<h4 class="profile-part-title">
-													Instagram
-												</h4>
-												<a href="mailto:">
-													www.instagram.com
-												</a>
-											</div>
+										<div class="contacts-part__item-content">
+											<h4 class="profile-part-title">
+												E-mail
+											</h4>
+											<a href="mailto:">
+												zpn@vaterelay.appleid.com
+											</a>
 										</div>
-										<div class="contacts-part__item">
-											<div class="contacts-part__item-icon">
-												<img src="./images/icons/profile/contacts/telegram.svg" alt="telegram icon">
-											</div>
-											<div class="contacts-part__item-content">
-												<h4 class="profile-part-title">
-													Telegram
-												</h4>
-												<a href="#">
-													www.telegram.com
-												</a>
-											</div>
+									</div>
+									<div class="contacts-part__item">
+										<div class="contacts-part__item-icon">
+											<img src="./images/icons/profile/contacts/location.svg" alt="location icon">
+										</div>
+										<div class="contacts-part__item-content">
+											<h4 class="profile-part-title">
+												Location
+											</h4>
+											<p>
+												790 Penllyn Pike, Suite 203 Blue Bell, PA 19422
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="contacts-part__box">
+									<div class="contacts-part__item">
+										<div class="contacts-part__item-icon">
+											<img src="./images/icons/profile/contacts/linkedin.svg" alt="linkedin icon">
+										</div>
+										<div class="contacts-part__item-content">
+											<h4 class="profile-part-title">
+												linkedin
+											</h4>
+											<a href="#">
+												linkedin.com/in/svetlana-manko-0959bb201
+											</a>
+										</div>
+									</div>
+									<div class="contacts-part__item">
+										<div class="contacts-part__item-icon">
+											<img src="./images/icons/profile/contacts/instagram.svg" alt="instagram icon">
+										</div>
+										<div class="contacts-part__item-content">
+											<h4 class="profile-part-title">
+												Instagram
+											</h4>
+											<a href="mailto:">
+												www.instagram.com
+											</a>
+										</div>
+									</div>
+									<div class="contacts-part__item">
+										<div class="contacts-part__item-icon">
+											<img src="./images/icons/profile/contacts/telegram.svg" alt="telegram icon">
+										</div>
+										<div class="contacts-part__item-content">
+											<h4 class="profile-part-title">
+												Telegram
+											</h4>
+											<a href="#">
+												www.telegram.com
+											</a>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="following-part profile-tab hidden" id="following">
-								<h3 class="profile__info-title">
-									<span>
-										Following
-									</span>
-								</h3>
-								<div class="user-search">
-									<input class="input user-search__input" placeholder="Search..." type="text"
-										name="search-subscriptions">
-									<button class="user-search__btn">
-										<img src="./images/icons/search.svg" alt="search">
+						</div>
+						<div class="following-part profile-tab hidden" id="following">
+							<h3 class="profile__info-title">
+								<span>
+									Following
+								</span>
+							</h3>
+							<div class="user-search">
+								<input class="input user-search__input" placeholder="Search..." type="text"
+									name="search-subscriptions">
+								<button class="user-search__btn">
+									<img src="./images/icons/search.svg" alt="search">
+								</button>
+							</div>
+							<ul class="users-list">
+								<li class="users-list__item">
+									<div class="user">
+										<div class="user__avatar">
+											<img src="./images/avatar.jpg" alt="avatar">
+										</div>
+										<div class="user__info">
+											<div class="user__info-name">
+												<a href="#">Mary Paris</a>
+												<img src="images/profile-icons/confirm.svg" alt="conform icon">
+											</div>
+											<a class="user__info-username" href="#">
+												@Username
+											</a>
+											<div class="user__info-prof">
+												Design, Development
+											</div>
+										</div>
+										<a class="user__send-msg" href="#">
+											Send message
+										</a>
+										<button class="more-btn">
+											<span></span>
+											<span></span>
+											<span></span>
+										</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="folowers-part profile-tab hidden" id="folowers">
+							<h3 class="profile__info-title">
+								<span>
+									Folowers
+								</span>
+								<div class="profile__part">
+									In developing
+								</div>
+							</h3>
+						</div>
+						<div class="connections-part profile-tab hidden" id="connections">
+							<h3 class="profile__info-title">
+								<span>
+									Connections
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="notifications-part profile-tab hidden" id="notifications">
+							<h3 class="profile__info-title">
+								<span>
+									Notifications
+								</span>
+							</h3>
+							<div class="notifications-part__inner">
+								<div class="notifications-part__block">
+									<h4 class="notifications-part__title">
+										E-mail notifications
+									</h4>
+									<p class="notifications-part__text">
+										This option allows you to receive up-to-date information about new tools and options
+										and
+										latest news
+									</p>
+									<div class="notifications-part__item">
+										<label class="custom-checkbox">
+											<input type="checkbox" name="neuron-news">
+											<span class="checkmark"></span>
+											Neuron News
+										</label>
+									</div>
+									<div class="notifications-part__item">
+										<label class="custom-checkbox">
+											<input type="checkbox" name="ai-news">
+											<span class="checkmark"></span>
+											AI News
+										</label>
+									</div>
+								</div>
+								<div class="notifications-part__block">
+									<h4 class="notifications-part__title">
+										Telegram notifications
+									</h4>
+									<p class="notifications-part__text">
+										This option allows you to receive up-to-date information about the weather and events
+										in
+										your city
+									</p>
+									<div class="notifications-part__item">
+										<label class="custom-checkbox">
+											<input type="checkbox" name="weather">
+											<span class="checkmark"></span>
+											Weather
+										</label>
+									</div>
+									<div class="notifications-part__item">
+										<label class="custom-checkbox">
+											<input type="checkbox" name="events">
+											<span class="checkmark"></span>
+											Events
+										</label>
+									</div>
+									<div class="notifications-part__item">
+										<label class="custom-checkbox">
+											<input type="checkbox" name="neuron-news">
+											<span class="checkmark"></span>
+											Neuron news
+										</label>
+									</div>
+									<div class="notifications-part__item">
+										<label class="custom-checkbox">
+											<input type="checkbox" name="ai-news">
+											<span class="checkmark"></span>
+											AI news
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="storage-part profile-tab hidden" id="storage">
+							<h3 class="profile__info-title">
+								<span>
+									Storage
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="privacy-part profile-tab hidden" id="privacy">
+							<h3 class="profile__info-title">
+								<span>
+									Privacy
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="collaborators-part profile-tab hidden" id="collaborators">
+							<h3 class="profile__info-title">
+								<span>
+									Collaborators
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="projects-part profile-tab hidden" id="projects">
+							<h3 class="profile__info-title">
+								<span>
+									Projects
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="payments-part profile-tab hidden" id="payments">
+							<h3 class="profile__info-title">
+								<span>
+									Payments
+								</span>
+							</h3>
+							<div class="payments-part__inner">
+								<div class="payments-part__left">
+									<h4 class="payments-part__title">
+										Available Energy:
+									</h4>
+									<div class="payments-part__energy">
+										<img src="./images/icons/energy.svg" alt="energy icons">
+										<span>11080</span>
+									</div>
+									<button class="button button--medium">
+										Refill balance
 									</button>
 								</div>
-								<ul class="users-list">
-									<li class="users-list__item">
-										<div class="user">
-											<div class="user__avatar">
-												<img src="./images/avatar.jpg" alt="avatar">
+								<div class="payments-part__tariff">
+									<h4 class="payments-part__title">
+										Current tariff plan:
+									</h4>
+									<div class="tariff-card">
+										<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
+											method="post" role="payment_pack_300">
+											<div class="tariff-card__tariff">
+												Free
+												<span>until 07/13/2023</span>
 											</div>
-											<div class="user__info">
-												<div class="user__info-name">
-													<a href="#">Mary Paris</a>
-													<img src="images/profile-icons/confirm.svg" alt="conform icon">
-												</div>
-												<a class="user__info-username" href="#">
-													@Username
-												</a>
-												<div class="user__info-prof">
-													Design, Development
-												</div>
-											</div>
-											<a class="user__send-msg" href="#">
-												Send message
-											</a>
-											<button class="more-btn">
-												<span></span>
-												<span></span>
-												<span></span>
-											</button>
+											<ul class="tariff-card__list">
+												<li class="tariff-card__list-item">
+													<span class="tariff-card__list-item-left">
+														Energy
+													</span>
+													<span class="tariff-card__list-item-right">
+														20
+													</span>
+												</li>
+												<li class="tariff-card__list-item">
+													<span class="tariff-card__list-item-left">
+														Recharging
+													</span>
+													<span class="tariff-card__list-item-right">
+														2 / hour
+													</span>
+												</li>
+												<li class="tariff-card__list-item">
+													<span class="tariff-card__list-item-left">
+														Storage
+													</span>
+													<span>
+														1 GB
+													</span>
+												</li>
+											</ul>
+
+											<div class="tariff-card__line"></div>
+
+											<ul class="tariff-card__list">
+												<li class="tariff-card__list-item">
+													<span class="tariff-card__list-item-left">
+														Neuron Assistant
+													</span>
+												</li>
+												<li class="tariff-card__list-item">
+													<span class="tariff-card__list-item-left">
+														Neuron GPT
+													</span>
+												</li>
+												<li class="tariff-card__list-item">
+													<span class="tariff-card__list-item-left">
+														Neuron tools
+													</span>
+												</li>
+											</ul>
+										</form>
+									</div>
+									<button class="button button--medium">
+										Change plan
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="usage-part profile-tab hidden" id="usage">
+							<h3 class="profile__info-title">
+								<span>
+									Usage
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="subscription-part profile-tab hidden" id="subscription">
+							<h3 class="profile__info-title">
+								<span>
+									Subscription
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="generations-part profile-tab hidden" id="generations">
+							<h3 class="profile__info-title">
+								<span>
+									Generations
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="posts-part profile-tab hidden" id="posts">
+							<h3 class="profile__info-title">
+								<span>
+									Posts
+								</span>
+							</h3>
+							<div class="profile__part">
+								In developing
+							</div>
+						</div>
+						<div class="business-card-part profile-wrap profile-tab hidden" id="business-card">
+							<div class="business-card-part__main">
+								<div class="business-card__start">
+									<div class="business-card__top">
+										<strong>
+											Business Card
+										</strong>
+										<form class="toggle-on-form" action="." style="display: none;">
+											<input type="text" name="action" value="sync_on" hidden>
+										</form>
+										<form class="toggle-off-form" action="." style="display: none;">
+											<input type="text" name="action" value="sync_off" hidden>
+										</form>
+										<div class="business-card__toggle">
+											Sync with profile
+
+											<input class="toggle-btn" type="checkbox">
 										</div>
+									</div>
+									<div class="business-card__bottom">
+										Create your digital business card
+									</div>
+								</div>
+								<ul class="contact-list" id="contact">
+									<input type="text" name="action" value="sort" hidden>
+									<li>
+										<button class="focus-btn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+												fill="none">
+												<path
+													d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+													stroke="#686F7B" stroke-width="1.6" />
+												<path
+													d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+													stroke="#686F7B" stroke-width="1.6" />
+											</svg>
+										</button>
+										<img src="./images/profile/business-card/phone.svg" alt="phone icon">
+										<div class="contact-data__right">
+											<div class="contact-data__right">
+												<strong>Phone</strong>
+												<p>(800) 666-7045 </p>
+											</div>
+										</div>
+										<button class="edit-contact-btn" data-name="phone">
+											edit contact
+										</button>
+										<form class="del-contact-form" action=".">
+											<input type="text" name="action" value="delete_business_contact" hidden>
+											<input name="object_id" value="1" hidden>
+											<button class="del-contact-btn">
+												<img src="./images/icons/close.svg" alt="">
+											</button>
+										</form>
+									</li>
+									<li>
+										<button class="focus-btn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+												fill="none">
+												<path
+													d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+													stroke="#686F7B" stroke-width="1.6" />
+												<path
+													d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+													stroke="#686F7B" stroke-width="1.6" />
+											</svg>
+										</button>
+										<img src="./images/profile/business-card/email.svg" alt="phone icon">
+										<div class="contact-data__right">
+											<strong>E-mail</strong>
+											<p>zpn@vaterelay.appleid.com</p>
+										</div>
+										<form class="del-contact-form" action=".">
+											<input type="text" name="action" value="delete_business_contact" hidden>
+											<input name="object_id" value="2" hidden>
+											<button class="del-contact-btn">
+												<img src="./images/icons/close.svg" alt="">
+											</button>
+										</form>
+									</li>
+									<li>
+										<button class="focus-btn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+												fill="none">
+												<path
+													d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+													stroke="#686F7B" stroke-width="1.6" />
+												<path
+													d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+													stroke="#686F7B" stroke-width="1.6" />
+											</svg>
+										</button>
+										<img src="./images/profile/business-card/instagram.svg" alt="phone icon">
+										<div class="contact-data__right">
+											<strong>Instagram</strong>
+											<p>www.instagram.com</p>
+										</div>
+										<form class="del-contact-form" action=".">
+											<input type="text" name="action" value="delete_business_contact" hidden>
+											<input name="object_id" value="3" hidden>
+											<button class="del-contact-btn">
+												<img src="./images/icons/close.svg" alt="">
+											</button>
+										</form>
+									</li>
+									<li>
+										<button class="focus-btn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+												fill="none">
+												<path
+													d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+													stroke="#686F7B" stroke-width="1.6" />
+												<path
+													d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+													stroke="#686F7B" stroke-width="1.6" />
+											</svg>
+										</button>
+										<img src="./images/profile/business-card/telegram.svg" alt="phone icon">
+										<div class="contact-data__right">
+											<strong>Telegram</strong>
+											<p>www.telegram.com</p>
+										</div>
+										<form class="del-contact-form" action=".">
+											<input type="text" name="action" value="delete_business_contact" hidden>
+											<input name="object_id" value="4" hidden>
+											<button class="del-contact-btn">
+												<img src="./images/icons/close.svg" alt="">
+											</button>
+										</form>
+									</li>
+									<li>
+										<button class="focus-btn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+												fill="none">
+												<path
+													d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+													stroke="#686F7B" stroke-width="1.6" />
+												<path
+													d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+													stroke="#686F7B" stroke-width="1.6" />
+											</svg>
+										</button>
+										<img src="./images/profile/business-card/location.svg" alt="phone icon">
+										<div class="contact-data__right">
+											<strong>Location</strong>
+											<p>790 Penllyn Pike, Suite 203 Blue Bell, PA 19422</p>
+										</div>
+										<form class="del-contact-form" action=".">
+											<input type="text" name="action" value="delete_business_contact" hidden>
+											<input name="object_id" value="5" hidden>
+											<button class="del-contact-btn">
+												<img src="./images/icons/close.svg" alt="">
+											</button>
+										</form>
+									</li>
+									<li>
+										<button class="focus-btn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+												fill="none">
+												<path
+													d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
+													stroke="#686F7B" stroke-width="1.6" />
+												<path
+													d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
+													stroke="#686F7B" stroke-width="1.6" />
+											</svg>
+										</button>
+										<img src="./images/profile/business-card/linkedin.svg" alt="phone icon">
+										<div class="contact-data__right">
+											<strong>linkedin</strong>
+											<p>linkedin.com/in/svetlana-manko-0959bb201</p>
+										</div>
+										<form class="del-contact-form" action=".">
+											<input type="text" name="action" value="delete_business_contact" hidden>
+											<input name="object_id" value="6" hidden>
+											<button class="del-contact-btn">
+												<img src="./images/icons/close.svg" alt="">
+											</button>
+										</form>
 									</li>
 								</ul>
-							</div>
-							<div class="folowers-part profile-tab hidden" id="folowers">
-								<h3 class="profile__info-title">
-									<span>
-										Folowers
-									</span>
-									<div class="profile__part">
-										In developing
-									</div>
-								</h3>
-							</div>
-							<div class="connections-part profile-tab hidden" id="connections">
-								<h3 class="profile__info-title">
-									<span>
-										Connections
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="notifications-part profile-tab hidden" id="notifications">
-								<h3 class="profile__info-title">
-									<span>
-										Notifications
-									</span>
-								</h3>
-								<div class="notifications-part__inner">
-									<div class="notifications-part__block">
-										<h4 class="notifications-part__title">
-											E-mail notifications
-										</h4>
-										<p class="notifications-part__text">
-											This option allows you to receive up-to-date information about new tools and options
-											and
-											latest news
-										</p>
-										<div class="notifications-part__item">
-											<label class="custom-checkbox">
-												<input type="checkbox" name="neuron-news">
-												<span class="checkmark"></span>
-												Neuron News
-											</label>
-										</div>
-										<div class="notifications-part__item">
-											<label class="custom-checkbox">
-												<input type="checkbox" name="ai-news">
-												<span class="checkmark"></span>
-												AI News
-											</label>
-										</div>
-									</div>
-									<div class="notifications-part__block">
-										<h4 class="notifications-part__title">
-											Telegram notifications
-										</h4>
-										<p class="notifications-part__text">
-											This option allows you to receive up-to-date information about the weather and events
-											in
-											your city
-										</p>
-										<div class="notifications-part__item">
-											<label class="custom-checkbox">
-												<input type="checkbox" name="weather">
-												<span class="checkmark"></span>
-												Weather
-											</label>
-										</div>
-										<div class="notifications-part__item">
-											<label class="custom-checkbox">
-												<input type="checkbox" name="events">
-												<span class="checkmark"></span>
-												Events
-											</label>
-										</div>
-										<div class="notifications-part__item">
-											<label class="custom-checkbox">
-												<input type="checkbox" name="neuron-news">
-												<span class="checkmark"></span>
-												Neuron news
-											</label>
-										</div>
-										<div class="notifications-part__item">
-											<label class="custom-checkbox">
-												<input type="checkbox" name="ai-news">
-												<span class="checkmark"></span>
-												AI news
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="storage-part profile-tab hidden" id="storage">
-								<h3 class="profile__info-title">
-									<span>
-										Storage
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="privacy-part profile-tab hidden" id="privacy">
-								<h3 class="profile__info-title">
-									<span>
-										Privacy
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="collaborators-part profile-tab hidden" id="collaborators">
-								<h3 class="profile__info-title">
-									<span>
-										Collaborators
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="projects-part profile-tab hidden" id="projects">
-								<h3 class="profile__info-title">
-									<span>
-										Projects
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="payments-part profile-tab hidden" id="payments">
-								<h3 class="profile__info-title">
-									<span>
-										Payments
-									</span>
-								</h3>
-								<div class="payments-part__inner">
-									<div class="payments-part__left">
-										<h4 class="payments-part__title">
-											Available Energy:
-										</h4>
-										<div class="payments-part__energy">
-											<img src="./images/icons/energy.svg" alt="energy icons">
-											<span>11080</span>
-										</div>
-										<button class="button button--medium">
-											Refill balance
-										</button>
-									</div>
-									<div class="payments-part__tariff">
-										<h4 class="payments-part__title">
-											Current tariff plan:
-										</h4>
-										<div class="tariff-card">
-											<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
-												method="post" role="payment_pack_300">
-												<div class="tariff-card__tariff">
-													Free
-													<span>until 07/13/2023</span>
-												</div>
-												<ul class="tariff-card__list">
-													<li class="tariff-card__list-item">
-														<span class="tariff-card__list-item-left">
-															Energy
-														</span>
-														<span class="tariff-card__list-item-right">
-															20
-														</span>
-													</li>
-													<li class="tariff-card__list-item">
-														<span class="tariff-card__list-item-left">
-															Recharging
-														</span>
-														<span class="tariff-card__list-item-right">
-															2 / hour
-														</span>
-													</li>
-													<li class="tariff-card__list-item">
-														<span class="tariff-card__list-item-left">
-															Storage
-														</span>
-														<span>
-															1 GB
-														</span>
-													</li>
-												</ul>
-
-												<div class="tariff-card__line"></div>
-
-												<ul class="tariff-card__list">
-													<li class="tariff-card__list-item">
-														<span class="tariff-card__list-item-left">
-															Neuron Assistant
-														</span>
-													</li>
-													<li class="tariff-card__list-item">
-														<span class="tariff-card__list-item-left">
-															Neuron GPT
-														</span>
-													</li>
-													<li class="tariff-card__list-item">
-														<span class="tariff-card__list-item-left">
-															Neuron tools
-														</span>
-													</li>
-												</ul>
-											</form>
-										</div>
-										<button class="button button--medium">
-											Change plan
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="usage-part profile-tab hidden" id="usage">
-								<h3 class="profile__info-title">
-									<span>
-										Usage
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="subscription-part profile-tab hidden" id="subscription">
-								<h3 class="profile__info-title">
-									<span>
-										Subscription
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="generations-part profile-tab hidden" id="generations">
-								<h3 class="profile__info-title">
-									<span>
-										Generations
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="posts-part profile-tab hidden" id="posts">
-								<h3 class="profile__info-title">
-									<span>
-										Posts
-									</span>
-								</h3>
-								<div class="profile__part">
-									In developing
-								</div>
-							</div>
-							<div class="business-card-part profile-tab hidden" id="business-card">
-								<div class="business-card-part__main">
-									<div class="business-card__start">
-										<div class="business-card__top">
-											<strong>
-												Business Card
-											</strong>
-											<form class="toggle-on-form" action="." style="display: none;">
-												<input type="text" name="action" value="sync_on" hidden>
-											</form>
-											<form class="toggle-off-form" action="." style="display: none;">
-												<input type="text" name="action" value="sync_off" hidden>
-											</form>
-											<div class="business-card__toggle">
-												Sync with profile
-
-												<input class="toggle-btn" type="checkbox">
-											</div>
-										</div>
-										<div class="business-card__bottom">
-											Create your digital business card
-										</div>
-									</div>
-									<ul class="contact-list" id="contact">
-										<li>
-											<button class="focus-btn">
-												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
-													fill="none">
-													<path
-														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
-														stroke="#686F7B" stroke-width="1.6" />
-													<path
-														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
-														stroke="#686F7B" stroke-width="1.6" />
-												</svg>
-											</button>
-											<img src="./images/profile/business-card/phone.svg" alt="phone icon">
-											<div class="contact-data__right">
-												<div class="contact-data__right">
-													<strong>Phone</strong>
-													<p>(800) 666-7045 </p>
-												</div>
-											</div>
-										</li>
-										<li>
-											<button class="focus-btn">
-												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
-													fill="none">
-													<path
-														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
-														stroke="#686F7B" stroke-width="1.6" />
-													<path
-														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
-														stroke="#686F7B" stroke-width="1.6" />
-												</svg>
-											</button>
-											<img src="./images/profile/business-card/email.svg" alt="phone icon">
-											<div class="contact-data__right">
-												<strong>E-mail</strong>
-												<p>zpn@vaterelay.appleid.com</p>
-											</div>
-										</li>
-										<li>
-											<button class="focus-btn">
-												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
-													fill="none">
-													<path
-														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
-														stroke="#686F7B" stroke-width="1.6" />
-													<path
-														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
-														stroke="#686F7B" stroke-width="1.6" />
-												</svg>
-											</button>
-											<img src="./images/profile/business-card/instagram.svg" alt="phone icon">
-											<div class="contact-data__right">
-												<strong>Instagram</strong>
-												<p>www.instagram.com</p>
-											</div>
-										</li>
-										<li>
-											<button class="focus-btn">
-												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
-													fill="none">
-													<path
-														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
-														stroke="#686F7B" stroke-width="1.6" />
-													<path
-														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
-														stroke="#686F7B" stroke-width="1.6" />
-												</svg>
-											</button>
-											<img src="./images/profile/business-card/telegram.svg" alt="phone icon">
-											<div class="contact-data__right">
-												<strong>Telegram</strong>
-												<p>www.telegram.com</p>
-											</div>
-										</li>
-										<li>
-											<button class="focus-btn">
-												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
-													fill="none">
-													<path
-														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
-														stroke="#686F7B" stroke-width="1.6" />
-													<path
-														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
-														stroke="#686F7B" stroke-width="1.6" />
-												</svg>
-											</button>
-											<img src="./images/profile/business-card/location.svg" alt="phone icon">
-											<div class="contact-data__right">
-												<strong>Location</strong>
-												<p>790 Penllyn Pike, Suite 203 Blue Bell, PA 19422</p>
-											</div>
-										</li>
-										<li>
-											<button class="focus-btn">
-												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
-													fill="none">
-													<path
-														d="M1.88344 19.1818C2.11774 19.1818 2.34244 19.2776 2.50812 19.4481C2.67379 19.6186 2.76687 19.8498 2.76687 20.0909C2.76687 20.332 2.67379 20.5632 2.50812 20.7337C2.34244 20.9042 2.11774 21 1.88344 21C1.64913 21 1.42443 20.9042 1.25875 20.7337C1.09308 20.5632 1 20.332 1 20.0909C1 19.8498 1.09308 19.6186 1.25875 19.4481C1.42443 19.2776 1.64913 19.1818 1.88344 19.1818ZM1.88343 10.0909C2.11774 10.0909 2.34244 10.1867 2.50812 10.3572C2.67379 10.5277 2.76687 10.7589 2.76687 11C2.76687 11.2411 2.67379 11.4723 2.50812 11.6428C2.34244 11.8133 2.11774 11.9091 1.88343 11.9091C1.64913 11.9091 1.42443 11.8133 1.25875 11.6428C1.09308 11.4723 1 11.2411 1 11C1 10.7589 1.09308 10.5277 1.25875 10.3572C1.42443 10.1867 1.64913 10.0909 1.88343 10.0909ZM1.88343 1C2.11774 1 2.34244 1.09578 2.50812 1.26627C2.67379 1.43675 2.76687 1.66798 2.76687 1.90909C2.76687 2.1502 2.67379 2.38143 2.50812 2.55192C2.34244 2.7224 2.11774 2.81818 1.88343 2.81818C1.64913 2.81818 1.42443 2.7224 1.25875 2.55192C1.09308 2.38143 0.999999 2.1502 0.999999 1.90909C0.999999 1.66798 1.09308 1.43675 1.25875 1.26627C1.42443 1.09578 1.64913 1 1.88343 1ZM8.95092 19.1818C9.18522 19.1818 9.40993 19.2776 9.5756 19.4481C9.74128 19.6186 9.83436 19.8498 9.83436 20.0909C9.83436 20.332 9.74128 20.5632 9.5756 20.7337C9.40993 20.9042 9.18522 21 8.95092 21C8.71662 21 8.49191 20.9042 8.32624 20.7337C8.16056 20.5632 8.06748 20.332 8.06748 20.0909C8.06748 19.8498 8.16056 19.6186 8.32624 19.4481C8.49191 19.2776 8.71662 19.1818 8.95092 19.1818ZM8.95092 10.0909C9.18522 10.0909 9.40993 10.1867 9.5756 10.3572C9.74128 10.5277 9.83435 10.7589 9.83435 11C9.83435 11.2411 9.74128 11.4723 9.5756 11.6428C9.40993 11.8133 9.18522 11.9091 8.95092 11.9091C8.71662 11.9091 8.49191 11.8133 8.32624 11.6428C8.16056 11.4723 8.06748 11.2411 8.06748 11C8.06748 10.7589 8.16056 10.5277 8.32624 10.3572C8.49191 10.1867 8.71662 10.0909 8.95092 10.0909ZM8.95092 1C9.18522 1 9.40993 1.09578 9.5756 1.26627C9.74128 1.43675 9.83435 1.66798 9.83435 1.90909C9.83435 2.1502 9.74128 2.38143 9.5756 2.55192C9.40993 2.7224 9.18522 2.81818 8.95092 2.81818C8.71662 2.81818 8.49191 2.7224 8.32624 2.55192C8.16056 2.38143 8.06748 2.1502 8.06748 1.90909C8.06748 1.66798 8.16056 1.43675 8.32624 1.26627C8.49191 1.09578 8.71662 1 8.95092 1Z"
-														stroke="#686F7B" stroke-width="1.6" />
-													<path
-														d="M16.1166 19.1818C16.3509 19.1818 16.5756 19.2776 16.7412 19.4481C16.9069 19.6186 17 19.8498 17 20.0909C17 20.332 16.9069 20.5632 16.7412 20.7337C16.5756 20.9042 16.3509 21 16.1166 21C15.8823 21 15.6576 20.9042 15.4919 20.7337C15.3262 20.5632 15.2331 20.332 15.2331 20.0909C15.2331 19.8498 15.3262 19.6186 15.4919 19.4481C15.6576 19.2776 15.8823 19.1818 16.1166 19.1818ZM16.1166 10.0909C16.3509 10.0909 16.5756 10.1867 16.7412 10.3572C16.9069 10.5277 17 10.7589 17 11C17 11.2411 16.9069 11.4723 16.7412 11.6428C16.5756 11.8133 16.3509 11.9091 16.1166 11.9091C15.8823 11.9091 15.6576 11.8133 15.4919 11.6428C15.3262 11.4723 15.2331 11.2411 15.2331 11C15.2331 10.7589 15.3262 10.5277 15.4919 10.3572C15.6576 10.1867 15.8823 10.0909 16.1166 10.0909ZM16.1166 0.999999C16.3509 0.999999 16.5756 1.09578 16.7412 1.26627C16.9069 1.43675 17 1.66798 17 1.90909C17 2.1502 16.9069 2.38143 16.7412 2.55192C16.5756 2.7224 16.3509 2.81818 16.1166 2.81818C15.8823 2.81818 15.6576 2.7224 15.4919 2.55192C15.3262 2.38143 15.2331 2.1502 15.2331 1.90909C15.2331 1.66798 15.3262 1.43675 15.4919 1.26627C15.6576 1.09578 15.8823 0.999999 16.1166 0.999999Z"
-														stroke="#686F7B" stroke-width="1.6" />
-												</svg>
-											</button>
-											<img src="./images/profile/business-card/linkedin.svg" alt="phone icon">
-											<div class="contact-data__right">
-												<strong>linkedin</strong>
-												<p>linkedin.com/in/svetlana-manko-0959bb201</p>
-											</div>
-										</li>
-									</ul>
-									<button class="add-contact">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-											fill="none">
-											<path
-												d="M18 12.9961H13V17.9961C13 18.2613 12.8946 18.5157 12.7071 18.7032C12.5196 18.8907 12.2652 18.9961 12 18.9961C11.7348 18.9961 11.4804 18.8907 11.2929 18.7032C11.1054 18.5157 11 18.2613 11 17.9961V12.9961H6C5.73478 12.9961 5.48043 12.8907 5.29289 12.7032C5.10536 12.5157 5 12.2613 5 11.9961C5 11.7309 5.10536 11.4765 5.29289 11.289C5.48043 11.1015 5.73478 10.9961 6 10.9961H11V5.99609C11 5.73088 11.1054 5.47652 11.2929 5.28899C11.4804 5.10145 11.7348 4.99609 12 4.99609C12.2652 4.99609 12.5196 5.10145 12.7071 5.28899C12.8946 5.47652 13 5.73088 13 5.99609V10.9961H18C18.2652 10.9961 18.5196 11.1015 18.7071 11.289C18.8946 11.4765 19 11.7309 19 11.9961C19 12.2613 18.8946 12.5157 18.7071 12.7032C18.5196 12.8907 18.2652 12.9961 18 12.9961Z"
-												fill="white" />
-										</svg>
-										Add contact
+								<button class="add-contact">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M18 12.9961H13V17.9961C13 18.2613 12.8946 18.5157 12.7071 18.7032C12.5196 18.8907 12.2652 18.9961 12 18.9961C11.7348 18.9961 11.4804 18.8907 11.2929 18.7032C11.1054 18.5157 11 18.2613 11 17.9961V12.9961H6C5.73478 12.9961 5.48043 12.8907 5.29289 12.7032C5.10536 12.5157 5 12.2613 5 11.9961C5 11.7309 5.10536 11.4765 5.29289 11.289C5.48043 11.1015 5.73478 10.9961 6 10.9961H11V5.99609C11 5.73088 11.1054 5.47652 11.2929 5.28899C11.4804 5.10145 11.7348 4.99609 12 4.99609C12.2652 4.99609 12.5196 5.10145 12.7071 5.28899C12.8946 5.47652 13 5.73088 13 5.99609V10.9961H18C18.2652 10.9961 18.5196 11.1015 18.7071 11.289C18.8946 11.4765 19 11.7309 19 11.9961C19 12.2613 18.8946 12.5157 18.7071 12.7032C18.5196 12.8907 18.2652 12.9961 18 12.9961Z"
+											fill="white" />
+									</svg>
+									Add contact
+								</button>
+								<div class="mobile-btns">
+									<button class="mobile-btns__qr">
+										Get QR-code
 									</button>
-									<div class="mobile-btns">
-										<button class="mobile-btns__qr">
-											Get QR-code
-										</button>
-										<button class="mobile-btns__card">
-											Card live preview
-										</button>
-									</div>
+									<button class="mobile-btns__card">
+										Card live preview
+									</button>
 								</div>
 							</div>
 						</div>
@@ -1846,19 +1979,19 @@
 				</button>
 			</div>
 			<form class="add-contact-form" method="post" action=".">
-				{% csrf_token %}
 				<input name="action" value="business-car-addcontact" hidden>
 				<div class="inputs">
 					<input type="text" name="contact-name" hidden>
 					<div class="input-wrapper">
-						<label>Link title:</label>
-						<input class="title-input" type="text" name="link_title" placeholder="Link title">
+						<label>Extra data:</label>
+						<input class="title-input" type="text" name="link_title" placeholder="Link title" hidden>
+						<input class="extra-data-input" type="text" name="extra_data_value" placeholder="Extra data">
 					</div>
 					<div class="input-wrapper">
 						<div class="label-wrapper">
 							<label>Data:</label>
 						</div>
-						<input class="item-input" name="data_value" type="tel" placeholder="Data">
+						<input class="item-input data-input" name="data_value" type="tel" placeholder="Data">
 					</div>
 				</div>
 				<div class="add-info__btns">
@@ -2152,7 +2285,39 @@
 		</div>
 	</div>
 
+	<div class="modal edit-contact-modal">
+		<div class="modal__overlay"></div>
+		<div class="modal-content">
+			<span class="modal__close">
+				<img src="./images/icons/close.svg" alt="close icon">
+			</span>
+
+			<div class="edit-contact-modal__inner" style="width: 400px;">
+				<form class="edit-contact-form" action=".">
+					<div class="inputs">
+						<input type="text" name="contact-name" hidden>
+						<div class="input-wrapper">
+							<label>Extra data:</label>
+							<input class="title-input" type="text" name="link_title" placeholder="Link title" hidden>
+							<input class="extra-data-input" type="text" name="extra_data_value" placeholder="Extra data">
+						</div>
+						<div class="input-wrapper">
+							<div class="label-wrapper">
+								<label>Data:</label>
+							</div>
+							<input class="item-input data-input" name="data_value" type="tel" placeholder="Data">
+						</div>
+					</div>
+					<button class="button button--medium" style="margin-top: 15px;">
+						Save
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+	<script src="https://unpkg.com/imask"></script>
 	<script src="./js/UI/modals.js"></script>
 	<script src="./js/components/header/common.js" type="module"></script>
 	<script src="./js/senses.js" type="module"></script>

@@ -177,6 +177,11 @@
 	margin-top: 26px;
 }
 
+.edit-contact-btn {
+	margin-left: auto;
+	margin-right: 10px;
+}
+
 .contact-list button {
 	flex-shrink: 0;
 }

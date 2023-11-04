@@ -17,6 +17,11 @@ if (localStorage.getItem('tab-name') === 'business-card') {
 	advertisingSidebar.style.display = 'flex'
 }
 
+if (localStorage.getItem('tab-name') === 'smm-manager') {
+	businessCardSidebar.style.display = 'none'
+	advertisingSidebar.style.display = 'none'
+}
+
 tabProfileButtons.forEach((button) => {
 	button.addEventListener("click", () => {
 
@@ -51,6 +56,11 @@ tabProfileButtons.forEach((button) => {
 		} else {
 			businessCardSidebar.style.display = 'none'
 			advertisingSidebar.style.display = 'flex'
+		}
+
+		if (localStorage.getItem('tab-name') === 'smm-manager') {
+			businessCardSidebar.style.display = 'none'
+			advertisingSidebar.style.display = 'none'
 		}
 	});
 });

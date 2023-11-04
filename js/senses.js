@@ -1,5 +1,54 @@
 import { Main } from "./methods.js";
 
+const editContactModal = new Modal('.edit-contact-modal')
+const editContactBtns = document.querySelectorAll('.edit-contact-btn')
+const editContactForm = document.querySelector('.edit-contact-form')
+const dataInputEitContactForm = editContactForm.querySelector('input[name="data_value"]')
+IMask(
+	dataInputEitContactForm,
+	{
+		mask: '+{0}(000)000-00-00'
+	}
+)
+
+editContactBtns.forEach((btn) => {
+	btn.addEventListener('click', () => {
+		editContactModal.open()
+		const contactName = btn.getAttribute('data-name')
+		const contactId = btn.getAttribute('data-id')
+
+		const contactNameInput = document.querySelector('.edit-contact-form input[name="contact-name"]')
+		const contactIdInput = document.querySelector('.edit-contact-form input[name="object_id"]')
+
+		contactNameInput.setAttribute('value', contactName)
+		contactIdInput.setAttribute('value', contactId)
+	})
+})
+
+editContactForm.addEventListener('submit', async (e) => {
+	e.preventDefault()
+
+	const id = editContactForm.querySelector('input[name="object_id"]').getAttribute('value')
+	const elemInput = document.querySelector(`.contact-list input[value="${id}"]`)
+	const elemData = elemInput.closest('.contact-data__right').querySelector('p')
+
+	try {
+		const URL = editContactForm.getAttribute('action')
+		const formData = new FormData(editContactForm);
+		const response = await fetch(URL, {
+			method: 'POST',
+			body: formData,
+		});
+	} catch (error) {
+		console.log(error);
+	} finally {
+		editContactModal.close()
+		elemData.textContent = dataInputEitContactForm.value
+		console.log(elemData);
+		console.log(dataInputEitContactForm);
+	}
+})
+
 class ContactPopup extends Main {
 	constructor(s, d = document) {
 		super(s, d);
@@ -69,13 +118,16 @@ class AddPopup extends Main {
 		this.addEvent(this.popupClose.elem, 'click', () => this.closePopup());
 		this.addEvent(this.popupItem.elem, 'click', e => e.stopPropagation());
 		this.addEvent(this.backBtn.elem, 'click', () => this.back());
-		this.addEvent(this.cancelBtn.elem, 'click', () => this.back());
+		this.addEvent(this.cancelBtn.elem, 'click', (e) => {
+			e.preventDefault()
+			this.back()
+		});
 	}
 
 	openPopup(e) {
 		this.addClass(this.infoPopup.elem, 'active');
 		this.removeClass(this.Contactpopup.elem, 'active');
-		cloned = e.parentElement.querySelector('svg').cloneNode(true);
+		cloned = e.parentNode.querySelector('.contact-add__left img').cloneNode(true);
 		cloned2 = new Main('.contact-list li').elem.cloneNode(true);
 		contactName = e.getAttribute('data-name');
 		this.inputContactName.elem.setAttribute('value', contactName);
@@ -153,6 +205,15 @@ class AddContact extends Main {
 		} finally {
 			if (this.addTitleInput.elem.value !== ''
 				&& this.itemInput.value !== '') {
+				const socilaLinks = document.querySelector('.socila-links')
+				const elem = `
+					<a href="#">
+						${cloned.outerHTML}
+						${this.addTitleInput.elem.value}
+					</a>
+				`
+				socilaLinks.insertAdjacentHTML('beforeend', elem)
+
 				this.contactList.elem.appendChild(cloned2);
 				cloned2.querySelector('strong').textContent = this.addTitleInput.elem.value;
 				cloned2.querySelector('p').textContent = this.itemInput.elem.value;
@@ -217,8 +278,82 @@ class CardPopup extends Main {
 
 new CardPopup();
 
+// Удаление контакта
+const delContactForms = document.querySelectorAll('.del-contact-form')
+const contactList = document.querySelector('.contact-list')
+
+delContactForms.forEach((form) => {
+	form.addEventListener('submit', async (e) => {
+		e.preventDefault()
+
+		try {
+			const URL = form.getAttribute('action')
+			const formData = new FormData(form);
+			const response = await fetch(URL, {
+				method: 'POST',
+				body: formData,
+			});
+		} catch (error) {
+			console.log(error);
+		} finally {
+			form.parentNode.remove()
+		}
+	})
+})
+
+const observer = new MutationObserver((mutations) => {
+	mutations.forEach((mutation) => {
+		if (mutation.type === 'childList') {
+			const delContactForms = document.querySelectorAll('.del-contact-form')
+
+			delContactForms.forEach((form) => {
+				form.addEventListener('submit', async (e) => {
+					e.preventDefault()
+
+					try {
+						const URL = form.getAttribute('action')
+						const formData = new FormData(form);
+						const response = await fetch(URL, {
+							method: 'POST',
+							body: formData,
+						});
+					} catch (error) {
+						console.log(error);
+					} finally {
+						form.parentNode.remove()
+					}
+				})
+			})
+		}
+	});
+});
+
+observer.observe(contactList, { childList: true });
+
 new Sortable(contact, {
 	multiDrag: true,
 	animation: 150,
-	ghostClass: 'sortable-ghost'
-});  
+	ghostClass: 'sortable-ghost',
+	onEnd: async function () {
+		let ids = [];
+		const csrfmiddlewaretoken = document.querySelector('.contact-list input[name="csrfmiddlewaretoken"]').getAttribute('value')
+		const action = document.querySelector('.contact-list input[name="action"]').getAttribute('value')
+		const idInputs = document.querySelectorAll('.contact-list input[name="object_id"]')
+		idInputs.forEach((item) => {
+			ids.push(item.getAttribute('value'))
+		})
+
+		try {
+			const formData = new FormData();
+			formData.append('csrfmiddlewaretoken', csrfmiddlewaretoken)
+			formData.append('action', action)
+			formData.append('ids', ids)
+			const response = await fetch('.', {
+				method: 'POST',
+				body: formData,
+			});
+		} catch (error) {
+			console.log(error);
+		}
+	}
+});
