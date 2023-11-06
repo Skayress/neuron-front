@@ -1,15 +1,24 @@
 import { Main } from "./methods.js";
 
+// Редактирование контакта
 const editContactModal = new Modal('.edit-contact-modal')
 const editContactBtns = document.querySelectorAll('.edit-contact-btn')
 const editContactForm = document.querySelector('.edit-contact-form')
+const editLocationForm = document.querySelector('.edit-location-form')
 const dataInputEitContactForm = editContactForm.querySelector('input[name="data_value"]')
-IMask(
-	dataInputEitContactForm,
-	{
-		mask: '+{0}(000)000-00-00'
-	}
-)
+
+editContactModal.closeBtn.addEventListener('click', () => {
+	dataInputEitContactForm.value = ''
+})
+
+editContactModal.overlay.addEventListener('click', () => {
+	dataInputEitContactForm.value = ''
+})
+
+const maskOptions = {
+	mask: /^\S*@?\S*$/
+};
+const mask = IMask(dataInputEitContactForm, maskOptions);
 
 editContactBtns.forEach((btn) => {
 	btn.addEventListener('click', () => {
@@ -17,11 +26,42 @@ editContactBtns.forEach((btn) => {
 		const contactName = btn.getAttribute('data-name')
 		const contactId = btn.getAttribute('data-id')
 
+		const contactNameTitle = document.querySelector('.edit-contact-form .data-title')
 		const contactNameInput = document.querySelector('.edit-contact-form input[name="contact-name"]')
 		const contactIdInput = document.querySelector('.edit-contact-form input[name="object_id"]')
 
 		contactNameInput.setAttribute('value', contactName)
 		contactIdInput.setAttribute('value', contactId)
+
+		if (contactNameInput.value === 'phone' || contactNameInput.value === 'whatsapp') {
+			editContactForm.style.display = 'block'
+			editLocationForm.style.display = 'none'
+			contactNameTitle.textContent = 'Number phone'
+			mask.updateOptions({
+				mask: '+{0}(000)000-00-00'
+			});
+		} else if (contactNameInput.value === 'email') {
+			editContactForm.style.display = 'block'
+			editLocationForm.style.display = 'none'
+			contactNameTitle.textContent = 'Email'
+			mask.updateOptions({
+				mask: /^\S*@?\S*$/
+			});
+		} else if (contactNameInput.value === 'instagram') {
+			editContactForm.style.display = 'block'
+			editLocationForm.style.display = 'none'
+			contactNameTitle.textContent = 'Username'
+			mask.updateOptions({
+				mask: /^\S*@?\S*$/
+			})
+		} else if (contactNameInput.value === 'location') {
+			editContactForm.style.display = 'none'
+			editLocationForm.style.display = 'block'
+			contactNameTitle.textContent = 'Location'
+			mask.updateOptions({
+				mask: /^\S*@?\S*$/
+			});
+		}
 	})
 })
 
@@ -44,10 +84,10 @@ editContactForm.addEventListener('submit', async (e) => {
 	} finally {
 		editContactModal.close()
 		elemData.textContent = dataInputEitContactForm.value
-		console.log(elemData);
-		console.log(dataInputEitContactForm);
 	}
 })
+// ==========================
+
 
 class ContactPopup extends Main {
 	constructor(s, d = document) {
@@ -192,7 +232,6 @@ class AddContact extends Main {
 		});
 	}
 	async add() {
-		console.log(2);
 		try {
 			const URL = this.addContactForm.elem.getAttribute('action')
 			const formData = new FormData(this.addContactForm.elem);
@@ -330,8 +369,36 @@ const observer = new MutationObserver((mutations) => {
 
 observer.observe(contactList, { childList: true });
 
+function sortable() {
+	let contactsItemsId = []; // айдишники контактов
+
+	const contactsItemsInputId = document.querySelectorAll('.contact-list input[name="object_id"]')
+	const socialLinksElements = Array.from(document.querySelectorAll('.socila-links a[data-id]'))
+
+	/* Извелекаем значение из инпута и формируем массив с айдишниками контактов */
+	contactsItemsInputId.forEach((item) => {
+		contactsItemsId.push(item.getAttribute('value'))
+	})
+
+	/* Преобразовываем строки в массиве в числа */
+	const contactsItemsIdNum = contactsItemsId.map((el) => parseInt(el))
+
+	const sortedElements = socialLinksElements.sort((a, b) => {
+		const idA = parseInt(a.dataset.id);
+		const idB = parseInt(b.dataset.id);
+		return contactsItemsIdNum.indexOf(idA) - contactsItemsIdNum.indexOf(idB);
+	});
+
+	// Заменяем порядок элементов в DOM на отсортированный порядок
+	sortedElements.forEach((element) => {
+		console.log(element);
+		element.parentNode.appendChild(element);
+	});
+}
+
+// Сортировка
 new Sortable(contact, {
-	multiDrag: true,
+	group: 'shared',
 	animation: 150,
 	ghostClass: 'sortable-ghost',
 	onEnd: async function () {
@@ -354,6 +421,15 @@ new Sortable(contact, {
 			});
 		} catch (error) {
 			console.log(error);
+		} finally {
+			sortable()
 		}
 	}
+});
+
+const socilaLinks = document.querySelector('.socila-links')
+
+new Sortable(socilaLinks, {
+	group: 'shared',
+	animation: 150
 });
