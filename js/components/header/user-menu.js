@@ -2,14 +2,14 @@ const userBtn = document.querySelector('.user-wrap');
 const userMenu = document.querySelector('.user-list');
 
 if (userBtn) {
-	userBtn.addEventListener('click', () => {
-		userMenu.classList.toggle('open')
-	})
-
 	document.addEventListener('click', (e) => {
-		const isClickInside = userBtn.contains(e.target);
+		const targetElement = e.target;
 
-		if (!isClickInside) {
+		if (targetElement.closest('.user-wrap')) {
+			userMenu.classList.toggle('open')
+		} else if (targetElement.closest('.user-list')) {
+			userMenu.classList.add('open')
+		} else {
 			userMenu.classList.remove('open')
 		}
 	})
