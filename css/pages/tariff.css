@@ -1,61 +1,583 @@
 @import url('./../common.css');
 @import url('./../ui.css');
 @import url('./../_partials/common/header.css');
-@import url('./../_partials/tarif-card.css');
+/* @import url('./../_partials/tarif-card.css'); */
 @import url('./../_partials/common/footer.css');
 
-.tariff {
-	padding: 40px 27px;
-	border-radius: 16px;
-	background: #fff;
-	box-shadow: 0px 4px 19px 0px rgba(12, 57, 99, 0.1)
-}
-
-.tariff-tabs .tabs__nav {
-	margin-bottom: 30px;
-	gap: 0;
-}
-
-.tariff-tabs .tabs__btn {
-	color: #1b193f;
-	padding: 15px;
-	border: none;
-	border-radius: 0px;
-	background: #f6f7f9;
-}
-
-.tariff-tabs .tabs__btn:first-child {
-	border-radius: 20px 0 0 20px;
-}
-
-.tariff-tabs .tabs__btn:last-child {
-	border-radius: 0 20px 20px 0;
-}
-
-.tariff-tabs .tabs__btn_active {
-	color: #fff;
-	background-color: #1b193f;
-	border-radius: 20px !important;
-}
-
-.tariff__inner {
+.content {
+	border-radius: 20px;
+	background-color: #F6FAFF;
+	padding: 60px 10px 30px 10px;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	column-gap: 10px;
+}
+
+.tranparent-hover:hover {
+	background-color: transparent;
+	color: #1B193F;
+	outline: .3px solid #1B193F;
+}
+
+.ultra .tranparent-hover:hover {
+	background-color: #1B193F;
+	color: #fff;
+	outline: none;
+	border: 1px solid #1B193F;
+}
+
+.background-hover:hover {
+	background-color: #1B193F;
+	color: #fff;
+}
+
+.rate-wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	padding: 40px 28px 63px 28px;
+	border-radius: 16px;
+	background: var(--white, #FFF);
+	box-shadow: 0px 4px 19px 0px rgba(12, 57, 99, 0.10);
+}
+
+.tabs-wrapper {
+	display: flex;
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 50px;
+	background-color: #F6F7F9;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+
+.tabs__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 14px;
+	border-radius: 20px;
+	color: #1B193F;
+	font-size: 16px;
+	font-weight: 500;
+	flex: 1;
+	background: transparent;
+	border: none;
+}
+
+.tabs__btn_active {
+	background-color: #1B193F;
+	color: #fff;
+}
+
+.rate-title {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	color: var(--black, #1B193F);
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -0.54px;
+	margin-bottom: 30px;
+}
+
+.rate-title a {
+	position: relative;
+	display: block;
+	background: var(--blue-gradient, linear-gradient(271deg, #1D4ED8 14.22%, #5AD7FE 106.77%));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: -0.54px;
+}
+
+.rate-title a::after {
+	position: absolute;
+	left: 0;
+	bottom: 3px;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: var(--blue-gradient, linear-gradient(271deg, #1D4ED8 14.22%, #5AD7FE 106.77%));
+}
+
+.rate-cards {
+	display: flex;
 	gap: 15px;
 }
 
-@media(max-width: 1024px) {
-	.tariff__inner {
-		flex-wrap: wrap;
+.rate-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px 10px;
+	border-radius: 17px;
+	border: 0.892px solid var(--black, #1b193f);
+	flex: 1;
+}
+
+.rate-card__top {
+	position: relative;
+	padding: 0 10px;
+}
+
+.top-icon {
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+.rate-card__price {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 12px;
+	color: var(--black, #1B193F);
+	font-family: Manrope;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -0.4px;
+	gap: 4px;
+}
+
+.rate-card__price span {
+	display: block;
+	color: var(--black, #1B193F);
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: -0.48px;
+	padding-bottom: 8px;
+}
+
+.rate-card__title {
+	display: block;
+	color: var(--black, #1B193F);
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: -0.54px;
+	margin-bottom: 4px;
+}
+
+.top-list {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	padding-bottom: 12px;
+	margin-bottom: 11px;
+}
+
+.top-list::after {
+	display: block;
+	position: absolute;
+	content: '';
+	background: url('../images/rate-line.png') no-repeat;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+}
+
+.top-list li {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	color: var(--black, #1B193F);
+	font-family: Inter;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 26.748px;
+	letter-spacing: -0.13px;
+}
+
+.top-list__right {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+}
+
+.substats-wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 11px;
+}
+
+.rate-substats {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	padding-bottom: 11px;
+}
+
+.rate-substats::after {
+	position: absolute;
+	content: '';
+	background: url('../images/rate-line.png') no-repeat;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+}
+
+.rate-substats li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--black, #1B193F);
+	font-family: Inter;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 26.748px;
+	letter-spacing: -0.13px;
+	justify-content: space-between;
+}
+
+.rate-substats svg {
+	flex-shrink: 0;
+}
+
+.rate-substats__left {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.new {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: 600;
+	width: 32px;
+	height: 12px;
+	font-size: 10.421px;
+	color: #fff;
+	border-radius: 4px;
+	background: var(--blue-gradient, linear-gradient(271deg, #1D4ED8 14.22%, #5AD7FE 106.77%));
+	box-shadow: 0px 3.36842px 16px 0px rgba(12, 57, 99, 0.10);
+	text-transform: uppercase;
+	padding-top: 2px;
+}
+
+.substats-desc .rate-substats__left {
+	align-items: flex-start;
+}
+
+.substats-desc li {
+	align-items: flex-start;
+}
+
+.substats-desc p {
+	line-height: normal;
+}
+
+.last-substats p {
+	line-height: normal;
+}
+
+.substats-desc .rate-substats__left svg {
+	transform: translateY(-2px);
+}
+
+.rate-substats__title {
+	color: var(--black, #1B193F);
+	font-family: Inter;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 14.748px;
+	letter-spacing: -0.13px;
+	margin-bottom: 3px;
+}
+
+.rate-substats__subtitle {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: var(--black, #1B193F);
+	font-family: Inter;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 14.748px;
+	letter-spacing: -0.13px;
+}
+
+.rate-substats__subtitle span {
+	display: block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #1B193F;
+}
+
+.rate-substats__desc span {
+	color: #686F7B;
+}
+
+.hot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 12px;
+	color: #fff;
+	font-weight: 600;
+	padding-top: 1px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	background: var(--orange, #FFAE50);
+	font-size: 10.421px;
+	box-shadow: 0px 3.36842px 16px 0px rgba(12, 57, 99, 0.10);
+}
+
+.last-substats::after {
+	display: none;
+}
+
+.subscribe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border-radius: 44px;
+	border: 0.892px solid var(--black, #1B193F);
+	color: var(--cool-gray-900, #111928);
+	text-align: center;
+	font-family: Manrope;
+	font-size: 12.483px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	transition: .3s ease-out;
+	margin-top: 16px;
+}
+
+.ultra {
+	background: var(--blue-gradient, linear-gradient(271deg, #1D4ED8 14.22%, #5AD7FE 106.77%));
+	border: none;
+}
+
+.ultra .new {
+	background: #fff;
+	color: #1D4ED8;
+}
+
+.ultra .top-icon path {
+	fill: #fff;
+}
+
+.ultra .rate-card__price,
+.ultra .rate-card__title,
+.ultra .top-list li,
+.ultra .rate-substats li,
+.ultra .rate-substats__title,
+.ultra .rate-substats__subtitle,
+.ultra .rate-substats__desc span,
+.ultra .rate-card__price span {
+	color: #fff;
+}
+
+.ultra .top-list__right svg path {
+	fill: #fff;
+}
+
+.ultra .rate-substats__subtitle span {
+	background-color: #fff;
+}
+
+.ultra .top-list::after {
+	background: url('../images/rate-line2.png');
+}
+
+.ultra .rate-substats::after {
+	background: url('../images/rate-line2.png');
+}
+
+.ultra .subscribe {
+	color: #fff;
+	background-color: #fff;
+	color: #1B193F;
+	border: 1px solid #fff;
+}
+
+.last-card .rate-substats__desc span {
+	display: block;
+	line-height: normal;
+}
+
+.penultimate-stats .rate-substats__desc p {
+	line-height: normal;
+}
+
+.bottom-card {
+	display: flex;
+	gap: 90px;
+	padding: 22px 34px 27px 34px;
+	border-radius: 17px;
+	border: 0.892px solid var(--black, #1B193F);
+	margin-top: 18px;
+}
+
+.bottom-card__price {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 12px;
+	color: var(--black, #1B193F);
+	font-family: Manrope;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -0.4px;
+	gap: 4px;
+	margin-bottom: 9px;
+}
+
+.bottom-card__price span {
+	display: block;
+	color: var(--black, #1B193F);
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: -0.48px;
+	padding-bottom: 8px;
+}
+
+.bottom-card__title {
+	color: var(--black, #1B193F);
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: -0.54px;
+}
+
+.bottom-card__right {
+	width: 100%;
+	max-width: 600px;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 10px;
+}
+
+.start-list {
+	margin-bottom: 4px;
+}
+
+.start-list li {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+	color: var(--black, #1B193F);
+	font-family: Inter;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 14.748px;
+	letter-spacing: -0.13px;
+}
+
+.bottom-card__list {
+	flex: 1;
+}
+
+.bottom-list {
+	width: 100%;
+	max-width: 135px;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	row-gap: 2px;
+}
+
+.bottom-list li {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: var(--black, #1B193F);
+	font-family: Inter;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 14.748px;
+	letter-spacing: -0.13px;
+}
+
+.bottom-list li span {
+	display: block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #1B193F;
+}
+
+.bottom-card__list span {
+	width: 100%;
+	max-width: 162px;
+	display: block;
+	text-align: center;
+	color: var(--gray, #686F7B);
+	font-family: Inter;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 14.248px;
+	letter-spacing: -0.13px;
+}
+
+@media (max-width: 1217px) {
+	.rate-cards {
+		flex-direction: column;
+		align-items: center;
 	}
 
-	.tariff-card {
-		max-width: 48%;
+	.rate-card {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.bottom-card {
+		max-width: 500px;
+		flex-direction: column;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+	}
+
+	.bottom-card__right {
+		max-width: 276px;
+		flex-direction: column;
+		gap: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.bottom-list {
+		max-width: 216px;
+	}
+
+	.rate-wrapper {
+		padding: 10px;
+	}
+
+	.last-title {
+		max-width: 238px;
+	}
+
+	.bottom-card {
+		gap: 27px;
 	}
 }
 
-@media(max-width: 600px) {
-	.tariff-card {
-		max-width: 100%;
+@media (max-width: 442px) {
+	.tabs-wrapper__btn {
+		padding: 5px;
+		font-size: 12px;
 	}
 }

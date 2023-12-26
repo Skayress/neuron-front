@@ -1,5 +1,7 @@
 import { Main } from "./methods.js";
 
+const checkLinkBtn = document.querySelector('.check-link-btn')
+
 // Редактирование контакта
 const editContactModal = new Modal('.edit-contact-modal')
 const editContactBtns = document.querySelectorAll('.edit-contact-btn')
@@ -20,18 +22,23 @@ const maskOptions = {
 };
 const mask = IMask(dataInputEitContactForm, maskOptions);
 
+let link;
+
 editContactBtns.forEach((btn) => {
 	btn.addEventListener('click', () => {
 		editContactModal.open()
 		const contactName = btn.getAttribute('data-name')
 		const contactId = btn.getAttribute('data-id')
+		link = btn.getAttribute('data-link')
+		checkLinkBtn.setAttribute('href', link)
+
 
 		const contactNameTitle = document.querySelector('.edit-contact-form .data-title')
 		const contactNameInput = document.querySelector('.edit-contact-form input[name="contact-name"]')
 		const contactIdInput = document.querySelector('.edit-contact-form input[name="object_id"]')
 
 		contactNameInput.setAttribute('value', contactName)
-		contactIdInput.setAttribute('value', contactId)
+		// contactIdInput.setAttribute('value', contactId)
 
 		if (contactNameInput.value === 'phone' || contactNameInput.value === 'whatsapp') {
 			editContactForm.style.display = 'block'
@@ -63,6 +70,12 @@ editContactBtns.forEach((btn) => {
 			});
 		}
 	})
+})
+
+dataInputEitContactForm.addEventListener('input', () => {
+	const valueInput = dataInputEitContactForm.value
+	const fullLink = link + valueInput
+	checkLinkBtn.setAttribute('href', fullLink)
 })
 
 editContactForm.addEventListener('submit', async (e) => {
@@ -260,26 +273,30 @@ class CardPopup extends Main {
 new CardPopup();
 
 // Удаление контакта
-const delContactForms = document.querySelectorAll('.del-contact-form')
 const contactList = document.querySelector('.contact-list')
 
-delContactForms.forEach((form) => {
-	form.addEventListener('submit', async (e) => {
-		e.preventDefault()
+contactList.addEventListener('click', (e) => {
+	const targetElemet = e.target;
+	const delContactFrom = targetElemet.closest('.del-contact-form')
 
-		try {
-			const URL = form.getAttribute('action')
-			const formData = new FormData(form);
-			const response = await fetch(URL, {
-				method: 'POST',
-				body: formData,
-			});
-		} catch (error) {
-			console.log(error);
-		} finally {
-			form.parentNode.remove()
-		}
-	})
+	if (delContactFrom) {
+		delContactFrom.addEventListener('submit', async (e) => {
+			e.preventDefault()
+
+			try {
+				const URL = delContactFrom.getAttribute('action')
+				const formData = new FormData(form);
+				const response = await fetch(URL, {
+					method: 'POST',
+					body: formData,
+				});
+			} catch (error) {
+				console.log(error);
+			} finally {
+				delContactFrom.parentNode.remove()
+			}
+		})
+	}
 })
 
 const observer = new MutationObserver((mutations) => {

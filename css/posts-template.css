@@ -1,0 +1,49 @@
+@import url('./common.css');
+
+.post {
+	max-width: 739px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.post__head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 6px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.post__date {
+	color: #98A0A2;
+	font-size: 14px;
+}
+
+.post__watch {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+
+.post__media {
+	display: flex;
+	justify-content: center;
+	height: 250px;
+	margin-bottom: 30px;
+}
+
+.post__text {
+	font-size: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 5px;
+}
+
+.post__source {
+	font-size: 18px;
+	font-weight: bold;
+	color: #5A95EE;
+}

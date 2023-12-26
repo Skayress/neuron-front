@@ -205,6 +205,11 @@
 
 	<div class="container">
 		<div class="page-block">
+
+			<div class="loader">
+				<span class="loader-spinner"></span>
+			</div>
+
 			<section class="profile profile-page">
 				<header class="profile-header">
 					<div class="profile-header__top">
@@ -1302,7 +1307,7 @@
 												<p>(800) 666-7045 </p>
 											</div>
 										</div>
-										<button class="edit-contact-btn" data-name="phone">
+										<button class="edit-contact-btn" data-name="phone" data-link="https://api.whatsapp.com/send?phone=">
 											edit contact
 										</button>
 										<form class="del-contact-form" action=".">
@@ -2308,9 +2313,14 @@
 							<input class="item-input data-input" name="data_value" type="tel" placeholder="Data">
 						</div>
 					</div>
-					<button class="button button--medium" style="margin-top: 15px;">
-						Save
-					</button>
+					<div class="edit-contact-modal__buttons" style="display: flex;">
+						<button class="button button--medium" style="margin-top: 15px;">
+							Save
+						</button>
+						<a class="check-link-btn button button--medium button--transparent" href="" target="_blank" style="margin-top: 15px;">
+							Check link
+						</a>
+					</div>
 				</form>
 			</div>
 		</div>

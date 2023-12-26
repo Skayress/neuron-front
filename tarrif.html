@@ -11,263 +11,2159 @@
 <body>
 	<div class="container">
 		<div class="page-block">
-			<section class="tariff">
+			<div class="rate-wrapper">
 				<div class="tabs tariff-tabs">
-					<div class="tabs__nav">
-						<button class="tabs__btn tabs__btn_active">Monthly Plans</button>
-						<button class="tabs__btn">One Time Energy Packs</button>
+					<div class="tabs__nav tabs-wrapper">
+						<button class="tabs__btn tabs__btn_active">
+							Monthly Plans
+						</button>
+						<button class="tabs__btn">
+							One Time Energy Packs
+						</button>
 					</div>
 					<div class="tabs__content">
 						<div class="tabs__pane tabs__pane_show">
-							<div class="tariff__inner">
-								<div class="tariff-card">
-									<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
-										method="post" role="payment_pack_300">
-										<div class="tariff-card__price">
-											<span>$0</span> / month
-										</div>
-										<div class="tariff-card__tariff">
-											Free
-										</div>
-										<ul class="tariff-card__list">
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
+							<div class="montly-plans">
+								<p class="rate-title">
+									Save 15% with
+									<a href="#">
+										yearly billing
+									</a>
+								</p>
+								<div class="rate-cards">
+									<div class="rate-card">
+										<div class="rate-card__top">
+											<svg class="top-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+												viewBox="0 0 20 20" fill="none">
+												<path
+													d="M10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20ZM10.3 5.29C10.5 5.11 10.74 5 11 5C11.27 5 11.5 5.11 11.71 5.29C11.9 5.5 12 5.74 12 6C12 6.27 11.9 6.5 11.71 6.71C11.5 6.9 11.27 7 11 7C10.74 7 10.5 6.9 10.3 6.71C10.11 6.5 10 6.27 10 6C10 5.74 10.11 5.5 10.3 5.29ZM7.8 9.97C7.8 9.97 9.97 8.25 10.76 8.18C11.5 8.12 11.35 8.97 11.28 9.41L11.27 9.47C11.13 10 10.96 10.64 10.79 11.25C10.41 12.64 10.04 14 10.13 14.25C10.23 14.59 10.85 14.16 11.3 13.86C11.36 13.82 11.41 13.78 11.46 13.75C11.46 13.75 11.54 13.67 11.62 13.78C11.64 13.81 11.66 13.84 11.68 13.86C11.77 14 11.82 14.05 11.7 14.13L11.66 14.15C11.44 14.3 10.5 14.96 10.12 15.2C9.71 15.47 8.14 16.37 8.38 14.62C8.59 13.39 8.87 12.33 9.09 11.5C9.5 10 9.68 9.32 8.76 9.91C8.39 10.13 8.17 10.27 8.04 10.36C7.93 10.44 7.92 10.44 7.85 10.31L7.82 10.25L7.77 10.17C7.7 10.07 7.7 10.06 7.8 9.97Z"
+													fill="url(#paint0_linear_5201_16796)" />
+												<defs>
+													<linearGradient id="paint0_linear_5201_16796" x1="19.8192" y1="18.6748"
+														x2="-3.18067" y2="18.3889" gradientUnits="userSpaceOnUse">
+														<stop offset="0.116616" stop-color="#1D4ED8" />
+														<stop offset="0.931232" stop-color="#5AD7FE" />
+													</linearGradient>
+												</defs>
+											</svg>
+											<strong class="rate-card__price">
+												$193
+												<span>
+													/ month
+												</span>
+											</strong>
+											<strong class="rate-card__title">
+												Free
+											</strong>
+											<ul class="top-list">
+												<li>
 													Energy
-												</span>
-												<span class="tariff-card__list-item-right">
-													20
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
+													<div class="top-list__right">
+														<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+															viewBox="0 0 19 19" fill="none">
+															<path
+																d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z"
+																fill="url(#paint0_linear_5209_17846)" />
+															<path
+																d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z"
+																fill="url(#paint1_linear_5209_17846)" />
+															<defs>
+																<linearGradient id="paint0_linear_5209_17846" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8" />
+																	<stop offset="0.931232" stop-color="#5AD7FE" />
+																</linearGradient>
+																<linearGradient id="paint1_linear_5209_17846" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8" />
+																	<stop offset="0.931232" stop-color="#5AD7FE" />
+																</linearGradient>
+															</defs>
+														</svg>
+														1 000
+													</div>
+												</li>
+												<li>
 													Recharging
-												</span>
-												<span class="tariff-card__list-item-right">
-													2 / hour
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
+													<div class="top-list__right">
+														<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+															viewBox="0 0 19 19" fill="none">
+															<path
+																d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z"
+																fill="url(#paint0_linear_5209_17855)" />
+															<path
+																d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z"
+																fill="url(#paint1_linear_5209_17855)" />
+															<defs>
+																<linearGradient id="paint0_linear_5209_17855" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8" />
+																	<stop offset="0.931232" stop-color="#5AD7FE" />
+																</linearGradient>
+																<linearGradient id="paint1_linear_5209_17855" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8" />
+																	<stop offset="0.931232" stop-color="#5AD7FE" />
+																</linearGradient>
+															</defs>
+														</svg>
+														50 / hour
+													</div>
+												</li>
+												<li>
 													Storage
+													<div class="top-list__right">
+														1 GB
+													</div>
+												</li>
+											</ul>
+											<div class="substats-wrapper">
+												<ul class="rate-substats">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round" />
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8" />
+																		<stop offset="0.931232" stop-color="#5AD7FE" />
+																	</linearGradient>
+																</defs>
+															</svg>
+															Expert Network Access
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round" />
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8" />
+																		<stop offset="0.931232" stop-color="#5AD7FE" />
+																	</linearGradient>
+																</defs>
+															</svg>
+															Neuron Assistant
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round" />
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8" />
+																		<stop offset="0.931232" stop-color="#5AD7FE" />
+																	</linearGradient>
+																</defs>
+															</svg>
+															Neuron GPT
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round" />
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8" />
+																		<stop offset="0.931232" stop-color="#5AD7FE" />
+																	</linearGradient>
+																</defs>
+															</svg>
+															Neuron Tools
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round" />
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8" />
+																		<stop offset="0.931232" stop-color="#5AD7FE" />
+																	</linearGradient>
+																</defs>
+															</svg>
+															Business Card (QR code)
+														</div>
+														<span class="new">new</span>
+													</li>
+												</ul>
+												<ul class="rate-substats substats-desc">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17913)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round" />
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17913" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8" />
+																		<stop offset="0.931232" stop-color="#5AD7FE" />
+																	</linearGradient>
+																</defs>
+															</svg>
+															<div class="rate-substats__desc">
+																<p class="rate-substats__title">
+																	Digital Workers
+																</p>
+																<p class="rate-substats__subtitle">
+																	<span></span>
+																	Sales Manager
+																</p>
+																<span>
+																	(Neuron Platform)
+																</span>
+															</div>
+														</div>
+														<span class="hot">
+															hot
+														</span>
+													</li>
+												</ul>
+												<ul class="rate-substats last-substats">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Content Builder
+														</div>
+														<span class="new">new</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<a href="#" class="subscribe background-hover">
+											Subscribe
+										</a>
+									</div>
+									<div class="rate-card">
+										<div class="rate-card__top">
+											<svg class="top-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+												viewBox="0 0 20 20" fill="none">
+												<path
+													d="M10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20ZM10.3 5.29C10.5 5.11 10.74 5 11 5C11.27 5 11.5 5.11 11.71 5.29C11.9 5.5 12 5.74 12 6C12 6.27 11.9 6.5 11.71 6.71C11.5 6.9 11.27 7 11 7C10.74 7 10.5 6.9 10.3 6.71C10.11 6.5 10 6.27 10 6C10 5.74 10.11 5.5 10.3 5.29ZM7.8 9.97C7.8 9.97 9.97 8.25 10.76 8.18C11.5 8.12 11.35 8.97 11.28 9.41L11.27 9.47C11.13 10 10.96 10.64 10.79 11.25C10.41 12.64 10.04 14 10.13 14.25C10.23 14.59 10.85 14.16 11.3 13.86C11.36 13.82 11.41 13.78 11.46 13.75C11.46 13.75 11.54 13.67 11.62 13.78C11.64 13.81 11.66 13.84 11.68 13.86C11.77 14 11.82 14.05 11.7 14.13L11.66 14.15C11.44 14.3 10.5 14.96 10.12 15.2C9.71 15.47 8.14 16.37 8.38 14.62C8.59 13.39 8.87 12.33 9.09 11.5C9.5 10 9.68 9.32 8.76 9.91C8.39 10.13 8.17 10.27 8.04 10.36C7.93 10.44 7.92 10.44 7.85 10.31L7.82 10.25L7.77 10.17C7.7 10.07 7.7 10.06 7.8 9.97Z"
+													fill="url(#paint0_linear_5201_16796)"></path>
+												<defs>
+													<linearGradient id="paint0_linear_5201_16796" x1="19.8192" y1="18.6748"
+														x2="-3.18067" y2="18.3889" gradientUnits="userSpaceOnUse">
+														<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+														<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+													</linearGradient>
+												</defs>
+											</svg>
+											<strong class="rate-card__price">
+												$19
+												<span>
+													/ month
 												</span>
-												<span class="tariff-card__list-item-right">
-													1 GB
+											</strong>
+											<strong class="rate-card__title">
+												Advanced
+											</strong>
+											<ul class="top-list">
+												<li>
+													Energy
+													<div class="top-list__right">
+														<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+															viewBox="0 0 19 19" fill="none">
+															<path
+																d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z"
+																fill="url(#paint0_linear_5209_17846)"></path>
+															<path
+																d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z"
+																fill="url(#paint1_linear_5209_17846)"></path>
+															<defs>
+																<linearGradient id="paint0_linear_5209_17846" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+																<linearGradient id="paint1_linear_5209_17846" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+															</defs>
+														</svg>
+														3 000
+													</div>
+												</li>
+												<li>
+													Recharging
+													<div class="top-list__right">
+														<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+															viewBox="0 0 19 19" fill="none">
+															<path
+																d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z"
+																fill="url(#paint0_linear_5209_17855)"></path>
+															<path
+																d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z"
+																fill="url(#paint1_linear_5209_17855)"></path>
+															<defs>
+																<linearGradient id="paint0_linear_5209_17855" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+																<linearGradient id="paint1_linear_5209_17855" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+															</defs>
+														</svg>
+														100 / hour
+													</div>
+												</li>
+												<li>
+													Storage
+													<div class="top-list__right">
+														20 GB
+													</div>
+												</li>
+											</ul>
+											<div class="substats-wrapper">
+												<ul class="rate-substats">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Expert Network Access
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Neuron Assistant
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Neuron GPT
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Neuron Tools
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Business Card (QR code)
+														</div>
+														<span class="new">new</span>
+													</li>
+												</ul>
+												<ul class="rate-substats substats-desc">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17913)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17913" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															<div class="rate-substats__desc">
+																<p class="rate-substats__title">
+																	Digital Workers
+																</p>
+																<p class="rate-substats__subtitle">
+																	<span></span>
+																	Sales Manager
+																</p>
+																<span>
+																	(Neuron Platform)
+																</span>
+															</div>
+														</div>
+														<span class="hot">
+															hot
+														</span>
+													</li>
+												</ul>
+												<ul class="rate-substats last-substats">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Content Builder
+														</div>
+														<span class="new">new</span>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															<div class="rate-substats__desc">
+																<p>Content Publisher</p>
+																<p>(3 connections)</p>
+															</div>
+														</div>
+														<span class="hot">
+															hot
+														</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<a href="#" class="subscribe background-hover">
+											Subscribe
+										</a>
+									</div>
+									<div class="rate-card ultra">
+										<div class="rate-card__top">
+											<svg class="top-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+												viewBox="0 0 20 20" fill="none">
+												<path
+													d="M10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20ZM10.3 5.29C10.5 5.11 10.74 5 11 5C11.27 5 11.5 5.11 11.71 5.29C11.9 5.5 12 5.74 12 6C12 6.27 11.9 6.5 11.71 6.71C11.5 6.9 11.27 7 11 7C10.74 7 10.5 6.9 10.3 6.71C10.11 6.5 10 6.27 10 6C10 5.74 10.11 5.5 10.3 5.29ZM7.8 9.97C7.8 9.97 9.97 8.25 10.76 8.18C11.5 8.12 11.35 8.97 11.28 9.41L11.27 9.47C11.13 10 10.96 10.64 10.79 11.25C10.41 12.64 10.04 14 10.13 14.25C10.23 14.59 10.85 14.16 11.3 13.86C11.36 13.82 11.41 13.78 11.46 13.75C11.46 13.75 11.54 13.67 11.62 13.78C11.64 13.81 11.66 13.84 11.68 13.86C11.77 14 11.82 14.05 11.7 14.13L11.66 14.15C11.44 14.3 10.5 14.96 10.12 15.2C9.71 15.47 8.14 16.37 8.38 14.62C8.59 13.39 8.87 12.33 9.09 11.5C9.5 10 9.68 9.32 8.76 9.91C8.39 10.13 8.17 10.27 8.04 10.36C7.93 10.44 7.92 10.44 7.85 10.31L7.82 10.25L7.77 10.17C7.7 10.07 7.7 10.06 7.8 9.97Z"
+													fill="url(#paint0_linear_5201_16796)"></path>
+												<defs>
+													<linearGradient id="paint0_linear_5201_16796" x1="19.8192" y1="18.6748"
+														x2="-3.18067" y2="18.3889" gradientUnits="userSpaceOnUse">
+														<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+														<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+													</linearGradient>
+												</defs>
+											</svg>
+											<strong class="rate-card__price">
+												$49
+												<span>
+													/ month
 												</span>
-											</li>
-										</ul>
-
-										<div class="tariff-card__line"></div>
-
-										<ul class="tariff-card__list">
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron Assistant
+											</strong>
+											<strong class="rate-card__title">
+												Ultra
+											</strong>
+											<ul class="top-list">
+												<li>
+													Energy
+													<div class="top-list__right">
+														<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+															viewBox="0 0 19 19" fill="none">
+															<path
+																d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z"
+																fill="url(#paint0_linear_5209_17846)"></path>
+															<path
+																d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z"
+																fill="url(#paint1_linear_5209_17846)"></path>
+															<defs>
+																<linearGradient id="paint0_linear_5209_17846" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+																<linearGradient id="paint1_linear_5209_17846" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+															</defs>
+														</svg>
+														10 000
+													</div>
+												</li>
+												<li>
+													Recharging
+													<div class="top-list__right">
+														<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+															viewBox="0 0 19 19" fill="none">
+															<path
+																d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z"
+																fill="url(#paint0_linear_5209_17855)"></path>
+															<path
+																d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z"
+																fill="url(#paint1_linear_5209_17855)"></path>
+															<defs>
+																<linearGradient id="paint0_linear_5209_17855" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+																<linearGradient id="paint1_linear_5209_17855" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+															</defs>
+														</svg>
+														200 / hour
+													</div>
+												</li>
+												<li>
+													Storage
+													<div class="top-list__right">
+														50 GB
+													</div>
+												</li>
+											</ul>
+											<div class="substats-wrapper">
+												<ul class="rate-substats">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="white" stroke-width="1.78322" stroke-linecap="round"
+																	stroke-linejoin="round"></path>
+															</svg>
+															Expert Network Access
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="white" stroke-width="1.78322" stroke-linecap="round"
+																	stroke-linejoin="round"></path>
+															</svg>
+															Neuron Assistant
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="white" stroke-width="1.78322" stroke-linecap="round"
+																	stroke-linejoin="round"></path>
+															</svg>
+															Neuron GPT
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="white" stroke-width="1.78322" stroke-linecap="round"
+																	stroke-linejoin="round"></path>
+															</svg>
+															Neuron Tools
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="white" stroke-width="1.78322" stroke-linecap="round"
+																	stroke-linejoin="round"></path>
+															</svg>
+															Business Card (QR code)
+														</div>
+														<span class="new">new</span>
+													</li>
+												</ul>
+												<ul class="rate-substats substats-desc">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="white" stroke-width="1.78322" stroke-linecap="round"
+																	stroke-linejoin="round"></path>
+															</svg>
+															<div class="rate-substats__desc">
+																<p class="rate-substats__title">
+																	Digital Workers
+																</p>
+																<p class="rate-substats__subtitle">
+																	<span></span>
+																	Sales Manager
+																</p>
+																<p class="rate-substats__subtitle">
+																	<span></span>
+																	Support
+																</p>
+																<span>
+																	(Neuron Platform)
+																</span>
+															</div>
+														</div>
+														<span class="hot">
+															hot
+														</span>
+													</li>
+												</ul>
+												<ul class="rate-substats last-substats">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="white" stroke-width="1.78322" stroke-linecap="round"
+																	stroke-linejoin="round"></path>
+															</svg>
+															Content Builder
+														</div>
+														<span class="new">new</span>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="white" stroke-width="1.78322" stroke-linecap="round"
+																	stroke-linejoin="round"></path>
+															</svg>
+															<div class="rate-substats__desc">
+																<p>Content Publisher</p>
+																<p>(10 connections)</p>
+															</div>
+														</div>
+														<span class="hot">
+															hot
+														</span>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="white" stroke-width="1.78322" stroke-linecap="round"
+																	stroke-linejoin="round"></path>
+															</svg>
+															<div class="rate-substats__desc">
+																<p>Scheduler</p>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<a href="#" class="subscribe tranparent-hover">
+											Subscribe
+										</a>
+									</div>
+									<div class="rate-card last-card">
+										<div class="rate-card__top">
+											<svg class="top-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+												viewBox="0 0 20 20" fill="none">
+												<path
+													d="M10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20ZM10.3 5.29C10.5 5.11 10.74 5 11 5C11.27 5 11.5 5.11 11.71 5.29C11.9 5.5 12 5.74 12 6C12 6.27 11.9 6.5 11.71 6.71C11.5 6.9 11.27 7 11 7C10.74 7 10.5 6.9 10.3 6.71C10.11 6.5 10 6.27 10 6C10 5.74 10.11 5.5 10.3 5.29ZM7.8 9.97C7.8 9.97 9.97 8.25 10.76 8.18C11.5 8.12 11.35 8.97 11.28 9.41L11.27 9.47C11.13 10 10.96 10.64 10.79 11.25C10.41 12.64 10.04 14 10.13 14.25C10.23 14.59 10.85 14.16 11.3 13.86C11.36 13.82 11.41 13.78 11.46 13.75C11.46 13.75 11.54 13.67 11.62 13.78C11.64 13.81 11.66 13.84 11.68 13.86C11.77 14 11.82 14.05 11.7 14.13L11.66 14.15C11.44 14.3 10.5 14.96 10.12 15.2C9.71 15.47 8.14 16.37 8.38 14.62C8.59 13.39 8.87 12.33 9.09 11.5C9.5 10 9.68 9.32 8.76 9.91C8.39 10.13 8.17 10.27 8.04 10.36C7.93 10.44 7.92 10.44 7.85 10.31L7.82 10.25L7.77 10.17C7.7 10.07 7.7 10.06 7.8 9.97Z"
+													fill="url(#paint0_linear_5201_16796)"></path>
+												<defs>
+													<linearGradient id="paint0_linear_5201_16796" x1="19.8192" y1="18.6748"
+														x2="-3.18067" y2="18.3889" gradientUnits="userSpaceOnUse">
+														<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+														<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+													</linearGradient>
+												</defs>
+											</svg>
+											<strong class="rate-card__price">
+												$99
+												<span>
+													/ month
 												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron GPT
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron tools
-												</span>
-											</li>
-										</ul>
-										<button type="submit"
-											class="button button--transparent button--small btn-success tariff-card__btn"
-											data-bind-href="pricing">Payment</button>
-									</form>
+											</strong>
+											<strong class="rate-card__title">
+												Professional
+											</strong>
+											<ul class="top-list">
+												<li>
+													Energy
+													<div class="top-list__right">
+														<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+															viewBox="0 0 19 19" fill="none">
+															<path
+																d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z"
+																fill="url(#paint0_linear_5209_17846)"></path>
+															<path
+																d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z"
+																fill="url(#paint1_linear_5209_17846)"></path>
+															<defs>
+																<linearGradient id="paint0_linear_5209_17846" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+																<linearGradient id="paint1_linear_5209_17846" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+															</defs>
+														</svg>
+														30 000
+													</div>
+												</li>
+												<li>
+													Recharging
+													<div class="top-list__right">
+														<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+															viewBox="0 0 19 19" fill="none">
+															<path
+																d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z"
+																fill="url(#paint0_linear_5209_17855)"></path>
+															<path
+																d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z"
+																fill="url(#paint1_linear_5209_17855)"></path>
+															<defs>
+																<linearGradient id="paint0_linear_5209_17855" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+																<linearGradient id="paint1_linear_5209_17855" x1="15.6429" y1="17.7314"
+																	x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+																	<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																	<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																</linearGradient>
+															</defs>
+														</svg>
+														500 / hour
+													</div>
+												</li>
+												<li>
+													Storage
+													<div class="top-list__right">
+														100 GB
+													</div>
+												</li>
+											</ul>
+											<div class="substats-wrapper">
+												<ul class="rate-substats">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Expert Network Access
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Neuron Assistant
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Neuron GPT
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Neuron Tools
+														</div>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Business Card (QR code)
+														</div>
+														<span class="new">new</span>
+													</li>
+												</ul>
+												<ul class="rate-substats substats-desc">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17913)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17913" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															<div class="rate-substats__desc">
+																<p class="rate-substats__title">
+																	Digital Workers
+																</p>
+																<p class="rate-substats__subtitle">
+																	<span></span>
+																	Sales Manager
+																</p>
+																<span>
+																	(Neuron Platform,<br> Personal Website)
+																</span>
+															</div>
+														</div>
+														<span class="hot">
+															hot
+														</span>
+													</li>
+												</ul>
+												<ul class="rate-substats penultimate-stats">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															Content Builder
+														</div>
+														<span class="new">new</span>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															<div class="rate-substats__desc">
+																<p>Content Publisher</p>
+																<p>(Unlimited connections)</p>
+															</div>
+														</div>
+														<span class="hot">
+															hot
+														</span>
+													</li>
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															<div class="rate-substats__desc">
+																<p>Scheduler</p>
+															</div>
+														</div>
+													</li>
+												</ul>
+												<ul class="rate-substats last-substats">
+													<li>
+														<div class="rate-substats__left">
+															<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+																viewBox="0 0 21 21" fill="none">
+																<path
+																	d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+																	stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322"
+																	stroke-linecap="round" stroke-linejoin="round"></path>
+																<defs>
+																	<linearGradient id="paint0_linear_5209_17866" x1="18.2326"
+																		y1="17.3314" x2="0.12022" y2="17.1063"
+																		gradientUnits="userSpaceOnUse">
+																		<stop offset="0.116616" stop-color="#1D4ED8"></stop>
+																		<stop offset="0.931232" stop-color="#5AD7FE"></stop>
+																	</linearGradient>
+																</defs>
+															</svg>
+															<div class="rate-substats__desc">
+																<p>Message Center</p>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<a href="#" class="subscribe background-hover">
+											Subscribe
+										</a>
+									</div>
 								</div>
-								<div class="tariff-card">
-									<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
-										method="post" role="payment_pack_300">
-										<div class="tariff-card__price">
-											<span>$0</span> / month
+								<div class="bottom-card">
+									<div class="bottom-card__left">
+										<strong class="bottom-card__price">
+											from $999
+											<span>
+												/ month
+											</span>
+										</strong>
+										<p class="bottom-card__title">
+											Corporate
+										</p>
+									</div>
+									<div class="bottom-card__right">
+										<div class="bottom-card__list">
+											<ul class="start-list">
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+														viewBox="0 0 21 21" fill="none">
+														<path
+															d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+															stroke="url(#paint0_linear_5201_17013)" stroke-width="1.78322"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<defs>
+															<linearGradient id="paint0_linear_5201_17013" x1="18.2326" y1="17.3314"
+																x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+																<stop offset="0.116616" stop-color="#1D4ED8" />
+																<stop offset="0.931232" stop-color="#5AD7FE" />
+															</linearGradient>
+														</defs>
+													</svg>
+													New Types Digital Workers
+												</li>
+											</ul>
+											<ul class="bottom-list">
+												<li>
+													<span></span>
+													Sales Manager
+												</li>
+												<li>
+													<span></span>
+													Content Manager
+												</li>
+												<li>
+													<span></span>
+													SMM Manager
+												</li>
+												<li>
+													<span></span>
+													Marketing Expert
+												</li>
+												<li>
+													<span></span>
+													Support
+												</li>
+											</ul>
+											<span>
+												(Neuron Platform,<br> Personal Website)
+											</span>
 										</div>
-										<div class="tariff-card__tariff">
-											Free
+										<div class="bottom-card__list">
+											<ul class="start-list">
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+														viewBox="0 0 21 21" fill="none">
+														<path
+															d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+															stroke="url(#paint0_linear_5201_17013)" stroke-width="1.78322"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<defs>
+															<linearGradient id="paint0_linear_5201_17013" x1="18.2326" y1="17.3314"
+																x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+																<stop offset="0.116616" stop-color="#1D4ED8" />
+																<stop offset="0.931232" stop-color="#5AD7FE" />
+															</linearGradient>
+														</defs>
+													</svg>
+													Custom Models
+												</li>
+											</ul>
+											<ul class="bottom-list">
+												<li>
+													<span></span>
+													Deep learning
+												</li>
+												<li>
+													<span></span>
+													Custom finetuning
+												</li>
+											</ul>
 										</div>
-										<ul class="tariff-card__list">
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Energy
-												</span>
-												<span class="tariff-card__list-item-right">
-													20
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Recharging
-												</span>
-												<span class="tariff-card__list-item-right">
-													2 / hour
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Storage
-												</span>
-												<span class="tariff-card__list-item-right">
-													1 GB
-												</span>
-											</li>
-										</ul>
-
-										<div class="tariff-card__line"></div>
-
-										<ul class="tariff-card__list">
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron Assistant
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron GPT
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron tools
-												</span>
-											</li>
-										</ul>
-										<button type="submit"
-											class="button button--transparent button--small btn-success tariff-card__btn"
-											data-bind-href="pricing">Payment</button>
-									</form>
-								</div>
-								<div class="tariff-card">
-									<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
-										method="post" role="payment_pack_300">
-										<div class="tariff-card__price">
-											<span>$0</span> / month
+										<div class="bottom-card__list">
+											<ul class="start-list">
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+														viewBox="0 0 21 21" fill="none">
+														<path
+															d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z"
+															stroke="url(#paint0_linear_5201_17013)" stroke-width="1.78322"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<defs>
+															<linearGradient id="paint0_linear_5201_17013" x1="18.2326" y1="17.3314"
+																x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+																<stop offset="0.116616" stop-color="#1D4ED8" />
+																<stop offset="0.931232" stop-color="#5AD7FE" />
+															</linearGradient>
+														</defs>
+													</svg>
+													Platforms
+												</li>
+											</ul>
+											<ul class="bottom-list">
+												<li>
+													<span></span>
+													Whats App
+												</li>
+												<li>
+													<span></span>
+													Telegram
+												</li>
+												<li>
+													<span></span>
+													ip telephony
+												</li>
+											</ul>
 										</div>
-										<div class="tariff-card__tariff">
-											Free
-										</div>
-										<ul class="tariff-card__list">
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Energy
-												</span>
-												<span class="tariff-card__list-item-right">
-													20
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Recharging
-												</span>
-												<span class="tariff-card__list-item-right">
-													2 / hour
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Storage
-												</span>
-												<span class="tariff-card__list-item-right">
-													1 GB
-												</span>
-											</li>
-										</ul>
-
-										<div class="tariff-card__line"></div>
-
-										<ul class="tariff-card__list">
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron Assistant
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron GPT
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron tools
-												</span>
-											</li>
-										</ul>
-										<button type="submit"
-											class="button button--transparent button--small btn-success tariff-card__btn"
-											data-bind-href="pricing">Payment</button>
-									</form>
-								</div>
-								<div class="tariff-card">
-									<form enctype="multipart/form-data" action="{% url 'tariffs:payment_pack_300' %}"
-										method="post" role="payment_pack_300">
-										<div class="tariff-card__price">
-											<span>$0</span> / month
-										</div>
-										<div class="tariff-card__tariff">
-											Free
-										</div>
-										<ul class="tariff-card__list">
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Energy
-												</span>
-												<span class="tariff-card__list-item-right">
-													20
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Recharging
-												</span>
-												<span class="tariff-card__list-item-right">
-													2 / hour
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Storage
-												</span>
-												<span class="tariff-card__list-item-right">
-													1 GB
-												</span>
-											</li>
-										</ul>
-
-										<div class="tariff-card__line"></div>
-
-										<ul class="tariff-card__list">
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron Assistant
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron GPT
-												</span>
-											</li>
-											<li class="tariff-card__list-item">
-												<span class="tariff-card__list-item-left">
-													Neuron tools
-												</span>
-											</li>
-										</ul>
-										<button type="submit"
-											class="button button--transparent button--small btn-success tariff-card__btn"
-											data-bind-href="pricing">Payment</button>
-									</form>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="tabs__pane">
-
+							<div class="montly-plans">
+                        <p class="rate-title">
+                            Back to
+                            <a href="#">
+                                monthly billing
+                            </a>
+                        </p>
+                        <div class="rate-cards">
+                            <div class="rate-card right-card">
+                                <div class="rate-card__top">
+                                    <svg class="top-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20ZM10.3 5.29C10.5 5.11 10.74 5 11 5C11.27 5 11.5 5.11 11.71 5.29C11.9 5.5 12 5.74 12 6C12 6.27 11.9 6.5 11.71 6.71C11.5 6.9 11.27 7 11 7C10.74 7 10.5 6.9 10.3 6.71C10.11 6.5 10 6.27 10 6C10 5.74 10.11 5.5 10.3 5.29ZM7.8 9.97C7.8 9.97 9.97 8.25 10.76 8.18C11.5 8.12 11.35 8.97 11.28 9.41L11.27 9.47C11.13 10 10.96 10.64 10.79 11.25C10.41 12.64 10.04 14 10.13 14.25C10.23 14.59 10.85 14.16 11.3 13.86C11.36 13.82 11.41 13.78 11.46 13.75C11.46 13.75 11.54 13.67 11.62 13.78C11.64 13.81 11.66 13.84 11.68 13.86C11.77 14 11.82 14.05 11.7 14.13L11.66 14.15C11.44 14.3 10.5 14.96 10.12 15.2C9.71 15.47 8.14 16.37 8.38 14.62C8.59 13.39 8.87 12.33 9.09 11.5C9.5 10 9.68 9.32 8.76 9.91C8.39 10.13 8.17 10.27 8.04 10.36C7.93 10.44 7.92 10.44 7.85 10.31L7.82 10.25L7.77 10.17C7.7 10.07 7.7 10.06 7.8 9.97Z" fill="url(#paint0_linear_5201_16796)"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_5201_16796" x1="19.8192" y1="18.6748" x2="-3.18067" y2="18.3889" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.116616" stop-color="#1D4ED8"/>
+                                            <stop offset="0.931232" stop-color="#5AD7FE"/>
+                                          </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <strong class="rate-card__price last-title">
+                                        from $999
+                                        <span>
+                                            / year
+                                        </span>
+                                    </strong>
+                                    <strong class="rate-card__title">
+                                        Corporate
+                                    </strong>
+                                    <div class="left-card-list">
+                                        <ul class="rate-substats substats-desc">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17913)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17913" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p class="rate-substats__title">
+                                                            New Types Digital Workers 
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Sales Manager
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Content Manager 
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            SMM Manager 
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Support 
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Sales Manager
+                                                        </p>
+                                                        <span>
+                                                            (Neuron Platform,<br> Personal Website)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="rate-substats substats-desc">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17913)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17913" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p class="rate-substats__title">
+                                                            Custom Models
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Deep learning
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Custom finetuning
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="rate-substats substats-desc">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17913)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17913" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p class="rate-substats__title">
+                                                            Platforms
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Whats App
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Telegram
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            ip telephony
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="subscribe background-hover">
+                                    Subscribe
+                                </a>
+                            </div>
+                            <div class="rate-card">
+                                <div class="rate-card__top">
+                                    <svg class="top-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20ZM10.3 5.29C10.5 5.11 10.74 5 11 5C11.27 5 11.5 5.11 11.71 5.29C11.9 5.5 12 5.74 12 6C12 6.27 11.9 6.5 11.71 6.71C11.5 6.9 11.27 7 11 7C10.74 7 10.5 6.9 10.3 6.71C10.11 6.5 10 6.27 10 6C10 5.74 10.11 5.5 10.3 5.29ZM7.8 9.97C7.8 9.97 9.97 8.25 10.76 8.18C11.5 8.12 11.35 8.97 11.28 9.41L11.27 9.47C11.13 10 10.96 10.64 10.79 11.25C10.41 12.64 10.04 14 10.13 14.25C10.23 14.59 10.85 14.16 11.3 13.86C11.36 13.82 11.41 13.78 11.46 13.75C11.46 13.75 11.54 13.67 11.62 13.78C11.64 13.81 11.66 13.84 11.68 13.86C11.77 14 11.82 14.05 11.7 14.13L11.66 14.15C11.44 14.3 10.5 14.96 10.12 15.2C9.71 15.47 8.14 16.37 8.38 14.62C8.59 13.39 8.87 12.33 9.09 11.5C9.5 10 9.68 9.32 8.76 9.91C8.39 10.13 8.17 10.27 8.04 10.36C7.93 10.44 7.92 10.44 7.85 10.31L7.82 10.25L7.77 10.17C7.7 10.07 7.7 10.06 7.8 9.97Z" fill="url(#paint0_linear_5201_16796)"></path>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_5201_16796" x1="19.8192" y1="18.6748" x2="-3.18067" y2="18.3889" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                          </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <strong class="rate-card__price">
+                                        $193
+                                        <del>$228</del>
+                                        <span>
+                                            / year
+                                        </span>
+                                    </strong>
+                                    <strong class="rate-card__title">
+                                        Advanced
+                                    </strong>
+                                    <ul class="top-list">
+                                        <li>
+                                            Energy
+                                            <div class="top-list__right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                    <path d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z" fill="url(#paint0_linear_5209_17846)"></path>
+                                                    <path d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z" fill="url(#paint1_linear_5209_17846)"></path>
+                                                    <defs>
+                                                      <linearGradient id="paint0_linear_5209_17846" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                      <linearGradient id="paint1_linear_5209_17846" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                3 000
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Recharging
+                                            <div class="top-list__right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                    <path d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z" fill="url(#paint0_linear_5209_17855)"></path>
+                                                    <path d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z" fill="url(#paint1_linear_5209_17855)"></path>
+                                                    <defs>
+                                                      <linearGradient id="paint0_linear_5209_17855" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                      <linearGradient id="paint1_linear_5209_17855" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                100 / hour
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Storage
+                                            <div class="top-list__right">
+                                                20 GB
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="substats-wrapper">
+                                        <ul class="rate-substats">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Expert Network Access 
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Neuron Assistant
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Neuron GPT
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Neuron Tools
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Business Card (QR code)
+                                                </div>
+                                                <span class="new">new</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="rate-substats substats-desc">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17913)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17913" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p class="rate-substats__title">
+                                                            Digital Workers 
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Sales Manager
+                                                        </p>
+                                                        <span>
+                                                            (Neuron Platform)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="hot">
+                                                    hot
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <ul class="rate-substats last-substats">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Content Builder
+                                                </div>
+                                                <span class="new">new</span>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p>Content Publisher</p>
+                                                        <p>(3 connections)</p>
+                                                    </div>
+                                                </div>
+                                                <span class="hot">
+                                                    hot
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="subscribe background-hover">
+                                    Subscribe
+                                </a>
+                            </div>
+                            <div class="rate-card ultra">
+                                <div class="rate-card__top">
+                                    <svg class="top-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20ZM10.3 5.29C10.5 5.11 10.74 5 11 5C11.27 5 11.5 5.11 11.71 5.29C11.9 5.5 12 5.74 12 6C12 6.27 11.9 6.5 11.71 6.71C11.5 6.9 11.27 7 11 7C10.74 7 10.5 6.9 10.3 6.71C10.11 6.5 10 6.27 10 6C10 5.74 10.11 5.5 10.3 5.29ZM7.8 9.97C7.8 9.97 9.97 8.25 10.76 8.18C11.5 8.12 11.35 8.97 11.28 9.41L11.27 9.47C11.13 10 10.96 10.64 10.79 11.25C10.41 12.64 10.04 14 10.13 14.25C10.23 14.59 10.85 14.16 11.3 13.86C11.36 13.82 11.41 13.78 11.46 13.75C11.46 13.75 11.54 13.67 11.62 13.78C11.64 13.81 11.66 13.84 11.68 13.86C11.77 14 11.82 14.05 11.7 14.13L11.66 14.15C11.44 14.3 10.5 14.96 10.12 15.2C9.71 15.47 8.14 16.37 8.38 14.62C8.59 13.39 8.87 12.33 9.09 11.5C9.5 10 9.68 9.32 8.76 9.91C8.39 10.13 8.17 10.27 8.04 10.36C7.93 10.44 7.92 10.44 7.85 10.31L7.82 10.25L7.77 10.17C7.7 10.07 7.7 10.06 7.8 9.97Z" fill="url(#paint0_linear_5201_16796)"></path>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_5201_16796" x1="19.8192" y1="18.6748" x2="-3.18067" y2="18.3889" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                          </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <strong class="rate-card__price">
+                                        $499
+                                        <del class="del2">$588</del>
+                                        <span>
+                                            / year
+                                        </span>
+                                    </strong>
+                                    <strong class="rate-card__title">
+                                        Ultra
+                                    </strong>
+                                    <ul class="top-list">
+                                        <li>
+                                            Energy
+                                            <div class="top-list__right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                    <path d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z" fill="url(#paint0_linear_5209_17846)"></path>
+                                                    <path d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z" fill="url(#paint1_linear_5209_17846)"></path>
+                                                    <defs>
+                                                      <linearGradient id="paint0_linear_5209_17846" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                      <linearGradient id="paint1_linear_5209_17846" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                10 000
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Recharging
+                                            <div class="top-list__right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                    <path d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z" fill="url(#paint0_linear_5209_17855)"></path>
+                                                    <path d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z" fill="url(#paint1_linear_5209_17855)"></path>
+                                                    <defs>
+                                                      <linearGradient id="paint0_linear_5209_17855" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                      <linearGradient id="paint1_linear_5209_17855" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                200 / hour
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Storage
+                                            <div class="top-list__right">
+                                                50 GB
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="substats-wrapper">
+                                        <ul class="rate-substats">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="white" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>                                                   
+                                                    Expert Network Access 
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="white" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    Neuron Assistant
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="white" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    Neuron GPT
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="white" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    Neuron Tools
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="white" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    Business Card (QR code)
+                                                </div>
+                                                <span class="new">new</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="rate-substats substats-desc">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="white" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p class="rate-substats__title">
+                                                            Digital Workers 
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Sales Manager
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Support
+                                                        </p>
+                                                        <span>
+                                                            (Neuron Platform)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="hot">
+                                                    hot
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <ul class="rate-substats last-substats">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="white" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    Content Builder
+                                                </div>
+                                                <span class="new">new</span>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="white" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p>Content Publisher</p>
+                                                        <p>(10 connections)</p>
+                                                    </div>
+                                                </div>
+                                                <span class="hot">
+                                                    hot
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="white" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p>Scheduler</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="subscribe tranparent-hover">
+                                    Subscribe
+                                </a>
+                            </div>
+                            <div class="rate-card last-card">
+                                <div class="rate-card__top">
+                                    <svg class="top-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20ZM10.3 5.29C10.5 5.11 10.74 5 11 5C11.27 5 11.5 5.11 11.71 5.29C11.9 5.5 12 5.74 12 6C12 6.27 11.9 6.5 11.71 6.71C11.5 6.9 11.27 7 11 7C10.74 7 10.5 6.9 10.3 6.71C10.11 6.5 10 6.27 10 6C10 5.74 10.11 5.5 10.3 5.29ZM7.8 9.97C7.8 9.97 9.97 8.25 10.76 8.18C11.5 8.12 11.35 8.97 11.28 9.41L11.27 9.47C11.13 10 10.96 10.64 10.79 11.25C10.41 12.64 10.04 14 10.13 14.25C10.23 14.59 10.85 14.16 11.3 13.86C11.36 13.82 11.41 13.78 11.46 13.75C11.46 13.75 11.54 13.67 11.62 13.78C11.64 13.81 11.66 13.84 11.68 13.86C11.77 14 11.82 14.05 11.7 14.13L11.66 14.15C11.44 14.3 10.5 14.96 10.12 15.2C9.71 15.47 8.14 16.37 8.38 14.62C8.59 13.39 8.87 12.33 9.09 11.5C9.5 10 9.68 9.32 8.76 9.91C8.39 10.13 8.17 10.27 8.04 10.36C7.93 10.44 7.92 10.44 7.85 10.31L7.82 10.25L7.77 10.17C7.7 10.07 7.7 10.06 7.8 9.97Z" fill="url(#paint0_linear_5201_16796)"></path>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_5201_16796" x1="19.8192" y1="18.6748" x2="-3.18067" y2="18.3889" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                          </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <strong class="rate-card__price">
+                                        $1009
+                                        <del class="del3">$1188</del>
+                                        <span>
+                                            / year
+                                        </span>
+                                    </strong>
+                                    <strong class="rate-card__title">
+                                        Professional
+                                    </strong>
+                                    <ul class="top-list">
+                                        <li>
+                                            Energy
+                                            <div class="top-list__right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                    <path d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z" fill="url(#paint0_linear_5209_17846)"></path>
+                                                    <path d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z" fill="url(#paint1_linear_5209_17846)"></path>
+                                                    <defs>
+                                                      <linearGradient id="paint0_linear_5209_17846" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                      <linearGradient id="paint1_linear_5209_17846" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                30 000
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Recharging
+                                            <div class="top-list__right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                    <path d="M4.02629 10.0696L11.5263 0.56963L10.0263 8.06963H15.0263L7.52629 18.5696L9.02629 10.0696H4.02629Z" fill="url(#paint0_linear_5209_17855)"></path>
+                                                    <path d="M11.0493 1.20311L9.7095 8.24233L14.5631 8.25866L7.95645 17.8014L9.29625 10.0571L4.44293 10.0402L11.0493 1.20311ZM11.0502 0.0156255C11.0181 0.0156255 10.9861 0.0167944 10.9546 0.0191508C10.745 0.0360913 10.6061 0.106154 10.4413 0.216888C10.3485 0.278738 10.2649 0.353286 10.1928 0.438357C10.1712 0.463889 10.1508 0.49044 10.1317 0.517919L3.47779 9.32412C3.21506 9.68423 3.17647 10.1595 3.37834 10.5568C3.57992 10.954 3.98753 11.2057 4.43432 11.209L7.86204 11.2339L6.78439 17.5832C6.68197 18.1289 6.9729 18.6727 7.48501 18.8918C7.63384 18.9558 7.79415 18.9887 7.95613 18.9886C8.32931 18.9886 8.63598 18.814 8.86608 18.4988L15.5282 8.956C15.791 8.59587 15.8293 8.11998 15.6277 7.72335C15.4261 7.32614 15.0185 7.07437 14.5717 7.07112L11.144 7.06518L12.2101 1.48245C12.2327 1.39105 12.244 1.29724 12.2439 1.20309C12.2439 0.560651 11.7324 0.0369633 11.0923 0.0161821C11.0781 0.0155883 11.0641 0.0156255 11.0502 0.0156255Z" fill="url(#paint1_linear_5209_17855)"></path>
+                                                    <defs>
+                                                      <linearGradient id="paint0_linear_5209_17855" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                      <linearGradient id="paint1_linear_5209_17855" x1="15.6429" y1="17.7314" x2="1.25988" y2="17.6136" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                        <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                      </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                500 / hour
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Storage
+                                            <div class="top-list__right">
+                                                100 GB
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="substats-wrapper">
+                                        <ul class="rate-substats">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Expert Network Access 
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Neuron Assistant
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Neuron GPT
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Neuron Tools
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Business Card (QR code)
+                                                </div>
+                                                <span class="new">new</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="rate-substats substats-desc">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17913)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17913" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p class="rate-substats__title">
+                                                            Digital Workers 
+                                                        </p>
+                                                        <p class="rate-substats__subtitle">
+                                                            <span></span>
+                                                            Sales Manager
+                                                        </p>
+                                                        <span>
+                                                            (Neuron Platform,<br> Personal Website)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <span class="hot">
+                                                    hot
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <ul class="rate-substats penultimate-stats">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    Content Builder
+                                                </div>
+                                                <span class="new">new</span>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p>Content Publisher</p>
+                                                        <p>(Unlimited connections)</p>
+                                                    </div>
+                                                </div>
+                                                <span class="hot">
+                                                    hot
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p>Scheduler</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="rate-substats last-substats">
+                                            <li>
+                                                <div class="rate-substats__left">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                        <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5209_17866)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <defs>
+                                                          <linearGradient id="paint0_linear_5209_17866" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                            <stop offset="0.116616" stop-color="#1D4ED8"></stop>
+                                                            <stop offset="0.931232" stop-color="#5AD7FE"></stop>
+                                                          </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <div class="rate-substats__desc">
+                                                        <p>Message Center</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="subscribe background-hover">
+                                    Subscribe
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="bottom-card">
+                            <div class="bottom-card__left">
+                                <strong class="bottom-card__price">
+                                    from $999
+                                    <span>
+                                        / month
+                                    </span>
+                                </strong>
+                                <p class="bottom-card__title">
+                                    Corporate
+                                </p>
+                            </div>
+                            <div class="bottom-card__right">
+                                <div class="bottom-card__list">
+                                    <ul class="start-list">
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5201_17013)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_5201_17013" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0.116616" stop-color="#1D4ED8"/>
+                                                    <stop offset="0.931232" stop-color="#5AD7FE"/>
+                                                  </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            New Types Digital Workers 
+                                        </li>
+                                    </ul>
+                                    <ul class="bottom-list">
+                                        <li>
+                                            <span></span>
+                                            Sales Manager
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            Content Manager 
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            SMM Manager 
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            Marketing Expert 
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            Support
+                                        </li>
+                                    </ul>
+                                    <span>
+                                        (Neuron Platform,<br> Personal Website)
+                                    </span>
+                                </div>
+                                <div class="bottom-card__list">
+                                    <ul class="start-list">
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5201_17013)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_5201_17013" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0.116616" stop-color="#1D4ED8"/>
+                                                    <stop offset="0.931232" stop-color="#5AD7FE"/>
+                                                  </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            Custom Models
+                                        </li>
+                                    </ul>
+                                    <ul class="bottom-list">
+                                        <li>
+                                            <span></span>
+                                            Deep learning
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            Custom finetuning
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bottom-card__list">
+                                    <ul class="start-list">
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                                <path d="M7.875 10.5L9.625 12.25L13.125 8.75M18.375 10.5C18.375 11.5342 18.1713 12.5582 17.7756 13.5136C17.3798 14.4691 16.7997 15.3372 16.0685 16.0685C15.3372 16.7997 14.4691 17.3798 13.5136 17.7756C12.5582 18.1713 11.5342 18.375 10.5 18.375C9.46584 18.375 8.44181 18.1713 7.48637 17.7756C6.53093 17.3798 5.6628 16.7997 4.93153 16.0685C4.20027 15.3372 3.6202 14.4691 3.22445 13.5136C2.82869 12.5582 2.625 11.5342 2.625 10.5C2.625 8.41142 3.45468 6.40838 4.93153 4.93153C6.40838 3.45469 8.41142 2.625 10.5 2.625C12.5886 2.625 14.5916 3.45469 16.0685 4.93153C17.5453 6.40838 18.375 8.41142 18.375 10.5Z" stroke="url(#paint0_linear_5201_17013)" stroke-width="1.78322" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <defs>
+                                                  <linearGradient id="paint0_linear_5201_17013" x1="18.2326" y1="17.3314" x2="0.12022" y2="17.1063" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0.116616" stop-color="#1D4ED8"/>
+                                                    <stop offset="0.931232" stop-color="#5AD7FE"/>
+                                                  </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            Platforms
+                                        </li>
+                                    </ul>
+                                    <ul class="bottom-list">
+                                        <li>
+                                            <span></span>
+                                            Whats App
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            Telegram
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            ip telephony
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 		</div>
 	</div>
 
